@@ -10,7 +10,7 @@ Order (bad-batch-coach skill): Hypertrophy (6 wk) → Strength / conjugate + tri
 | Power (French contrast) | 13–15 | Dec 28 – Jan 17, 2027 |
 
 Weekly template: Mon lower squat · Tue upper push · Wed lower hinge · Thu upper pull · Fri full body + French contrast · Sat partner WOD · Sun recovery.
-Equipment: barbells/rack, trap bar, DBs, KBs, boxes, wall balls, med balls, jump ropes, pull-up bar, bands, **1 Assault bike, 1 sprint treadmill (non-motorized), no rower** (Wes, 2026-10-02). Sled and hurdles are assumed, so confirm with Wes. With up to 50 members sharing 1 bike and 1 treadmill, every machine piece needs a no-machine option (run, burpees, jump rope, shuttle sprints).
+Equipment: barbells/rack, trap bar, DBs, KBs, boxes, wall balls, med balls, jump ropes, pull-up bar, bands, **1 Assault bike, 1 sprint treadmill (non-motorized), no rower** (Wes, 2026-10-02). Sleds and hurdles: yes (Wes, 2026-10-02). With up to 50 members sharing 1 bike and 1 treadmill, every machine piece needs a no-machine option (run, burpees, jump rope, shuttle sprints).
 
 ## Week 1 math (Oct 5–11)
 RPE → % from the skill's RTS chart.
