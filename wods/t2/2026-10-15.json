@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "block": "Power · Week 2 of 3",
+  "title": "Upper Speed + Rotation",
+  "warmup": "2 rounds: 1:00 bike · 10 band pull-aparts · 10 scap pull-ups · 5 inchworms",
+  "jumps": [
+    [
+      "Med ball rotational throw",
+      "4 × 6 / side",
+      "Into the wall, full hip turn"
+    ],
+    [
+      "Lateral line hops",
+      "3 × 20",
+      "Quick feet"
+    ],
+    [
+      "Squat jump",
+      "4 × 5",
+      "Reset each rep"
+    ],
+    [
+      "Tuck jump",
+      "3 × 6",
+      "Knees to chest, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "Push press",
+      "4 × 3 @ RPE 8.5",
+      "Dip and drive fast · Rest 2:30"
+    ],
+    [
+      "DB row",
+      "4 × 8 / side",
+      "Pause at the hip"
+    ],
+    [
+      "Pallof press",
+      "3 × 12 / side",
+      "Don't let the band rotate you"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 9",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 9
+    },
+    "items": [
+      "6 DB push press",
+      "8 pull-ups",
+      "10 med ball rotational slams (5 / side)"
+    ],
+    "scaling": "Ring rows · lighter DBs and ball"
+  },
+  "note": "Lighter jump day. Push press: fast dip, faster drive."
+}

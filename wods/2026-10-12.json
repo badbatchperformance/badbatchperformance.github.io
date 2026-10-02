@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-12",
+  "block": "Hypertrophy · Week 2 of 6",
+  "title": "Lower: Squat",
+  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 goblet squats · 10 glute bridges · 5 inchworms",
+  "jumps": [
+    [
+      "Pogo hops",
+      "3 × 20",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Box jump",
+      "5 × 5",
+      "Step down, don't jump down"
+    ],
+    [
+      "Broad jump",
+      "3 × 5",
+      "Stick every landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Back squat",
+      "3 × 8 @ RPE 7.5",
+      "Tempo 3-1-1: 3 sec down, 1 sec pause · Rest 2:30"
+    ],
+    [
+      "DB walking lunge",
+      "3 × 12 / leg @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Single-leg calf raise",
+      "3 × 15 / side",
+      "Full stretch at the bottom"
+    ]
+  ],
+  "cond": {
+    "format": "4 rounds for time",
+    "subtitle": "Time cap 16:00",
+    "timer": {
+      "type": "fortime",
+      "cap": 16
+    },
+    "items": [
+      "400m run (treadmill or outside)",
+      "15 KB goblet squats (53/35 lb)",
+      "10 push-ups",
+      "10 V-ups"
+    ],
+    "scaling": "200m run · lighter KB · push-ups from a box · tuck-ups"
+  },
+  "note": "Same tempo as last week, a little more weight. Depth does not change."
+}

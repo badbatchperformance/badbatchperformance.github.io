@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-15",
+  "block": "Hypertrophy · Week 2 of 6",
+  "title": "Upper: Pull",
+  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 KB halos · 5 inchworms",
+  "jumps": [
+    [
+      "Lateral line hops",
+      "3 × 20",
+      "Quick feet"
+    ],
+    [
+      "Squat jump",
+      "4 × 6",
+      "Land soft, reset each rep"
+    ]
+  ],
+  "strength": [
+    [
+      "Strict press",
+      "3 × 8 @ RPE 7.5",
+      "Squeeze glutes, no leg drive · Rest 2:00"
+    ],
+    [
+      "Pull-ups",
+      "4 × (2 short of failure)",
+      "Scale: banded or ring rows"
+    ],
+    [
+      "Superset: Hammer curl + DB skull crusher",
+      "3 × 12 each",
+      "Rest 1:00"
+    ],
+    [
+      "Band face pull",
+      "3 × 15",
+      "Pull to the eyes"
+    ]
+  ],
+  "cond": {
+    "format": "5 × 2:00 / 1:00",
+    "subtitle": "Work 2:00 · rest 1:00",
+    "timer": {
+      "type": "interval",
+      "work": 120,
+      "rest": 60,
+      "rounds": 5
+    },
+    "items": [
+      "5 pull-ups",
+      "10 DB push press (35/25 lb)",
+      "Max burpees in the time left",
+      "Score: total burpees"
+    ],
+    "scaling": "Ring rows · DBs 25/15 lb"
+  },
+  "note": "Strict means strict. If the hips drive, the set is over."
+}

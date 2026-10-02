@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-16",
+  "block": "Hypertrophy · Week 2 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "2 rounds: 1:00 bike · 10 goblet squats · 10 walking lunges · 10 band pull-aparts",
+  "jumps": [
+    [
+      "French contrast · 3 rounds",
+      "Goblet squat 3 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
+      "Goblet heavy @ RPE 8 · light DBs on the jump · max intent · rest 3:00"
+    ],
+    [
+      "Jump rope",
+      "2 × 25",
+      "Easy pace"
+    ]
+  ],
+  "strength": [
+    [
+      "Front squat",
+      "3 × 6 @ RPE 7.5",
+      "Elbows high · Rest 2:30"
+    ],
+    [
+      "Single-arm DB row",
+      "3 × 12 / side",
+      "Pause at the hip"
+    ],
+    [
+      "Farmer carry",
+      "3 × 40 yd",
+      "Heavy, tall posture"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 15",
+    "subtitle": "5 rounds · new station every minute",
+    "timer": {
+      "type": "emom",
+      "minutes": 15
+    },
+    "items": [
+      "Min 1: 15 KB swings",
+      "Min 2: 10 DB thrusters (35/25 lb)",
+      "Min 3: 12/9 cal bike or 10 burpees"
+    ],
+    "scaling": "Cut reps so you get 15+ sec of rest each minute"
+  },
+  "note": "Heavy first, then fast. Take the full 3:00 between contrast rounds."
+}

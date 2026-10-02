@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-17",
+  "block": "Power · Week 2 of 3",
+  "title": "Saturday Sprint Day",
+  "warmup": "3 rounds: A-skip · B-skip · carioca, 20 yd each",
+  "jumps": [
+    [
+      "Pogo hops",
+      "3 × 20",
+      "Partners alternate"
+    ],
+    [
+      "Broad jump",
+      "4 × 4",
+      "Stick it"
+    ],
+    [
+      "Bound for distance",
+      "4 × 5",
+      "Count your bounds to 20 yd"
+    ]
+  ],
+  "strength": [
+    [
+      "Sprint",
+      "10 × 30 yd",
+      "Walk back · race your partner"
+    ],
+    [
+      "Sled push",
+      "6 × 20 yd",
+      "Heavy · no sled? heavy farmer carry 40 yd"
+    ]
+  ],
+  "cond": {
+    "format": "Partner for time",
+    "subtitle": "5 rounds · cap 20:00 · split reps any way",
+    "timer": {
+      "type": "fortime",
+      "cap": 20
+    },
+    "items": [
+      "20 KB swings",
+      "15 wall balls",
+      "10 burpees",
+      "200m run together (treadmill or outside)"
+    ],
+    "scaling": "Solo? Halve the reps · 100m run"
+  },
+  "note": "Race someone faster than you."
+}

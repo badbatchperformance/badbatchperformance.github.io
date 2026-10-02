@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-17",
+  "block": "Hypertrophy · Week 2 of 6",
+  "title": "Saturday Partner WOD",
+  "warmup": "With your partner, 3 rounds: 1:00 bike or jog each · 10 air squats · 10 push-ups",
+  "jumps": [
+    [
+      "Pogo hops",
+      "4 × 20",
+      "Partners alternate sets"
+    ],
+    [
+      "Broad jump",
+      "4 × 5",
+      "Stick it"
+    ]
+  ],
+  "strength": [
+    [
+      "Farmer carry",
+      "4 × 50 yd",
+      "Heavy · partners alternate"
+    ],
+    [
+      "KB front-rack carry",
+      "4 × 40 yd",
+      "Elbows up, ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "Partner for time",
+    "subtitle": "Cap 30:00 · split reps any way · one works, one rests",
+    "timer": {
+      "type": "fortime",
+      "cap": 30
+    },
+    "items": [
+      "100 wall balls",
+      "80 KB swings",
+      "60 cal bike (or 1200m run)",
+      "40 burpees",
+      "20 DB thrusters each"
+    ],
+    "scaling": "Solo? Halve the reps · lighter ball and bells"
+  },
+  "note": "Short sets, fast switches. Keep moving."
+}

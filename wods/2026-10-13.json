@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-13",
+  "block": "Hypertrophy · Week 2 of 6",
+  "title": "Upper: Push",
+  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 scap push-ups · 10 push-ups",
+  "jumps": [
+    [
+      "Jump rope",
+      "3 × 35",
+      "Light and quick"
+    ],
+    [
+      "Med ball chest pass",
+      "4 × 6",
+      "Throw it through the wall"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench press",
+      "3 × 10 @ RPE 7.5",
+      "Tempo 3-0-1 · Rest 2:00 · Spotter or safeties"
+    ],
+    [
+      "Superset: Half-kneeling DB press",
+      "3 × 10 / side",
+      "Squeeze the down-side glute"
+    ],
+    [
+      "+ Chest-supported DB row",
+      "3 × 12",
+      "Rest 1:30 after the pair"
+    ],
+    [
+      "DB lateral raise",
+      "3 × 15",
+      "Slow down · Rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "4 rounds · new station every minute",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 12 push-ups",
+      "Min 2: 12 wall balls (20/14 lb)",
+      "Min 3: 10/7 cal bike or 10 burpees"
+    ],
+    "scaling": "Push-ups from a box · 14/10 lb ball · keep 15 sec rest each minute"
+  },
+  "note": "Shoulder blades pinned to the bench for every rep."
+}

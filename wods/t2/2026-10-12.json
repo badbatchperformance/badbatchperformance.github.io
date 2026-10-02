@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-12",
+  "block": "Power · Week 2 of 3",
+  "title": "Lower Power: Squat",
+  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 leg swings / side · 10 walking lunges · 3 × 10-yd A-skips",
+  "jumps": [
+    [
+      "French contrast × 4 rounds",
+      "Back squat 3 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
+      "Squat @ RPE 8 · DBs 15–25% bodyweight · Rest 3:00 · max intent"
+    ],
+    [
+      "Lateral bound",
+      "3 × 6 / side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Hurdle hop",
+      "4 × 5",
+      "No hurdles? Tuck jumps, same reps"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic hamstring curl",
+      "3 × 6",
+      "Lower as slowly as you can · band assist OK"
+    ],
+    [
+      "Copenhagen plank",
+      "3 × 25 sec / side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "10 × :20 / 1:10",
+    "subtitle": "All-out sprints, full recovery",
+    "timer": {
+      "type": "interval",
+      "work": 20,
+      "rest": 70,
+      "rounds": 10
+    },
+    "items": [
+      "Bike or treadmill: 20 sec all-out",
+      "Easy: 1:10",
+      "Hold your round-1 output"
+    ],
+    "scaling": "Machines taken? 20-yd shuttle sprints"
+  },
+  "note": "Same squat weight is fine. Make the jumps higher and the DBs a little heavier."
+}

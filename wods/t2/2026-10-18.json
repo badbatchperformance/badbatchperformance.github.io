@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "block": "Power · Week 2 of 3",
+  "title": "Recovery Sunday",
+  "warmup": "5 min easy walk or bike",
+  "jumps": [],
+  "strength": [
+    [
+      "Zone 2 cardio",
+      "30–40 min",
+      "Bike, treadmill or outdoor walk. You should be able to talk in full sentences"
+    ]
+  ],
+  "cond": {
+    "format": "Mobility 10 × 1:00",
+    "subtitle": "5 positions, 2 rounds · 10 sec to switch",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 10,
+      "rounds": 10
+    },
+    "items": [
+      "World's greatest stretch (each side)",
+      "Pigeon stretch (each side)",
+      "Thoracic openers",
+      "Dead hang",
+      "Deep squat hold"
+    ],
+    "scaling": "Go easy, breathe through the nose"
+  },
+  "note": "Bike taken? Walk outside or use the treadmill. Easy means easy."
+}
