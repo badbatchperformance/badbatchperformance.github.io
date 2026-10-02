@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-09",
+  "block": "Hypertrophy · Week 1 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "2 rounds: 1:00 bike · 10 goblet squats · 10 walking lunges · 10 band pull-aparts",
+  "jumps": [
+    [
+      "French contrast · 2 rounds",
+      "Goblet squat 5 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
+      "Goblet @ RPE 7 · light DBs on the jump · max intent · rest 2:00"
+    ],
+    [
+      "Jump rope",
+      "2 × 30",
+      "Easy pace"
+    ]
+  ],
+  "strength": [
+    [
+      "Front squat",
+      "3 × 6 @ RPE 7",
+      "Elbows high · Rest 2:00"
+    ],
+    [
+      "Single-arm DB row",
+      "3 × 10 / side",
+      "Pause at the hip"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 15",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 15
+    },
+    "items": [
+      "15/12 cal bike",
+      "12 DB deadlifts",
+      "9 hand-release push-ups",
+      "6 burpees"
+    ],
+    "scaling": "Push-ups from a box · lighter DBs"
+  },
+  "note": "French contrast: every jump is max effort. If you slow down, stop the round."
+}

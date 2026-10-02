@@ -1,0 +1,19 @@
+{
+  "signupUrl": "https://www.badbatchperformance.com",
+  "spotsTotal": 50,
+  "spotsLeft": 50,
+  "foundingSpots": 25,
+  "foundingPrice": 100,
+  "regularPrice": 125,
+  "hours": [
+    "Mon–Fri 5–10 AM",
+    "Mon–Fri 8–10 PM",
+    "Sat–Sun 9 AM–3 PM"
+  ],
+  "ticker": [
+    "RPE 7 = 3 good reps left in the tank",
+    "Re-rack your weights",
+    "Log your lifts",
+    "Military, veterans & first responders: 10% off"
+  ]
+}

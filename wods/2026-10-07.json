@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-07",
+  "block": "Hypertrophy · Week 1 of 6",
+  "title": "Lower: Hinge",
+  "warmup": "2 rounds: 250m row · 10 PVC good mornings · 10 lateral lunges · 10 glute bridges",
+  "jumps": [
+    [
+      "Pogo hops",
+      "2 × 20",
+      "Stiff ankles"
+    ],
+    [
+      "Skater bounds",
+      "3 × 6 / side",
+      "Hold each landing 1 sec"
+    ],
+    [
+      "Broad jump",
+      "3 × 4",
+      "Max distance, stick it"
+    ]
+  ],
+  "strength": [
+    [
+      "Trap bar deadlift",
+      "3 × 6 @ RPE 7",
+      "Tempo 3-0-1 · Rest 2:30"
+    ],
+    [
+      "DB Romanian deadlift",
+      "3 × 10 @ RPE 8",
+      "Feel the hamstrings, flat back"
+    ],
+    [
+      "Back extension",
+      "3 × 15",
+      "Squeeze glutes at the top"
+    ]
+  ],
+  "cond": {
+    "format": "Intervals 6 × 1:00 / 1:30",
+    "subtitle": "Hard 1:00 · easy 1:30",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 90,
+      "rounds": 6
+    },
+    "items": [
+      "Assault bike: 1:00 hard",
+      "Spin easy: 1:30",
+      "Hit the same calories every round"
+    ],
+    "scaling": "Row or ski instead of bike"
+  },
+  "note": "RPE 7 = 3 good reps left in the tank. Leave them there."
+}

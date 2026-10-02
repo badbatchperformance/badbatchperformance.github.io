@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-06",
+  "block": "Hypertrophy · Week 1 of 6",
+  "title": "Upper: Push",
+  "warmup": "2 rounds: 1:00 bike · 10 band pull-aparts · 10 scap push-ups · 10 push-ups",
+  "jumps": [
+    [
+      "Jump rope",
+      "3 × 30",
+      "Light and quick"
+    ],
+    [
+      "Med ball chest pass",
+      "4 × 5",
+      "Throw it through the wall"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench press",
+      "3 × 10 @ RPE 7",
+      "Tempo 3-0-1 · Rest 2:00 · Use a spotter or safeties"
+    ],
+    [
+      "Superset: DB Z-press",
+      "3 × 10",
+      "Seated on the floor, no back support"
+    ],
+    [
+      "+ Chest-supported DB row",
+      "3 × 12",
+      "Rest 1:30 after the pair"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 12",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 12
+    },
+    "items": [
+      "10 push-ups",
+      "15 wall balls (20/14 lb)",
+      "12/9 cal bike"
+    ],
+    "scaling": "Push-ups from a box · wall ball 14/10 lb"
+  },
+  "note": "Bar path: touch low on the chest, press back over the shoulders."
+}

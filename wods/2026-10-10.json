@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-10",
+  "block": "Hypertrophy · Week 1 of 6",
+  "title": "Saturday Partner WOD",
+  "warmup": "With your partner, 3 rounds: 200m row each · 10 air squats · 10 push-ups",
+  "jumps": [
+    [
+      "Pogo hops",
+      "4 × 20",
+      "Partners alternate sets"
+    ],
+    [
+      "Broad jump",
+      "3 × 5",
+      "Stick it"
+    ]
+  ],
+  "strength": [
+    [
+      "Farmer carry",
+      "4 × 40 yd",
+      "Heavy · partners alternate"
+    ],
+    [
+      "Suitcase carry",
+      "4 × 40 yd / side",
+      "Don't lean"
+    ]
+  ],
+  "cond": {
+    "format": "Partner AMRAP 30",
+    "subtitle": "Split reps any way · one works, one rests",
+    "timer": {
+      "type": "amrap",
+      "minutes": 30
+    },
+    "items": [
+      "30 cal row",
+      "30 KB swings",
+      "30 wall balls",
+      "30 burpees"
+    ],
+    "scaling": "Solo? Halve the reps"
+  },
+  "note": "Pick a partner close to your pace. Talk to each other the whole time."
+}

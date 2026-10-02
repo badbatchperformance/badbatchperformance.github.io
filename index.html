@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bad Batch WOD</title>
+<meta name="description" content="Today's Workout of the Day at Bad Batch Performance, Hopkinsville KY. Open Gym: 50 members only.">
+<meta property="og:title" content="Bad Batch Performance: Workout of the Day">
+<meta property="og:description" content="Today's WOD from Bad Batch Performance in Hopkinsville, KY. Open Gym is capped at 50 members.">
+<meta property="og:image" content="assets/share.png">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="assets/eagle.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0b0b;
+    --panel: #161616;
+    --line: #2a2a2a;
+    --text: #f5f5f5;
+    --muted: #a3a3a3;
+    --red: #ed1c24;
+    --red-dim: #7a1014;
+    --rest: #2f80ed;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+  h1, h2, h3, .display { font-family: Oswald, Impact, sans-serif; text-transform: uppercase; letter-spacing: .02em; }
+  .muted { color: var(--muted); }
+  .red { color: var(--red); }
+
+  /* ---------- Phone / desktop view ---------- */
+  .site { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .site header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 16px; border-bottom: 2px solid var(--red); }
+  .site header img { height: 44px; max-width: 60%; }
+  .datenav { display: flex; align-items: center; gap: 8px; }
+  .datenav button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; width: 40px; height: 40px; font-size: 18px; cursor: pointer; }
+  .daytitle { margin: 20px 0 4px; font-size: clamp(28px, 7vw, 52px); line-height: 1.05; }
+  .dayline { color: var(--muted); font-weight: 600; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 20px; }
+  @media (min-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+  .card h2 { font-size: 22px; margin-bottom: 12px; display: flex; gap: 10px; align-items: baseline; }
+  .card h2 .tag { background: var(--red); color: #fff; padding: 2px 10px; border-radius: 6px; font-size: 16px; }
+  .ex { padding: 10px 0; border-top: 1px solid var(--line); }
+  .ex:first-of-type { border-top: 0; }
+  .ex .name { font-weight: 800; }
+  .ex .rx { color: var(--red); font-weight: 800; }
+  .ex .notes { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .sub { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 14px 0 4px; font-weight: 600; }
+  .format { font-size: 34px; color: var(--red); line-height: 1; }
+  .moves { list-style: none; margin-top: 10px; }
+  .moves li { padding: 8px 0; border-top: 1px solid var(--line); font-weight: 600; font-size: 18px; }
+  .note { margin-top: 16px; padding: 14px 16px; border-left: 4px solid var(--red); background: var(--panel); border-radius: 0 10px 10px 0; }
+  .cta { margin-top: 28px; padding: 24px; border-radius: 16px; background: linear-gradient(135deg, #1a0405, #3a080b); border: 1px solid var(--red-dim); }
+  .cta h3 { font-size: 30px; line-height: 1.1; }
+  .cta p { margin-top: 10px; line-height: 1.5; }
+  .cta .btn { display: inline-block; margin-top: 16px; background: var(--red); color: #fff; text-decoration: none; font-weight: 800; padding: 14px 22px; border-radius: 10px; text-transform: uppercase; letter-spacing: .05em; }
+  .cta ul { margin: 12px 0 0 18px; line-height: 1.7; }
+  .site footer { margin: 28px 0 12px; color: var(--muted); font-size: 13px; text-align: center; line-height: 1.6; }
+  .site footer a { color: var(--muted); }
+  .empty { padding: 48px 0; text-align: center; }
+  .empty h2 { font-size: 36px; }
+
+  /* Timer (shared) */
+  .timer { margin-top: 16px; background: #000; border: 2px solid var(--line); border-radius: 14px; padding: 14px; text-align: center; user-select: none; cursor: pointer; }
+  .timer .phase { font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-size: 16px; }
+  .timer .clock { font-family: Oswald, sans-serif; font-variant-numeric: tabular-nums; font-size: 72px; line-height: 1; margin: 6px 0; }
+  .timer .round { font-weight: 600; color: var(--muted); }
+  .timer .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .timer.work { border-color: var(--red); }
+  .timer.work .clock { color: var(--red); }
+  .timer.rest { border-color: var(--rest); }
+  .timer.rest .clock { color: var(--rest); }
+  .timer.lead .clock { color: #f2c94c; }
+  .timer.done .clock { color: var(--muted); }
+
+  /* ---------- TV wall view (?wall=a or ?wall=b) ---------- */
+  body.tv { height: 100vh; overflow: hidden; cursor: none; }
+  .tv .site { display: none; }
+  .wall { display: none; height: 100vh; padding: 2.2vh 2.4vw; flex-direction: column; gap: 1.6vh; }
+  .tv .wall { display: flex; }
+  .wall .top { display: flex; align-items: center; justify-content: space-between; border-bottom: .4vh solid var(--red); padding-bottom: 1.4vh; }
+  .wall .top img { height: 6.5vh; }
+  .wall .top .mid { text-align: center; }
+  .wall .top .mid h1 { font-size: 5.6vh; line-height: 1; }
+  .wall .top .mid .dayline { font-size: 2.2vh; margin-top: .6vh; }
+  .wall .top .now { text-align: right; font-family: Oswald, sans-serif; }
+  .wall .top .now .t { font-size: 5vh; line-height: 1; font-variant-numeric: tabular-nums; }
+  .wall .top .now .d { font-size: 2.2vh; color: var(--muted); text-transform: uppercase; }
+  .wall .body { flex: 1; display: grid; gap: 2vw; min-height: 0; }
+  .wall .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 1.4vh; padding: 2.2vh 2vw; overflow: hidden; display: flex; flex-direction: column; }
+  .wall .panel h2 { font-size: 3.6vh; margin-bottom: 1.2vh; display: flex; gap: 1vw; align-items: baseline; }
+  .wall .panel h2 .tag { background: var(--red); color: #fff; padding: .2vh 1vw; border-radius: .6vh; font-size: 2.8vh; }
+  .wall .ex { padding: 1.2vh 0; }
+  .wall .ex .name { font-size: 3.6vh; }
+  .wall .ex .rx { font-size: 3.6vh; }
+  .wall .ex .notes { font-size: 2.3vh; }
+  .wall .sub { font-size: 1.8vh; margin: 1.2vh 0 .4vh; }
+  .wall .warm { font-size: 2.6vh; color: var(--muted); line-height: 1.35; }
+  .wall .format { font-size: 9vh; }
+  .wall .fsub { font-size: 2.6vh; color: var(--muted); margin-top: .6vh; }
+  .wall .moves li { font-size: 4.4vh; padding: 1.3vh 0; }
+  .wall .scale { font-size: 2.4vh; color: var(--muted); margin-top: auto; padding-top: 1vh; }
+  .wall .timer { margin: 0; display: flex; flex-direction: column; justify-content: center; border-width: .5vh; border-radius: 1.4vh; }
+  .wall .timer .phase { font-size: 3.6vh; }
+  .wall .timer .clock { font-size: 22vh; }
+  .wall .timer .round { font-size: 3.4vh; }
+  .wall .timer .hint { font-size: 1.8vh; }
+  .wall .bottom { display: flex; align-items: center; gap: 2vw; border-top: 1px solid var(--line); padding-top: 1.2vh; }
+  .wall .bottom .ticker { flex: 1; font-size: 2.6vh; font-weight: 600; }
+  .wall .bottom .ticker .red { font-family: Oswald, sans-serif; text-transform: uppercase; }
+  .wall .bottom .qr { display: flex; align-items: center; gap: 1vw; font-size: 1.9vh; color: var(--muted); text-align: right; line-height: 1.3; }
+  .wall .bottom .qr svg { height: 9vh; width: 9vh; background: #fff; padding: .5vh; border-radius: .6vh; }
+  .wall .noteline { font-size: 2.6vh; border-left: .5vh solid var(--red); padding-left: 1vw; }
+  .wall.a .body { grid-template-columns: 1fr 1.25fr; }
+  .wall.b .body { grid-template-columns: 1.1fr 1fr; }
+  .wall.both .body { grid-template-columns: 1fr 1fr; }
+  .wall.both .timer .clock { font-size: 12vh; }
+  .wall .restday { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2vh; }
+  .wall .restday img { height: 24vh; }
+  .wall .restday h2 { font-size: 7vh; }
+  .wall .restday p { font-size: 3vh; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- Phone / desktop -->
+<div class="site">
+  <header>
+    <img src="assets/logo.svg" alt="Bad Batch Performance">
+    <div class="datenav">
+      <button id="prev" aria-label="Previous day">‹</button>
+      <button id="next" aria-label="Next day">›</button>
+    </div>
+  </header>
+  <main id="siteMain"></main>
+  <section class="cta" id="cta"></section>
+  <footer>
+    Bad Batch Performance · 205 Trail of Tears Dr, Hopkinsville, KY ·
+    <a href="tel:+18285535397">(828) 553-5397</a><br>
+    Train at your own risk and within your ability. Scale anything that hurts.
+  </footer>
+</div>
+
+<!-- TV wall -->
+<div class="wall" id="wall"></div>
+
+<script>
+(() => {
+  const params = new URLSearchParams(location.search);
+  const wallMode = (params.get('wall') || '').toLowerCase(); // 'a', 'b', 'both' or ''
+  const isTV = ['a', 'b', 'both'].includes(wallMode);
+  if (isTV) document.body.classList.add('tv');
+
+  const pad = n => String(n).padStart(2, '0');
+  const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const addDays = (s, n) => { const d = parseYmd(s); d.setDate(d.getDate() + n); return ymd(d); };
+  const niceDate = s => parseYmd(s).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const fresh = url => `${url}?v=${Date.now()}`;
+
+  let config = { signupUrl: 'https://www.badbatchperformance.com', ticker: [] };
+  let viewDate = params.get('date') || ymd(new Date());
+  let followToday = !params.get('date');
+  let wod = null;
+  let lastJson = '';
+  let timer = null;
+
+  async function getJson(url) {
+    const r = await fetch(fresh(url), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }
+
+  async function load() {
+    try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
+    let data = null, next = null;
+    try { data = await getJson(`wods/${viewDate}.json`); } catch (e) {
+      try { next = (await getJson('wods/index.json')).find(d => d > viewDate) || null; } catch (e2) {}
+    }
+    const json = JSON.stringify([data, next, config, viewDate]);
+    if (json === lastJson) return; // nothing changed; keep the timer running
+    lastJson = json;
+    wod = data;
+    isTV ? renderWall(next) : renderSite(next);
+  }
+
+  /* ---------- Rendering ---------- */
+  const exHtml = ([name, rx, notes]) =>
+    `<div class="ex"><div class="name">${esc(name)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`;
+
+  function partA(w) {
+    return `
+      <div class="sub">Warm-up</div><div class="warm">${esc(w.warmup)}</div>
+      ${w.jumps && w.jumps.length ? `<div class="sub">Jumps</div>${w.jumps.map(exHtml).join('')}` : ''}
+      <div class="sub">Strength</div>${w.strength.map(exHtml).join('')}`;
+  }
+  function partB(w) {
+    const c = w.cond;
+    return `
+      <div class="format display">${esc(c.format)}</div>
+      ${c.subtitle ? `<div class="fsub muted">${esc(c.subtitle)}</div>` : ''}
+      <ul class="moves">${c.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+      ${c.scaling ? `<div class="scale"><span class="red">Scale:</span> ${esc(c.scaling)}</div>` : ''}`;
+  }
+
+  function qrSvg(url) {
+    if (typeof qrcode === 'undefined') return '';
+    const q = qrcode(0, 'M'); q.addData(url); q.make();
+    return q.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+  }
+
+  function renderSite(next) {
+    const main = document.getElementById('siteMain');
+    if (!wod) {
+      main.innerHTML = `<div class="empty"><h2>No posted workout</h2>
+        <p class="muted" style="margin-top:8px">${esc(niceDate(viewDate))}</p>
+        ${next ? `<p style="margin-top:16px"><a class="red" href="?date=${next}">Next workout: ${esc(niceDate(next))} →</a></p>` : ''}</div>`;
+    } else {
+      main.innerHTML = `
+        <h1 class="daytitle">${esc(wod.title)}</h1>
+        <div class="dayline">${esc(niceDate(wod.date))} · ${esc(wod.block)}</div>
+        <div class="grid">
+          <section class="card"><h2><span class="tag">A</span> Strength</h2>${partA(wod)}</section>
+          <section class="card"><h2><span class="tag">B</span> Conditioning</h2>${partB(wod)}<div id="timerSlot"></div></section>
+        </div>
+        ${wod.note ? `<div class="note"><b class="red">Coach's note:</b> ${esc(wod.note)}</div>` : ''}`;
+      mountTimer(document.getElementById('timerSlot'), wod.cond.timer);
+    }
+    const left = config.spotsLeft;
+    document.getElementById('cta').innerHTML = `
+      <h3>Open Gym: 50 members. That's it.</h3>
+      <p>Train this program in our gym on your schedule. Workouts are written by Wes Nelson, M.S. (Kinesiology & Biomechanics), and posted on the TVs every day.</p>
+      <ul>
+        <li>${(config.hours || []).map(esc).join(' · ')}</li>
+        <li>Founding rate: <b>$${config.foundingPrice}/mo</b>, locked in for as long as you stay (first ${config.foundingSpots} members), then $${config.regularPrice}/mo</li>
+        <li>Month to month. Cancel anytime.</li>
+      </ul>
+      ${left != null ? `<p class="red" style="font-weight:800">${left} of ${config.spotsTotal} spots left</p>` : ''}
+      <a class="btn" href="${esc(config.signupUrl)}">Claim a spot</a>`;
+    document.title = wod ? `${wod.title} · Bad Batch WOD` : 'Bad Batch WOD';
+  }
+
+  function renderWall(next) {
+    const el = document.getElementById('wall');
+    el.className = `wall ${wallMode}`;
+    const top = `
+      <div class="top">
+        <img src="assets/logo.svg" alt="Bad Batch Performance">
+        <div class="mid"><h1>${esc(wod ? wod.title : 'Open Gym')}</h1>
+          <div class="dayline muted">${wod ? esc(wod.block) : ''}</div></div>
+        <div class="now"><div class="t" id="nowT"></div><div class="d">${esc(niceDate(viewDate))}</div></div>
+      </div>`;
+    let body;
+    if (!wod) {
+      body = `<div class="restday"><img src="assets/eagle.svg" alt="">
+        <h2>No posted workout today</h2>
+        <p>${next ? `Next workout: ${esc(niceDate(next))}` : 'Train your weak points. Re-rack your weights.'}</p></div>`;
+    } else if (wallMode === 'a') {
+      body = `<section class="panel"><h2><span class="tag">A</span> Warm-up & Jumps</h2>
+                <div class="sub">Warm-up</div><div class="warm">${esc(wod.warmup)}</div>
+                ${(wod.jumps || []).length ? `<div class="sub">Jumps</div>${wod.jumps.map(exHtml).join('')}` : ''}
+</section>
+              <section class="panel"><h2><span class="tag">A</span> Strength</h2>${wod.strength.map(exHtml).join('')}
+                ${wod.note ? `<div class="noteline" style="margin-top:auto">${esc(wod.note)}</div>` : ''}</section>`;
+    } else if (wallMode === 'b') {
+      body = `<section class="panel"><h2><span class="tag">B</span> Conditioning</h2>${partB(wod)}</section>
+              <div class="timer" id="timerSlot"></div>`;
+    } else {
+      body = `<section class="panel"><h2><span class="tag">A</span> Strength</h2>${partA(wod)}</section>
+              <section class="panel"><h2><span class="tag">B</span> Conditioning</h2>${partB(wod)}<div id="timerSlot"></div></section>`;
+    }
+    const tick = (config.ticker || []).length ? config.ticker : ['Re-rack your weights'];
+    el.innerHTML = `${top}<div class="body">${body}</div>
+      <div class="bottom">
+        <div class="ticker"><span class="red">Open Gym</span> · <span id="tickerText">${esc(tick[0])}</span></div>
+        <div class="qr"><div>Want in?<br><b style="color:var(--text)">Scan to claim a spot</b></div>${qrSvg(config.signupUrl)}</div>
+      </div>`;
+    let i = 0;
+    clearInterval(renderWall.tickTimer);
+    renderWall.tickTimer = setInterval(() => {
+      const t = document.getElementById('tickerText');
+      if (t) t.textContent = tick[++i % tick.length];
+    }, 12000);
+    if (wod) {
+      const slot = document.getElementById('timerSlot');
+      if (slot) mountTimer(slot, wod.cond.timer, wallMode === 'b');
+    }
+    updateClock();
+  }
+
+  /* ---------- Timer ----------
+     Types: amrap {minutes} counts down, fortime {cap} counts up,
+     emom {minutes} counts each minute down, interval {work, rest, rounds}.
+     Fire TV remote: OK/Enter = start/pause, Left = reset. Click or tap works too. */
+  const LEAD = 10;
+  let audio;
+  function beep(freq = 880, ms = 180) {
+    try {
+      audio = audio || new (window.AudioContext || window.webkitAudioContext)();
+      const o = audio.createOscillator(), g = audio.createGain();
+      o.frequency.value = freq; o.connect(g); g.connect(audio.destination);
+      g.gain.setValueAtTime(0.3, audio.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + ms / 1000);
+      o.start(); o.stop(audio.currentTime + ms / 1000);
+    } catch (e) {}
+  }
+
+  function mountTimer(slot, spec, isWallSlot) {
+    if (!slot || !spec) return;
+    const el = isWallSlot ? slot : document.createElement('div');
+    if (!isWallSlot) { el.className = 'timer'; slot.appendChild(el); }
+    el.innerHTML = `<div class="phase"></div><div class="clock"></div><div class="round"></div>
+      <div class="hint">${isTV ? 'OK = start / pause · ◀ = reset' : 'Tap to start / pause · double-tap to reset'}</div>`;
+    const total = spec.type === 'amrap' || spec.type === 'emom' ? spec.minutes * 60
+      : spec.type === 'fortime' ? spec.cap * 60
+      : (spec.work + spec.rest) * spec.rounds;
+    let running = false, startedAt = 0, banked = -LEAD, lastSecond = null;
+    const fmt = s => { s = Math.max(0, Math.ceil(s)); return `${Math.floor(s / 60)}:${pad(s % 60)}`; };
+    const elapsed = () => banked + (running ? (performance.now() - startedAt) / 1000 : 0);
+
+    function state() {
+      const t = elapsed();
+      if (t < 0) return { cls: 'lead', phase: 'Get ready', clock: String(Math.ceil(-t)), round: '' , sec: Math.ceil(t) };
+      if (t >= total) return { cls: 'done', phase: 'Time', clock: fmt(spec.type === 'fortime' ? total : 0), round: '', sec: 'done' };
+      if (spec.type === 'amrap') return { cls: 'work', phase: `AMRAP ${spec.minutes}`, clock: fmt(total - t), round: '', sec: Math.floor(t) };
+      if (spec.type === 'fortime') return { cls: 'work', phase: `For time · cap ${spec.cap}:00`, clock: fmt(Math.floor(t)), round: '', sec: Math.floor(t) };
+      if (spec.type === 'emom') {
+        const m = Math.floor(t / 60);
+        return { cls: 'work', phase: `EMOM ${spec.minutes}`, clock: fmt(60 - (t % 60)), round: `Minute ${m + 1} of ${spec.minutes}`, sec: Math.floor(t) };
+      }
+      const len = spec.work + spec.rest, r = Math.floor(t / len), inR = t % len;
+      const working = inR < spec.work;
+      return { cls: working ? 'work' : 'rest', phase: working ? 'Work' : 'Rest',
+        clock: fmt(working ? spec.work - inR : len - inR), round: `Round ${r + 1} of ${spec.rounds}`, sec: Math.floor(t) };
+    }
+
+    function sounds(t) {
+      if (t < 0 && t >= -3) { beep(660); return; }
+      if (t === 0) { beep(1200, 500); return; }
+      if (spec.type === 'emom' && t % 60 >= 57) beep(660);
+      else if (spec.type === 'emom' && t % 60 === 0) beep(1200, 400);
+      if (spec.type === 'interval') {
+        const inR = t % (spec.work + spec.rest);
+        if (inR === 0 || inR === spec.work) beep(1200, 400);
+        else if ((inR >= spec.work - 3 && inR < spec.work) || inR >= spec.work + spec.rest - 3) beep(660);
+      }
+      if (spec.type !== 'fortime' && total - t <= 3 && total - t > 0) beep(660);
+    }
+
+    function paint() {
+      const s = state();
+      el.classList.remove('lead', 'work', 'rest', 'done');
+      if (running || banked !== -LEAD) el.classList.add(s.cls);
+      el.querySelector('.phase').textContent = running || banked !== -LEAD ? s.phase : 'Ready';
+      el.querySelector('.clock').textContent = running || banked !== -LEAD ? s.clock
+        : spec.type === 'fortime' ? '0:00' : spec.type === 'interval' ? fmt(spec.work) : fmt(total);
+      el.querySelector('.round').textContent = s.round;
+      if (running && s.sec !== lastSecond) {
+        if (lastSecond !== null) {
+          if (s.sec === 'done') { beep(1200, 900); running = false; banked = total; }
+          else sounds(s.sec);
+        }
+        lastSecond = s.sec;
+      }
+    }
+
+    const toggle = () => {
+      if (elapsed() >= total) return reset();
+      if (running) { banked = elapsed(); running = false; }
+      else { startedAt = performance.now(); running = true; beep(440, 80); }
+    };
+    const reset = () => { running = false; banked = -LEAD; lastSecond = null; };
+    el.onclick = toggle;
+    el.ondblclick = reset;
+    if (timer) timer.destroy();
+    const id = setInterval(paint, 100);
+    timer = { toggle, reset, destroy: () => clearInterval(id) };
+    paint();
+  }
+
+  document.addEventListener('keydown', e => {
+    if (!timer) return;
+    if (['Enter', ' ', 'MediaPlayPause'].includes(e.key)) { e.preventDefault(); timer.toggle(); }
+    if (['ArrowLeft', 'Backspace', 'r', 'R'].includes(e.key)) { e.preventDefault(); timer.reset(); }
+  });
+
+  /* ---------- Clock, day rollover, refresh ---------- */
+  function updateClock() {
+    const t = document.getElementById('nowT');
+    if (t) t.textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  }
+  setInterval(() => {
+    updateClock();
+    if (followToday && ymd(new Date()) !== viewDate) { viewDate = ymd(new Date()); lastJson = ''; load(); }
+  }, 15000);
+  setInterval(load, 5 * 60 * 1000); // pick up edits within a few minutes
+  if (isTV) setTimeout(() => location.reload(), 6 * 60 * 60 * 1000); // fresh page every 6 hours
+
+  const go = n => {
+    viewDate = addDays(viewDate, n); followToday = viewDate === ymd(new Date());
+    history.replaceState(null, '', followToday ? location.pathname : `?date=${viewDate}`);
+    lastJson = ''; load();
+  };
+  document.getElementById('prev').onclick = () => go(-1);
+  document.getElementById('next').onclick = () => go(1);
+
+  load();
+})();
+</script>
+</body>
+</html>

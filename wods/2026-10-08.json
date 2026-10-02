@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-08",
+  "block": "Hypertrophy · Week 1 of 6",
+  "title": "Upper: Pull",
+  "warmup": "2 rounds: 1:00 row · 10 band pull-aparts · 10 KB halos · 5 inchworms",
+  "jumps": [
+    [
+      "Lateral line hops",
+      "3 × 20",
+      "Quick feet"
+    ],
+    [
+      "Squat jump",
+      "4 × 5",
+      "Land soft, reset each rep"
+    ]
+  ],
+  "strength": [
+    [
+      "Strict press",
+      "3 × 8 @ RPE 7",
+      "Squeeze glutes, no leg drive · Rest 2:00"
+    ],
+    [
+      "Pull-ups",
+      "4 × (2 short of failure)",
+      "Scale: banded or ring rows"
+    ],
+    [
+      "Superset: DB curl + DB skull crusher",
+      "3 × 12 each",
+      "Rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "21-15-9 For time",
+    "subtitle": "Time cap 14:00",
+    "timer": {
+      "type": "fortime",
+      "cap": 14
+    },
+    "items": [
+      "Cal row",
+      "DB thrusters (35/25 lb)"
+    ],
+    "scaling": "15-12-9 · DB thrusters 25/15 lb"
+  },
+  "note": "Pull the shoulder blades down first, then pull the bar."
+}
