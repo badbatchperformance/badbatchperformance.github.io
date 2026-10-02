@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-09",
+  "block": "Power · Week 1 of 3",
+  "title": "Lower Power: Hinge",
+  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 KB deadlifts · 10 lateral lunges · 3 × 10-yd skips",
+  "jumps": [
+    [
+      "French contrast × 4 rounds",
+      "Trap bar deadlift 3 → Hurdle hop 5 → Light trap bar jump 5 → Fast pogos 10",
+      "Deadlift @ RPE 8 · Rest 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Broad jump",
+      "3 × 4",
+      "Stick it"
+    ],
+    [
+      "Single-leg hop",
+      "3 × 4 / side",
+      "Small hops, stable knee"
+    ],
+    [
+      "Lateral bound",
+      "3 × 5 / side",
+      "Stick each landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic hamstring curl",
+      "3 × 4",
+      "Slow lowering"
+    ],
+    [
+      "Single-leg RDL",
+      "3 × 8 / side",
+      "Flat back, square hips"
+    ]
+  ],
+  "cond": {
+    "format": "10 × :15 / :45",
+    "subtitle": "Max effort, then walk it off",
+    "timer": {
+      "type": "interval",
+      "work": 15,
+      "rest": 45,
+      "rounds": 10
+    },
+    "items": [
+      "Bike or sprint: 15 sec all-out",
+      "Rest: 45 sec"
+    ],
+    "scaling": "Bike taken? Treadmill sprints or 20-yd shuttle sprints"
+  },
+  "note": "Heavy, then fast. That's the whole point of French contrast."
+}

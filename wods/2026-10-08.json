@@ -2,7 +2,7 @@
   "date": "2026-10-08",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Upper: Pull",
-  "warmup": "2 rounds: 1:00 row · 10 band pull-aparts · 10 KB halos · 5 inchworms",
+  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 KB halos · 5 inchworms",
   "jumps": [
     [
       "Lateral line hops",
@@ -40,10 +40,10 @@
       "cap": 14
     },
     "items": [
-      "Cal row",
+      "Cal Assault bike",
       "DB thrusters (35/25 lb)"
     ],
-    "scaling": "15-12-9 · DB thrusters 25/15 lb"
+    "scaling": "15-12-9 · DB thrusters 25/15 lb · bike taken? burpees, same reps"
   },
   "note": "Pull the shoulder blades down first, then pull the bar."
 }

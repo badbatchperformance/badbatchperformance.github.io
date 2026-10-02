@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Lower: Hinge",
-  "warmup": "2 rounds: 250m row · 10 PVC good mornings · 10 lateral lunges · 10 glute bridges",
+  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 PVC good mornings · 10 lateral lunges · 10 glute bridges",
   "jumps": [
     [
       "Pogo hops",
@@ -38,7 +38,7 @@
     ]
   ],
   "cond": {
-    "format": "Intervals 6 × 1:00 / 1:30",
+    "format": "6 × 1:00 / 1:30",
     "subtitle": "Hard 1:00 · easy 1:30",
     "timer": {
       "type": "interval",
@@ -51,7 +51,7 @@
       "Spin easy: 1:30",
       "Hit the same calories every round"
     ],
-    "scaling": "Row or ski instead of bike"
+    "scaling": "Bike taken? 1:00 hard treadmill run or 1:00 fast jump rope"
   },
   "note": "RPE 7 = 3 good reps left in the tank. Leave them there."
 }

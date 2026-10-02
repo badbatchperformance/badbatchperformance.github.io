@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-06",
+  "block": "Power · Week 1 of 3",
+  "title": "Upper Power: Press",
+  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 push-ups · 5 light med ball slams",
+  "jumps": [
+    [
+      "French contrast × 4 rounds",
+      "Bench press 3 → Plyo push-up 5 → Med ball chest pass 5 → Med ball slam 5",
+      "Bench @ RPE 8 with a spotter or safeties · Rest 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Jump rope",
+      "3 × 40",
+      "Quick and light"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted pull-up",
+      "4 × 5 @ RPE 8",
+      "Scale: bodyweight or banded"
+    ],
+    [
+      "Landmine press",
+      "3 × 8 / side",
+      "Drive from the legs, finish tall"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 10",
+    "subtitle": "Alternate every minute",
+    "timer": {
+      "type": "emom",
+      "minutes": 10
+    },
+    "items": [
+      "Odd: 8 KB swings, max speed",
+      "Even: 5 med ball slams + 5 burpees"
+    ],
+    "scaling": "Lighter KB · step-back burpees"
+  },
+  "note": "Throw the med ball like you're trying to break it."
+}

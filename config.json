@@ -1,7 +1,7 @@
 {
-  "signupUrl": "https://www.badbatchperformance.com",
-  "spotsTotal": 50,
-  "spotsLeft": 50,
+  "signupUrl": "https://tq1bya3.pushpress.com/landing/plans/plan_9a4534fb3dd041",
+  "spotsTotal": 25,
+  "spotsLeft": 25,
   "foundingSpots": 25,
   "foundingPrice": 100,
   "regularPrice": 125,
@@ -15,5 +15,15 @@
     "Re-rack your weights",
     "Log your lifts",
     "Military, veterans & first responders: 10% off"
-  ]
+  ],
+  "tracks": {
+    "1": {
+      "name": "Build",
+      "tagline": "Strength + metcon"
+    },
+    "2": {
+      "name": "Athlete",
+      "tagline": "Power, speed + jumps"
+    }
+  }
 }

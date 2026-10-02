@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-10",
+  "block": "Power · Week 1 of 3",
+  "title": "Saturday Sprint Day",
+  "warmup": "3 rounds: A-skip · B-skip · carioca, 20 yd each",
+  "jumps": [
+    [
+      "Pogo hops",
+      "3 × 20",
+      "Partners alternate"
+    ],
+    [
+      "Broad jump",
+      "3 × 4",
+      "Stick it"
+    ],
+    [
+      "Bound for distance",
+      "3 × 5",
+      "Count your bounds to 20 yd"
+    ]
+  ],
+  "strength": [
+    [
+      "Sprint",
+      "8 × 30 yd",
+      "Walk back · race your partner"
+    ],
+    [
+      "Sled push",
+      "6 × 20 yd",
+      "Heavy · or heavy farmer carry 40 yd"
+    ]
+  ],
+  "cond": {
+    "format": "Partner AMRAP 20",
+    "subtitle": "Split reps any way · one works, one rests",
+    "timer": {
+      "type": "amrap",
+      "minutes": 20
+    },
+    "items": [
+      "20 cal bike (or 300m run)",
+      "20 KB swings",
+      "20 wall balls"
+    ],
+    "scaling": "Solo? Halve the reps"
+  },
+  "note": "Race someone faster than you."
+}
