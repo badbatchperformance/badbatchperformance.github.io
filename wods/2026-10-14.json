@@ -2,39 +2,44 @@
   "date": "2026-10-14",
   "block": "Hypertrophy · Week 2 of 6",
   "title": "Lower: Hinge",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 PVC good mornings · 10 lateral lunges · 10 glute bridges",
+  "warmup": "Foam roll 2 min, then 2 rounds: Inchworm Walk × 4 · Hamstring Walkout × 6 · Bird Dog × 8/side",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "2 × 25",
       "Stiff ankles"
     ],
     [
-      "Skater bounds",
-      "3 × 6 / side",
+      "Lateral Bounds",
+      "3 × 6/side",
       "Hold each landing 1 sec"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "3 × 5",
       "Max distance, stick it"
     ]
   ],
   "strength": [
     [
-      "Trap bar deadlift",
+      "Romanian Deadlift",
       "3 × 6 @ RPE 7.5",
-      "Tempo 3-0-1 · Rest 2:30"
+      "Tempo 3-0-1 · Rest 2:30 · from the floor, no rack needed"
     ],
     [
-      "DB Romanian deadlift",
-      "3 × 12 @ RPE 8",
-      "Flat back, feel the hamstrings"
+      "Single-Leg RDL",
+      "3 × 12/side",
+      "Square hips, flat back"
     ],
     [
-      "Barbell hip thrust",
+      "Hip Thrust",
       "3 × 12",
       "Pause 1 sec at the top"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 25 sec/side",
+      "Short lever (knee) to scale"
     ]
   ],
   "cond": {
@@ -45,11 +50,11 @@
       "minutes": 12
     },
     "items": [
-      "12 KB swings (53/35 lb)",
-      "10 DB hang cleans (35/25 lb)",
+      "12 KB Swings",
+      "20 Walking Lunge steps",
       "200m run (treadmill or outside)"
     ],
-    "scaling": "Lighter bells · 100m run"
+    "scaling": "Lighter bell · 100m run"
   },
   "note": "Push the floor away. Hips and shoulders rise together."
 }

@@ -2,34 +2,44 @@
   "date": "2026-10-05",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Lower: Squat",
-  "warmup": "2 rounds: 1:00 Assault bike or 200m jog · 10 air squats · 10 glute bridges · 5 inchworms",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "3 × 20",
       "Quick off the floor, stiff ankles"
     ],
     [
-      "Box jump",
+      "Box Jump",
       "4 × 5",
       "Step down, don't jump down"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "2 × 5",
       "Stick every landing"
     ]
   ],
   "strength": [
     [
-      "Back squat",
+      "Back Squat",
       "3 × 8 @ RPE 7",
       "Tempo 3-1-1: 3 sec down, 1 sec pause · Rest 2:00"
     ],
     [
-      "DB walking lunge",
-      "3 × 10 / leg @ RPE 8",
+      "DB Walking Lunge",
+      "3 × 10/leg @ RPE 8",
       "Rest 1:30"
+    ],
+    [
+      "Pissing Dog",
+      "3 × 10/side",
+      "Slow, own the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
+      "Full stretch at the bottom"
     ]
   ],
   "cond": {
@@ -40,12 +50,12 @@
       "minutes": 16
     },
     "items": [
-      "Min 1: 12/9 cal bike or 0:40 treadmill run",
-      "Min 2: 15 KB swings",
-      "Min 3: 10 burpees",
-      "Min 4: 40-sec plank"
+      "Min 1: 12/9 cal Assault bike",
+      "Min 2: 15 KB Swings",
+      "Min 3: 10 Inchworm Push-Ups",
+      "Min 4: 40 yd Farmer's Carry"
     ],
-    "scaling": "Cut reps so you get 15+ sec of rest each minute"
+    "scaling": "Bike taken? 40-sec run · cut reps to keep 15 sec rest"
   },
   "note": "Squat depth before squat weight. If the pause breaks your position, the load is too heavy."
 }

@@ -1,56 +1,57 @@
 {
   "date": "2026-10-09",
   "block": "Power · Week 1 of 3",
-  "title": "Lower Power: Hinge",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 KB deadlifts · 10 lateral lunges · 3 × 10-yd skips",
+  "title": "Lower Power: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
   "jumps": [
     [
-      "French contrast × 4 rounds",
-      "Trap bar deadlift 3 → Hurdle hop 5 → Light trap bar jump 5 → Fast pogos 10",
-      "Deadlift @ RPE 8 · Rest 3:00 between rounds · every jump max intent"
+      "French Contrast × 4 rounds",
+      "Back Squat 3 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Squat @ RPE 8 · DBs 10–20% bodyweight · rest 3:00 · max intent"
     ],
     [
-      "Broad jump",
-      "3 × 4",
-      "Stick it"
+      "Lateral Bounds",
+      "3 × 5/side",
+      "Stick each landing 1 sec"
     ],
     [
-      "Single-leg hop",
-      "3 × 4 / side",
-      "Small hops, stable knee"
-    ],
-    [
-      "Lateral bound",
-      "3 × 5 / side",
-      "Stick each landing"
+      "Hurdle Hops",
+      "3 × 5",
+      "Low hurdles, quick off the floor"
     ]
   ],
   "strength": [
     [
-      "Nordic hamstring curl",
-      "3 × 4",
-      "Slow lowering"
+      "Rear Foot Elevated Split Squat",
+      "3 × 6/side",
+      "DBs in hand"
     ],
     [
-      "Single-leg RDL",
-      "3 × 8 / side",
-      "Flat back, square hips"
+      "Pissing Dog",
+      "3 × 10/side",
+      "Slow, own the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
+      "Full stretch at the bottom"
     ]
   ],
   "cond": {
-    "format": "10 × :15 / :45",
-    "subtitle": "Max effort, then walk it off",
+    "format": "8 × :20 / 1:10",
+    "subtitle": "All-out sprints, full recovery",
     "timer": {
       "type": "interval",
-      "work": 15,
-      "rest": 45,
-      "rounds": 10
+      "work": 20,
+      "rest": 70,
+      "rounds": 8
     },
     "items": [
-      "Bike or sprint: 15 sec all-out",
-      "Rest: 45 sec"
+      "Assault bike or Treadmill Sprint: 20 sec all-out",
+      "Easy: 1:10",
+      "Every round as hard as the first"
     ],
-    "scaling": "Bike taken? Treadmill sprints or 20-yd shuttle sprints"
+    "scaling": "Machines taken? 20-yd shuttle sprints"
   },
-  "note": "Heavy, then fast. That's the whole point of French contrast."
+  "note": "Power is about speed. If your bar or your jumps slow down, end the set."
 }

@@ -2,44 +2,49 @@
   "date": "2026-10-07",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Lower: Hinge",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 PVC good mornings · 10 lateral lunges · 10 glute bridges",
+  "warmup": "Foam roll 2 min, then 2 rounds: Inchworm Walk × 4 · Hamstring Walkout × 6 · Bird Dog × 8/side",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "2 × 20",
       "Stiff ankles"
     ],
     [
-      "Skater bounds",
-      "3 × 6 / side",
+      "Lateral Bounds",
+      "3 × 6/side",
       "Hold each landing 1 sec"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "3 × 4",
       "Max distance, stick it"
     ]
   ],
   "strength": [
     [
-      "Trap bar deadlift",
+      "Romanian Deadlift",
       "3 × 6 @ RPE 7",
-      "Tempo 3-0-1 · Rest 2:30"
+      "Tempo 3-0-1 · Rest 2:30 · from the floor, no rack needed"
     ],
     [
-      "DB Romanian deadlift",
-      "3 × 10 @ RPE 8",
-      "Feel the hamstrings, flat back"
+      "Single-Leg RDL",
+      "3 × 10/side",
+      "Square hips, flat back"
     ],
     [
-      "Back extension",
-      "3 × 15",
-      "Squeeze glutes at the top"
+      "Nordic Hamstring Curl",
+      "3 × 5",
+      "Lower as slowly as you can · band assist OK"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 20 sec/side",
+      "Short lever (knee) to scale"
     ]
   ],
   "cond": {
     "format": "6 × 1:00 / 1:30",
-    "subtitle": "Hard 1:00 · easy 1:30",
+    "subtitle": "Run intervals: hard 1:00 · easy 1:30",
     "timer": {
       "type": "interval",
       "work": 60,
@@ -47,11 +52,11 @@
       "rounds": 6
     },
     "items": [
-      "Assault bike: 1:00 hard",
-      "Spin easy: 1:30",
-      "Hit the same calories every round"
+      "Assault bike or treadmill: 1:00 hard",
+      "Easy walk or spin: 1:30",
+      "Same output every round"
     ],
-    "scaling": "Bike taken? 1:00 hard treadmill run or 1:00 fast jump rope"
+    "scaling": "Machines taken? Run outside"
   },
   "note": "RPE 7 = 3 good reps left in the tank. Leave them there."
 }

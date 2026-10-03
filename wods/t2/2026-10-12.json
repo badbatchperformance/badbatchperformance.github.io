@@ -1,52 +1,56 @@
 {
   "date": "2026-10-12",
   "block": "Power · Week 2 of 3",
-  "title": "Lower Power: Squat",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 leg swings / side · 10 walking lunges · 3 × 10-yd A-skips",
+  "title": "Lower Power: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
   "jumps": [
     [
-      "French contrast × 4 rounds",
-      "Back squat 3 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
-      "Squat @ RPE 8 · DBs 15–25% bodyweight · Rest 3:00 · max intent"
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 → Box Jump 5 → Trap Bar Jump 5 → Pogo Hops 10",
+      "Deadlift @ RPE 8 · jumps a little heavier (15–25%) · rest 3:00"
     ],
     [
-      "Lateral bound",
-      "3 × 6 / side",
+      "Lateral Bounds",
+      "3 × 5/side",
       "Stick each landing 1 sec"
     ],
     [
-      "Hurdle hop",
-      "4 × 5",
-      "No hurdles? Tuck jumps, same reps"
+      "Single-Leg Hop",
+      "3 × 5/side",
+      "Small hops, stable knee"
     ]
   ],
   "strength": [
     [
-      "Nordic hamstring curl",
-      "3 × 6",
-      "Lower as slowly as you can · band assist OK"
+      "Nordic Hamstring Curl",
+      "3 × 5",
+      "Slow lowering · band assist OK"
     ],
     [
-      "Copenhagen plank",
-      "3 × 25 sec / side",
+      "Single-Leg RDL",
+      "3 × 10/side",
+      "Square hips, flat back"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 25 sec/side",
       "Short lever (knee) to scale"
     ]
   ],
   "cond": {
-    "format": "10 × :20 / 1:10",
-    "subtitle": "All-out sprints, full recovery",
+    "format": "12 × :15 / :45",
+    "subtitle": "Max effort, then walk it off",
     "timer": {
       "type": "interval",
-      "work": 20,
-      "rest": 70,
-      "rounds": 10
+      "work": 15,
+      "rest": 45,
+      "rounds": 12
     },
     "items": [
-      "Bike or treadmill: 20 sec all-out",
-      "Easy: 1:10",
-      "Hold your round-1 output"
+      "Assault bike or Treadmill Sprint: 15 sec all-out",
+      "Rest: 45 sec"
     ],
     "scaling": "Machines taken? 20-yd shuttle sprints"
   },
-  "note": "Same squat weight is fine. Make the jumps higher and the DBs a little heavier."
+  "note": "Same deadlift weight is fine. Make the jumps faster and higher."
 }

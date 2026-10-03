@@ -2,34 +2,39 @@
   "date": "2026-10-16",
   "block": "Hypertrophy · Week 2 of 6",
   "title": "Full Body + French Contrast",
-  "warmup": "2 rounds: 1:00 bike · 10 goblet squats · 10 walking lunges · 10 band pull-aparts",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Inchworm Shoulder Tap × 6 · 4 Way Deadbug × 8",
   "jumps": [
     [
-      "French contrast · 3 rounds",
-      "Goblet squat 3 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
-      "Goblet heavy @ RPE 8 · light DBs on the jump · max intent · rest 3:00"
+      "French Contrast · 3 rounds",
+      "Goblet Squat 3 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Goblet @ RPE 8 · light DBs on the jump · max intent · rest 3:00"
     ],
     [
-      "Jump rope",
+      "Ankle Spring Series",
       "2 × 25",
-      "Easy pace"
+      "Quick and springy"
     ]
   ],
   "strength": [
     [
-      "Front squat",
-      "3 × 6 @ RPE 7.5",
-      "Elbows high · Rest 2:30"
+      "Rear Foot Elevated Split Squat",
+      "3 × 8/side @ RPE 8",
+      "DBs in hand · Rest 1:30"
     ],
     [
-      "Single-arm DB row",
-      "3 × 12 / side",
+      "Dumbbell Rows",
+      "3 × 12/side",
       "Pause at the hip"
     ],
     [
-      "Farmer carry",
+      "Farmer's Carry",
       "3 × 40 yd",
       "Heavy, tall posture"
+    ],
+    [
+      "KB Side Plank Corkscrew",
+      "3 × 8/side",
+      "Corrective, not a max effort"
     ]
   ],
   "cond": {
@@ -40,11 +45,11 @@
       "minutes": 15
     },
     "items": [
-      "Min 1: 15 KB swings",
-      "Min 2: 10 DB thrusters (35/25 lb)",
-      "Min 3: 12/9 cal bike or 10 burpees"
+      "Min 1: 15 KB Swings",
+      "Min 2: 10 DB Push Press",
+      "Min 3: 20 yd Sled Push + walk back"
     ],
-    "scaling": "Cut reps so you get 15+ sec of rest each minute"
+    "scaling": "Sled taken? 40 yd Farmer's Carry · keep 15 sec rest"
   },
   "note": "Heavy first, then fast. Take the full 3:00 between contrast rounds."
 }

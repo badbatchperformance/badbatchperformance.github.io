@@ -2,29 +2,39 @@
   "date": "2026-10-09",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Full Body + French Contrast",
-  "warmup": "2 rounds: 1:00 bike · 10 goblet squats · 10 walking lunges · 10 band pull-aparts",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Inchworm Shoulder Tap × 6 · 4 Way Deadbug × 8",
   "jumps": [
     [
-      "French contrast · 2 rounds",
-      "Goblet squat 5 → Box jump 5 → DB squat jump 5 → Fast pogos 10",
+      "French Contrast · 2 rounds",
+      "Goblet Squat 5 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
       "Goblet @ RPE 7 · light DBs on the jump · max intent · rest 2:00"
     ],
     [
-      "Jump rope",
-      "2 × 30",
-      "Easy pace"
+      "Ankle Spring Series",
+      "3 × 20",
+      "Quick and springy"
     ]
   ],
   "strength": [
     [
-      "Front squat",
-      "3 × 6 @ RPE 7",
-      "Elbows high · Rest 2:00"
+      "Rear Foot Elevated Split Squat",
+      "3 × 6/side @ RPE 8",
+      "DBs in hand · Rest 1:30"
     ],
     [
-      "Single-arm DB row",
-      "3 × 10 / side",
+      "Dumbbell Rows",
+      "3 × 10/side",
       "Pause at the hip"
+    ],
+    [
+      "Farmer's Carry",
+      "3 × 40 yd",
+      "Heavy, tall posture"
+    ],
+    [
+      "KB Side Plank Corkscrew",
+      "3 × 8/side",
+      "Corrective, not a max effort"
     ]
   ],
   "cond": {
@@ -35,12 +45,12 @@
       "minutes": 15
     },
     "items": [
-      "15/12 cal bike",
-      "12 DB deadlifts",
-      "9 hand-release push-ups",
-      "6 burpees"
+      "10 KB Swings",
+      "8 Inchworm Push-Ups",
+      "10 Walking Lunge steps/leg",
+      "20 yd Sled Push"
     ],
-    "scaling": "Push-ups from a box · lighter DBs · bike taken? 200m run"
+    "scaling": "Sled taken? 40 yd Farmer's Carry · lighter bell"
   },
   "note": "French contrast: every jump is max effort. If you slow down, stop the round."
 }

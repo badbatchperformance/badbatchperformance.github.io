@@ -2,34 +2,44 @@
   "date": "2026-10-06",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Upper: Push",
-  "warmup": "2 rounds: 1:00 bike · 10 band pull-aparts · 10 scap push-ups · 10 push-ups",
+  "warmup": "Foam roll 2 min, then 2 rounds: Push-Up to T × 8 · Wall Shoulder CAR × 5/side · 4 Way Deadbug × 8",
   "jumps": [
     [
-      "Jump rope",
-      "3 × 30",
-      "Light and quick"
+      "Pogo Hops",
+      "3 × 20",
+      "Stiff ankles"
     ],
     [
-      "Med ball chest pass",
+      "Ankle Spring Series",
+      "3 × 10",
+      "Quick, springy contacts"
+    ],
+    [
+      "Med Ball Chest Pass",
       "4 × 5",
       "Throw it through the wall"
     ]
   ],
   "strength": [
     [
-      "Bench press",
+      "Bench Press",
       "3 × 10 @ RPE 7",
-      "Tempo 3-0-1 · Rest 2:00 · Use a spotter or safeties"
+      "Tempo 3-0-1 · Rest 2:00 · spotter or safeties"
     ],
     [
-      "Superset: DB Z-press",
-      "3 × 10",
-      "Seated on the floor, no back support"
+      "HK LM Press to Decel",
+      "3 × 8/side",
+      "Control the bar on the way down"
     ],
     [
-      "+ Chest-supported DB row",
-      "3 × 12",
-      "Rest 1:30 after the pair"
+      "Elevated Bird Dog Row",
+      "3 × 8/side",
+      "Leg high, quick return to the top"
+    ],
+    [
+      "Barbell Skull Crushers + Face Pull",
+      "3 × 12 + 15",
+      "Superset · Rest 1:00"
     ]
   ],
   "cond": {
@@ -40,11 +50,11 @@
       "minutes": 12
     },
     "items": [
-      "10 push-ups",
-      "15 wall balls (20/14 lb)",
-      "12/9 cal bike"
+      "10 Medicine Ball Slams",
+      "12 KB Swings",
+      "40 yd Farmer's Carry"
     ],
-    "scaling": "Push-ups from a box · wall ball 14/10 lb · bike taken? 12 burpees"
+    "scaling": "Lighter ball and bells"
   },
   "note": "Bar path: touch low on the chest, press back over the shoulders."
 }

@@ -2,28 +2,28 @@
   "date": "2026-10-10",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Saturday Partner WOD",
-  "warmup": "With your partner, 3 rounds: 1:00 bike each · 10 air squats · 10 push-ups",
+  "warmup": "With your partner, 2 rounds: Walking Lunge × 10/side · Inchworm Push-Up × 6 · Bird Dog × 8/side",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "4 × 20",
       "Partners alternate sets"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "3 × 5",
       "Stick it"
     ]
   ],
   "strength": [
     [
-      "Farmer carry",
+      "Farmer's Carry",
       "4 × 40 yd",
       "Heavy · partners alternate"
     ],
     [
-      "Suitcase carry",
-      "4 × 40 yd / side",
+      "Single-Arm Farmer Walk",
+      "4 × 40 yd/side",
       "Don't lean"
     ]
   ],
@@ -35,12 +35,13 @@
       "minutes": 30
     },
     "items": [
-      "30 cal bike (or 400m run)",
-      "30 KB swings",
-      "30 wall balls",
-      "30 burpees"
+      "30 KB Swings",
+      "20 Medicine Ball Slams",
+      "40 yd Sled Push",
+      "20 Walking Lunge steps",
+      "200m run"
     ],
-    "scaling": "Solo? Halve the reps"
+    "scaling": "Solo? Halve the reps · sled taken? 80 yd Farmer's Carry"
   },
   "note": "Pick a partner close to your pace. Talk to each other the whole time."
 }

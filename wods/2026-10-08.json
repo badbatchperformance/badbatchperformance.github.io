@@ -2,48 +2,54 @@
   "date": "2026-10-08",
   "block": "Hypertrophy · Week 1 of 6",
   "title": "Upper: Pull",
-  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 KB halos · 5 inchworms",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Eccentric Push-Up with Extension × 6 · Bird Dog × 8/side",
   "jumps": [
     [
-      "Lateral line hops",
+      "Lateral Pogo Hops",
       "3 × 20",
-      "Quick feet"
+      "Side to side over a line"
     ],
     [
-      "Squat jump",
+      "Jump Squats",
       "4 × 5",
       "Land soft, reset each rep"
     ]
   ],
   "strength": [
     [
-      "Strict press",
-      "3 × 8 @ RPE 7",
-      "Squeeze glutes, no leg drive · Rest 2:00"
-    ],
-    [
-      "Pull-ups",
+      "Pull-Up",
       "4 × (2 short of failure)",
-      "Scale: banded or ring rows"
+      "Scale: Banded Lat Pulldown"
     ],
     [
-      "Superset: DB curl + DB skull crusher",
+      "Seated DB Shoulder Press",
+      "3 × 10 @ RPE 8",
+      "Ribs down · Rest 1:30"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 8/side",
+      "Pause at full reach"
+    ],
+    [
+      "Zottman Curl + DB Tricep Extension",
       "3 × 12 each",
-      "Rest 1:00"
+      "Superset · Rest 1:00"
     ]
   ],
   "cond": {
     "format": "21-15-9 For time",
-    "subtitle": "Time cap 14:00",
+    "subtitle": "Time cap 12:00",
     "timer": {
       "type": "fortime",
-      "cap": 14
+      "cap": 12
     },
     "items": [
-      "Cal Assault bike",
-      "DB thrusters (35/25 lb)"
+      "Medicine Ball Slams",
+      "KB Swings",
+      "Walking Lunge steps"
     ],
-    "scaling": "15-12-9 · DB thrusters 25/15 lb · bike taken? burpees, same reps"
+    "scaling": "15-12-9 · lighter ball and bell"
   },
   "note": "Pull the shoulder blades down first, then pull the bar."
 }

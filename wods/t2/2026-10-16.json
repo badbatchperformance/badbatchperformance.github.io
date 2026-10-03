@@ -1,56 +1,57 @@
 {
   "date": "2026-10-16",
   "block": "Power · Week 2 of 3",
-  "title": "Lower Power: Hinge",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 KB deadlifts · 10 lateral lunges · 3 × 10-yd skips",
+  "title": "Lower Power: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
   "jumps": [
     [
-      "French contrast × 4 rounds",
-      "Trap bar deadlift 3 → Hurdle hop 5 → Light trap bar jump 5 → Fast pogos 10",
-      "Deadlift @ RPE 8 · no hurdles? tuck jumps · Rest 3:00"
+      "French Contrast × 4 rounds",
+      "Back Squat 3 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Squat @ RPE 8 · DBs 15–25% bodyweight · rest 3:00 · max intent"
     ],
     [
-      "Broad jump",
-      "3 × 4",
-      "Stick it"
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
     ],
     [
-      "Single-leg hop",
-      "3 × 5 / side",
-      "Small hops, stable knee"
-    ],
-    [
-      "Lateral bound",
-      "3 × 5 / side",
-      "Stick each landing"
+      "Hurdle Hops",
+      "4 × 5",
+      "Low hurdles, quick off the floor"
     ]
   ],
   "strength": [
     [
-      "Nordic hamstring curl",
-      "3 × 5",
-      "Slow lowering"
+      "Rear Foot Elevated Split Squat",
+      "3 × 8/side",
+      "DBs in hand"
     ],
     [
-      "Single-leg RDL",
-      "3 × 10 / side",
-      "Flat back, square hips"
+      "Pissing Dog",
+      "3 × 12/side",
+      "Slow, own the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
+      "Full stretch at the bottom"
     ]
   ],
   "cond": {
-    "format": "12 × :15 / :45",
-    "subtitle": "Max effort, then walk it off",
+    "format": "10 × :20 / 1:10",
+    "subtitle": "All-out sprints, full recovery",
     "timer": {
       "type": "interval",
-      "work": 15,
-      "rest": 45,
-      "rounds": 12
+      "work": 20,
+      "rest": 70,
+      "rounds": 10
     },
     "items": [
-      "Bike or treadmill: 15 sec all-out",
-      "Rest: 45 sec"
+      "Assault bike or Treadmill Sprint: 20 sec all-out",
+      "Easy: 1:10",
+      "Hold your round-1 output"
     ],
     "scaling": "Machines taken? 20-yd shuttle sprints"
   },
-  "note": "Heavy, then fast. If a jump slows down, end the round."
+  "note": "Same squat weight is fine. Make the jumps higher and the DBs a little heavier."
 }

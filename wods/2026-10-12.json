@@ -2,38 +2,43 @@
   "date": "2026-10-12",
   "block": "Hypertrophy · Week 2 of 6",
   "title": "Lower: Squat",
-  "warmup": "2 rounds: 1:00 bike or 200m jog · 10 goblet squats · 10 glute bridges · 5 inchworms",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "3 × 20",
       "Quick off the floor, stiff ankles"
     ],
     [
-      "Box jump",
+      "Box Jump",
       "5 × 5",
       "Step down, don't jump down"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "3 × 5",
       "Stick every landing"
     ]
   ],
   "strength": [
     [
-      "Back squat",
+      "Back Squat",
       "3 × 8 @ RPE 7.5",
-      "Tempo 3-1-1: 3 sec down, 1 sec pause · Rest 2:30"
+      "Tempo 3-1-1 · Rest 2:30"
     ],
     [
-      "DB walking lunge",
-      "3 × 12 / leg @ RPE 8",
+      "DB Walking Lunge",
+      "3 × 12/leg @ RPE 8",
       "Rest 1:30"
     ],
     [
-      "Single-leg calf raise",
-      "3 × 15 / side",
+      "Pissing Dog",
+      "3 × 12/side",
+      "Slow, own the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
       "Full stretch at the bottom"
     ]
   ],
@@ -46,11 +51,11 @@
     },
     "items": [
       "400m run (treadmill or outside)",
-      "15 KB goblet squats (53/35 lb)",
-      "10 push-ups",
-      "10 V-ups"
+      "15 KB Goblet Squats",
+      "10 Inchworm Push-Ups",
+      "40 yd Farmer's Carry"
     ],
-    "scaling": "200m run · lighter KB · push-ups from a box · tuck-ups"
+    "scaling": "200m run · lighter bell"
   },
   "note": "Same tempo as last week, a little more weight. Depth does not change."
 }

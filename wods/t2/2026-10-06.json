@@ -2,29 +2,39 @@
   "date": "2026-10-06",
   "block": "Power · Week 1 of 3",
   "title": "Upper Power: Press",
-  "warmup": "2 rounds: 1:00 bike or jog · 10 band pull-aparts · 10 push-ups · 5 light med ball slams",
+  "warmup": "Foam roll 2 min, then 2 rounds: Push-Up to T × 8 · Wall Shoulder CAR × 5/side · 4 Way Deadbug × 8",
   "jumps": [
     [
-      "French contrast × 4 rounds",
-      "Bench press 3 → Plyo push-up 5 → Med ball chest pass 5 → Med ball slam 5",
-      "Bench @ RPE 8 with a spotter or safeties · Rest 3:00 between rounds · every jump max intent"
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "DB bench @ RPE 8 · no rack needed · rest 3:00 · max intent"
     ],
     [
-      "Jump rope",
-      "3 × 40",
-      "Quick and light"
+      "Pogo Hops",
+      "4 × 20",
+      "Stiff ankles"
+    ],
+    [
+      "Ankle Spring Series",
+      "4 × 10",
+      "Quick, springy contacts"
     ]
   ],
   "strength": [
     [
-      "Weighted pull-up",
+      "Weighted Pull-Up",
       "4 × 5 @ RPE 8",
       "Scale: bodyweight or banded"
     ],
     [
-      "Landmine press",
-      "3 × 8 / side",
-      "Drive from the legs, finish tall"
+      "MB Pitcher Throw",
+      "3 × 4/side",
+      "Ball ~10% of bodyweight"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "3 × 6/side",
+      "Leg high, quick return"
     ]
   ],
   "cond": {
@@ -35,10 +45,10 @@
       "minutes": 10
     },
     "items": [
-      "Odd: 8 KB swings, max speed",
-      "Even: 5 med ball slams + 5 burpees"
+      "Odd: 8 KB Swings, max speed",
+      "Even: 6 Medicine Ball Slams + 20 yd sprint"
     ],
-    "scaling": "Lighter KB · step-back burpees"
+    "scaling": "Lighter bell and ball"
   },
   "note": "Throw the med ball like you're trying to break it."
 }

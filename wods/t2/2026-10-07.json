@@ -2,47 +2,47 @@
   "date": "2026-10-07",
   "block": "Power · Week 1 of 3",
   "title": "Speed + Hinge Power",
-  "warmup": "3 rounds: A-skip 20 yd · B-skip 20 yd · high knees 10 yd · 10 glute bridges",
+  "warmup": "Foam roll 2 min · Tri-Planar Ankle × 8/side · Walking Lunge × 10/side · A-skip, B-skip 2 × 20 yd each",
   "jumps": [
     [
-      "Pogo hops",
+      "Pogo Hops",
       "3 × 20",
       "Stiff ankles"
     ],
     [
-      "Broad jump",
+      "Broad Jump",
       "5 × 3",
       "Max distance, stick it"
     ],
     [
-      "Single-leg bound",
-      "3 × 4 / side",
+      "Single-Leg Bound",
+      "3 × 4/side",
       "Hold the landing"
     ],
     [
-      "Skater bound",
-      "3 × 6 / side",
+      "Lateral Bounds",
+      "3 × 6/side",
       "Explode sideways"
     ]
   ],
   "strength": [
     [
-      "Drop landing",
+      "Box Drop to Stick",
       "3 × 5",
-      "Step off a 12–18\" box, stick it silent"
+      "Step off a 12–18\" box, land silent"
     ],
     [
-      "Acceleration sprint",
+      "Acceleration Sprint",
       "6 × 20 yd",
       "Walk back · rest 1:30"
     ],
     [
-      "Trap bar jump",
+      "Trap Bar Jump",
       "4 × 3",
       "Light: 20–30% of your deadlift · land soft"
     ],
     [
-      "Heavy KB swing",
+      "Heavy KB Swings",
       "4 × 10",
       "Snap the hips"
     ]
@@ -56,9 +56,9 @@
     },
     "items": [
       "200m run (treadmill or outside)",
-      "10 KB swings"
+      "10 KB Swings"
     ],
-    "scaling": "150m run · lighter KB"
+    "scaling": "150m run · lighter bell"
   },
   "note": "Sprint at 100%. A 90% sprint is just a run."
 }

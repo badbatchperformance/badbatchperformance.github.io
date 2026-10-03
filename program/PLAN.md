@@ -1,5 +1,29 @@
 # Open Gym programming plan
 
+# STYLE RULES (must follow; from Wes's own CoachLogik programs, set 2026-10-03)
+Wes is not a CrossFit coach. Build every session from his movement library, using the names exactly as written here.
+
+**Never program:** jump rope or double-unders, wall balls, burpees, thrusters, ring rows, air squats, hand-release push-ups, toes-to-bar, kipping or muscle-ups, CrossFit-style chippers, rowers or ski ergs.
+
+**Warm-up ("the first three"):** foam roll 2 min, then 2 rounds of three unloaded movements: one lower mover, one inchworm or push-up pattern, and one core control drill.
+- Lower movers: Lateral Lunge, Reverse Lunge, Walking Lunge, Goblet Squat w/ Heartbeat, KOT Sissy Squat, Tri-Planar Ankle
+- Inchworm/push-up: Inchworm Push-Up, Inchworm Walk, Inchworm Shoulder Tap, Eccentric Push-Up with Extension, Push-Up to T, Wall Shoulder CAR, Hamstring Walkout
+- Core control: CL Dead Bug, 4 Way Deadbug, Bird Dog
+- Speed days add A-skip / B-skip.
+
+**Plyos and throws:** Pogo Hops (incl. lateral), Ankle Spring Series, Box Jump, Broad Jump, Lateral Bounds, Single-Leg Hop or Bound, Hurdle Hops, Jump Squats, Vertical Jump, Box Drop to Stick, Trap Bar Jump, Accel Sprint + Repeated Broad Jump. Throws (not foot contacts): Med Ball Chest Pass, MB Pitcher Throw, Med Ball Rotational Throw, Windmill MB Throw, Medicine Ball Slams, Plyometric Push-Up. Low-intensity contacts come from Pogo Hops / Ankle Spring Series, never jump rope.
+
+**Main lifts:** Back Squat, Bench Press, Romanian Deadlift, Trap Bar Deadlift, Push Press, Front Squat, DB Bench Press, Seated DB Shoulder Press, Rear Foot Elevated Split Squat.
+
+**Accessories (his staples):** Pissing Dog, Single-Leg RDL, Nordic Hamstring Curl, Copenhagen Plank, TK Palof / Palof Rotation, KB Side Plank Corkscrew, Loaded Hip Airplane, Dynamic Pigeon Isometric, Lengthened Ham Iso, Calf Raises / Cool Guy Leans, Farmer's Carry, Single-Arm Farmer Walk, Waiter's Walk, HK LM Press to Decel, Elevated Bird Dog Row, Cable Row with Extension, Dumbbell Rows, Face Pull, Prone YTW, Barbell Skull Crushers, Zottman Curl, DB Tricep Extension, Hip Thrust, Kettlebell Teapot, Pull-Up / Banded Lat Pulldown.
+
+**Metcons / conditioning (short, his tools):** Run Intervals (e.g. 30s on / 60s easy, 60s at 1:2), Sprints, Treadmill Sprint, Assault bike intervals, Sled Push, KB Swings, Medicine Ball Slams, Farmer's Carry, Walking Lunge steps, Inchworm Push-Ups, KB Goblet Squats, DB Push Press, Pull-Ups. Use timer formats (EMOM, AMRAP, intervals, for time, partner Saturday) built only from these.
+
+**Recovery Sunday:** Zone 2 Cardio 30–40 min, plus Hip Mobility Flow, Dynamic Pigeon Isometric, 90/90 with Thoracic Rotation, Couch Stretch, 90/90 Breathing.
+
+**Rack schedule that weeks 1–2 follow (keep it unless there's a reason):** Mon Build Back Squat (rack) / Athlete Trap Bar FC · Tue Build Bench (rack) / Athlete DB Bench FC · Wed both rack-free (Build RDL from the floor) · Thu Build DB press + pull-ups / Athlete Push Press (rack) · Fri Build RFESS + goblet FC / Athlete Back Squat FC (rack) · Sat no racks.
+
+
 Audience: **The Bad Batch 30** (cap 30, changed from 50 on 2026-10-03 for floor capacity): adult open-gym members, mixed levels, **no coach on the floor**. So heavy work is prescribed by **RPE first** (same safety rule as remote clients).
 Order (bad-batch-coach skill): Hypertrophy (6 wk) → Strength / conjugate + triphasic 2/2/2 (6 wk) → Power / French contrast (3 wk) → repeat.
 
@@ -109,3 +133,13 @@ Up ~7% from week 1 (735). Hurdles and sled still unconfirmed; every hurdle/sled 
 
 # Floor capacity + rack staggering (added 2026-10-03)
 4 squat racks with benches (~8 people on barbells at once), 1 cable machine, 1 GHD, 1 reverse hyper, 2 sleds, 1 Assault bike, 1 sprint treadmill. Both tracks share the floor at the same time, so on any day only ONE track's main lift uses the racks. The other track goes rack-free (trap bar, sleds, DB/KB, landmine, floor). The weekly routine enforces this from the week of Oct 19 on. Weeks 1–2 (Oct 5–18) were written before this rule and overlap on rack days.
+
+# Revision 2026-10-03: weeks 1–2 rewritten in Wes's style
+All 28 days were rebuilt from the STYLE RULES above (warm-ups, plyos, accessories and metcons), and the rack schedule was applied.
+- **Build lift changes:** Wed Trap Bar Deadlift → **Romanian Deadlift** at the same sets/reps/RPE (3×6 @ RPE 7 / 7.5 ≈ 76–77%, 18 reps ✅, INOL 0.76 / 0.80). Thu Strict Press → **Seated DB Shoulder Press** 3×10 @ RPE 8 (DB, no Prilepin check). Fri Front Squat → **Rear Foot Elevated Split Squat** (DB, no Prilepin check).
+- **Athlete lift changes:** Mon and Fri swapped themes. Mon = Trap Bar Deadlift French contrast, Fri = Back Squat French contrast (same 4×3 @ RPE 8, INOL 0.88). Tue French contrast uses **DB Bench Press** (rack-free, so no Prilepin check). Push press is unchanged.
+- **Foot contacts (revised):**
+  - Build week 1: Mon 90 · Tue 90 (pogo 60 + Ankle Spring 30) · Wed 88 · Thu 80 (lateral pogo 60 + jump squat 20) · Fri 100 (contrast 40 + Ankle Spring 60) · Sat 95 = **543**
+  - Build week 2: 100 · 105 (pogo 75 + Ankle Spring 30) · 101 · 84 · 110 (contrast 60 + Ankle Spring 50) · 100 = **600**
+  - Athlete week 1: Mon 134 (box 20, TB jump 20 high, pogo 40, lateral 30, SL hop 24 high) · Tue 120 (pogo 80 + Ankle Spring 40) · Wed 162 · Thu 95 (lateral pogo 60, jump squat 20, vertical 15) · Fri 125 · Sat 84 (pogo 60, broad 12, sprint + repeated broad 12) = **720**
+  - Athlete week 2: 140 · 140 (pogo 100 + Ankle Spring 40) · 168 · 98 · 136 (box 20, DB jump 20, pogo 40, lateral 36, hurdle 20) · 91 = **773** (+7%)
