@@ -45,7 +45,10 @@ window.BBDemos = (() => {
     const t = norm(text);
     const exact = db.alias.find(a => a.key === t);
     if (exact) return exact.v;
-    const lib = db.lib.find(v => t.includes(v.key));
+    // A dumbbell/kettlebell version of a barbell lift shouldn't show the barbell video.
+    const implement = /\s(dumbbell|kettlebell)\s/.test(t);
+    const barbellOnly = / (bench press|push press|strict press|back squat|front squat) $/;
+    const lib = db.lib.find(v => t.includes(v.key) && !(implement && barbellOnly.test(v.key) && !/(dumbbell|kettlebell)/.test(v.key)));
     if (lib) return lib;
     // Loose alias match, but never hand a dumbbell movement the barbell video.
     return db.alias.find(a => t.includes(a.key) && !(t.includes(' dumbbell ') && !a.key.includes('dumbbell')))?.v || null;
