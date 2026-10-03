@@ -27,3 +27,9 @@ Workout of the Day for the gym TVs and members' phones. It's a plain static site
 6. In the TV's own settings, turn off auto power-off / eco sleep.
 
 Timer on Wall 2: **OK** = start / pause, **◀** = reset. There's a 10-second "get ready" countdown with beeps (turn the TV volume up).
+
+## Movement demo videos (members only)
+- Wes's unlisted YouTube demos are mapped to movement names in a **private** file outside this repo (`Bad Batch Performance/Video Library/videos.json`) and published here only in encrypted form (`demos.enc.json`).
+- The key lives in the URL fragment (`#k=…`), which browsers never send to a server. Only the gym TVs carry it, and their QR code passes it to members' phones.
+- TVs: add `#k=<key>` to the TV link. The key is in `Video Library/demo-key.txt`. With the key, movements that have a video show ▶, and a "Scan for demo videos" QR appears.
+- Rebuild after adding videos: `node "Video Library/build-demos.mjs"`, then commit `demos.enc.json`. To revoke access, delete `demo-key.txt`, rebuild, and update both TV links.

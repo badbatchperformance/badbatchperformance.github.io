@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Movement Demos</title>
+<link rel="icon" href="assets/eagle.svg">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="demos.js"></script>
+<style>
+  :root { --bg: #0b0b0b; --panel: #161616; --line: #2a2a2a; --text: #f5f5f5; --muted: #a3a3a3; --red: #ed1c24; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 16px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 2px solid var(--red); }
+  header img { height: 40px; }
+  h1, h2, .tabs button b { font-family: Oswald, Impact, sans-serif; text-transform: uppercase; }
+  h1 { font-size: 30px; margin-top: 18px; }
+  .sub { color: var(--muted); font-weight: 600; margin-top: 4px; }
+  .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+  .tabs button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font: inherit; cursor: pointer; }
+  .tabs button.on { border-color: var(--red); box-shadow: inset 0 0 0 1px var(--red); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--muted); margin: 22px 0 8px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 10px; }
+  .card button { display: flex; width: 100%; gap: 12px; align-items: center; background: none; border: 0; color: var(--text); text-align: left; padding: 10px; cursor: pointer; font: inherit; }
+  .card img { width: 120px; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; flex: none; background: #000; }
+  .card .n { font-weight: 800; font-size: 17px; }
+  .card .s { color: var(--red); font-size: 13px; font-weight: 700; margin-top: 2px; }
+  .card.open { border-color: var(--red); }
+  .player { aspect-ratio: 16/9; width: 100%; border: 0; display: block; background: #000; }
+  input { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; margin-top: 4px; }
+  .locked { margin-top: 40px; text-align: center; line-height: 1.6; color: var(--muted); }
+  .locked b { color: var(--text); font-size: 20px; display: block; margin-bottom: 6px; }
+  .back { color: var(--muted); font-size: 14px; text-decoration: none; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin: 28px 0 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="assets/logo.svg" alt="Bad Batch Performance"><a class="back" id="back" href="./">← Today's workout</a></header>
+  <main id="main"></main>
+  <footer>Members only · Bad Batch 30 · Please don't share these links.</footer>
+</div>
+<script>
+(async () => {
+  const h = new URLSearchParams(location.hash.slice(1));
+  const pad = n => String(n).padStart(2, '0');
+  const today = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  let track = h.get('t') || '1';
+  const date = h.get('d') || today(new Date());
+  const want = h.get('v');
+  const main = document.getElementById('main');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const key = BBDemos.getKey();
+  const db = await BBDemos.load(key);
+  if (!db) {
+    main.innerHTML = `<div class="locked"><b>Members only</b>Scan the "demo videos" QR code on the gym TV to unlock the movement library.</div>`;
+    return;
+  }
+  // Keep the key out of the address bar after it's been saved on this phone.
+  history.replaceState(null, '', location.pathname + `#t=${track}&d=${date}`);
+  document.getElementById('back').href = `./?date=${date}${track !== '1' ? '&track=' + track : ''}`;
+
+  const card = (v, label) => `<div class="card" data-id="${v.id}"><button>
+      <img loading="lazy" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" alt="">
+      <div><div class="n">${esc(v.name)}</div>${label ? `<div class="s">${esc(label)}</div>` : ''}</div></button></div>`;
+
+  async function render() {
+    let wod = null;
+    try { wod = await (await fetch(`${track === '1' ? 'wods' : 'wods/t' + track}/${date}.json?v=${Date.now()}`)).json(); } catch (e) {}
+    const list = wod ? BBDemos.forDay(db, wod) : [];
+    const nice = new Date(date + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    main.innerHTML = `
+      <h1>Movement demos</h1>
+      <div class="sub">${esc(nice)}${wod ? ' · ' + esc(wod.title) : ''}</div>
+      <div class="tabs"><button data-t="1" class="${track === '1' ? 'on' : ''}"><b>Build</b></button><button data-t="2" class="${track === '2' ? 'on' : ''}"><b>Athlete</b></button></div>
+      <h2>Today</h2>
+      ${list.length ? list.map(m => card(m.video, m.section)).join('') : '<p class="sub">No demo videos for today\'s movements.</p>'}
+      <h2>Full library</h2>
+      <input id="q" placeholder="Search ${db.lib.length} movements (e.g. pissing dog)" autocomplete="off">
+      <div id="all"></div>`;
+    const all = [...db.lib].sort((a, b) => a.name.localeCompare(b.name));
+    const draw = q => { document.getElementById('all').innerHTML = all.filter(v => v.name.toLowerCase().includes(q.toLowerCase())).slice(0, q ? 60 : 25).map(v => card(v)).join(''); };
+    draw('');
+    document.getElementById('q').oninput = e => draw(e.target.value);
+    if (want) { const c = main.querySelector(`.card[data-id="${CSS.escape(want)}"]`); if (c) { open(c); c.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }
+  }
+
+  function open(c) {
+    main.querySelectorAll('.card.open').forEach(o => { o.classList.remove('open'); o.querySelector('iframe')?.remove(); });
+    c.classList.add('open');
+    c.insertAdjacentHTML('beforeend', `<iframe class="player" src="https://www.youtube-nocookie.com/embed/${c.dataset.id}?autoplay=1&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`);
+  }
+
+  main.addEventListener('click', e => {
+    const t = e.target.closest('[data-t]');
+    if (t) { track = t.dataset.t; history.replaceState(null, '', location.pathname + `#t=${track}&d=${date}`); render(); return; }
+    const c = e.target.closest('.card button');
+    if (c) { const card = c.parentElement; card.classList.contains('open') ? (card.classList.remove('open'), card.querySelector('iframe')?.remove()) : open(card); }
+  });
+  render();
+})();
+</script>
+</body>
+</html>

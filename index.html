@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="demos.js"></script>
 <style>
   :root {
     --bg: #0b0b0b;
@@ -62,6 +63,10 @@
   .site footer { margin: 28px 0 12px; color: var(--muted); font-size: 13px; text-align: center; line-height: 1.6; }
   .site footer a { color: var(--muted); }
   .empty { padding: 48px 0; text-align: center; }
+  .play { color: var(--red); font-size: .8em; text-decoration: none; white-space: nowrap; }
+  a.play { font-size: 13px; font-weight: 800; margin-left: 6px; border: 1px solid var(--red-dim); padding: 1px 8px; border-radius: 999px; vertical-align: 2px; }
+  .demobtn { display: block; margin-top: 16px; text-align: center; background: var(--panel); border: 1px solid var(--red); color: var(--text); text-decoration: none; font-weight: 800; padding: 14px; border-radius: 12px; }
+  .wall .bottom .qr.demo { margin-right: 1.5vw; }
   .tracks { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
   .tracks button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; text-align: left; cursor: pointer; font: inherit; }
   .tracks button b { display: block; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 18px; }
@@ -200,13 +205,30 @@
     return r.json();
   }
 
+  // Demo videos unlock only with the key from the gym TV's QR code (see demos.js).
+  const demoKey = BBDemos.getKey();
+  let demoDb = null;
+  const demoUrl = (extra = '') => `demos.html#k=${demoKey}&t=${track}&d=${viewDate}${extra}`;
+  function demoFor(name, rx) {
+    if (!demoDb) return null;
+    const parts = /contrast/i.test(name) ? String(rx).split('→') : [name];
+    for (const p of parts) { const v = BBDemos.match(demoDb, p.replace(/\s\d+$/, '')); if (v) return v; }
+    return null;
+  }
+  const playMark = (name, rx) => {
+    const v = demoFor(name, rx);
+    if (!v) return '';
+    return isTV ? ' <span class="play">▶</span>' : ` <a class="play" href="${demoUrl('&v=' + v.id)}">▶ demo</a>`;
+  };
+
   async function load() {
     try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
+    if (demoKey && !demoDb) demoDb = await BBDemos.load(demoKey);
     let data = null, next = null;
     try { data = await getJson(`${dir()}/${viewDate}.json`); } catch (e) {
       try { next = (await getJson(`${dir()}/index.json`)).find(d => d > viewDate) || null; } catch (e2) {}
     }
-    const json = JSON.stringify([data, next, config, viewDate, track]);
+    const json = JSON.stringify([data, next, config, viewDate, track, !!demoDb]);
     if (json === lastJson) return; // nothing changed; keep the timer running
     lastJson = json;
     wod = data;
@@ -215,7 +237,7 @@
 
   /* ---------- Rendering ---------- */
   const exHtml = ([name, rx, notes]) =>
-    `<div class="ex"><div class="name">${esc(name)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`;
+    `<div class="ex"><div class="name">${esc(name)}${playMark(name, rx)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`;
 
   function partA(w) {
     return `
@@ -228,7 +250,7 @@
     return `
       <div class="format display">${esc(c.format)}</div>
       ${c.subtitle ? `<div class="fsub muted">${esc(c.subtitle)}</div>` : ''}
-      <ul class="moves">${c.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+      <ul class="moves">${c.items.map(i => `<li>${esc(i)}${playMark(i)}</li>`).join('')}</ul>
       ${c.scaling ? `<div class="scale"><span class="red">Scale:</span> ${esc(c.scaling)}</div>` : ''}`;
   }
 
@@ -270,7 +292,8 @@
           <section class="card"><h2><span class="tag">A</span> Strength</h2>${partA(wod)}</section>
           <section class="card"><h2><span class="tag">B</span> Conditioning</h2>${partB(wod)}<div id="timerSlot"></div></section>
         </div>
-        ${wod.note ? `<div class="note"><b class="red">Coach's note:</b> ${esc(wod.note)}</div>` : ''}`;
+        ${wod.note ? `<div class="note"><b class="red">Coach's note:</b> ${esc(wod.note)}</div>` : ''}
+        ${demoDb ? `<a class="demobtn" href="${demoUrl()}">▶ Watch today's movement demos</a>` : ''}`;
       mountTimer(document.getElementById('timerSlot'), wod.cond.timer);
     }
     const left = config.spotsLeft;
@@ -324,6 +347,7 @@
     el.innerHTML = `${top}<div class="body">${body}</div>
       <div class="bottom">
         <div class="ticker"><span class="red">Open Gym</span> · <span id="tickerText">${esc(tick[0])}</span></div>
+        ${demoDb ? `<div class="qr demo"><div>Need a refresher?<br><b style="color:var(--text)">Scan for ▶ demo videos</b></div>${qrSvg(new URL(`demos.html#k=${demoKey}&t=${track}`, location.href).href)}</div>` : ''}
         <div class="qr"><div>Want in?<br><b style="color:var(--text)">Scan to claim a spot</b></div>${qrSvg(config.signupUrl)}</div>
       </div>`;
     let i = 0;
