@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-03",
+  "block": "DEMO · preview of Monday",
+  "title": "Lower Power: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 → Box Jump 5 → Trap Bar Jump 5 → Pogo Hops 10",
+      "Deadlift @ RPE 8 · jumps light (10–20%) · rest 3:00 · max intent"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 5/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Single-Leg Hop",
+      "3 × 4/side",
+      "Small hops, stable knee"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic Hamstring Curl",
+      "3 × 4",
+      "Lower as slowly as you can · band assist OK"
+    ],
+    [
+      "Single-Leg RDL",
+      "3 × 8/side",
+      "Square hips, flat back"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 20 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "10 × :15 / :45",
+    "subtitle": "Max effort, then walk it off",
+    "timer": {
+      "type": "interval",
+      "work": 15,
+      "rest": 45,
+      "rounds": 10
+    },
+    "items": [
+      "Assault bike or Treadmill Sprint: 15 sec all-out",
+      "Rest: 45 sec"
+    ],
+    "scaling": "Machines taken? 20-yd shuttle sprints"
+  },
+  "note": "Heavy, then fast. That's the whole point of French contrast."
+}
