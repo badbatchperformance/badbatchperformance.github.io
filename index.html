@@ -456,7 +456,8 @@
       else { startedAt = performance.now(); running = true; beep(440, 80); }
     };
     const reset = () => { running = false; banked = -LEAD; lastSecond = null; };
-    el.onclick = toggle;
+    // TV browsers can send both a key press and a click for one OK press; only count one.
+    el.onclick = () => { if (Date.now() - (window.__lastKeyToggle || 0) > 500) toggle(); };
     el.ondblclick = reset;
     if (timer) timer.destroy();
     const id = setInterval(paint, 100);
@@ -466,7 +467,7 @@
 
   document.addEventListener('keydown', e => {
     if (!timer) return;
-    if (['Enter', ' ', 'MediaPlayPause'].includes(e.key)) { e.preventDefault(); timer.toggle(); }
+    if (['Enter', ' ', 'MediaPlayPause'].includes(e.key)) { e.preventDefault(); window.__lastKeyToggle = Date.now(); timer.toggle(); }
     if (['ArrowLeft', 'Backspace', 'r', 'R'].includes(e.key)) { e.preventDefault(); timer.reset(); }
   });
 
