@@ -1,6 +1,8 @@
 // Movement demo videos. The movement → video list ships encrypted (demos.enc.json);
 // the key only travels in the URL fragment (#k=...) printed in the gym's TV QR code.
 window.BBDemos = (() => {
+  // Resolve the data file next to this script, so pages in subfolders (/tv1/) work too.
+  const base = document.currentScript ? document.currentScript.src : location.href;
   const b64 = s => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/')), c => c.charCodeAt(0));
 
   function getKey() {
@@ -13,7 +15,7 @@ window.BBDemos = (() => {
   async function load(k) {
     if (!k || !crypto.subtle) return null;
     try {
-      const enc = await (await fetch(`demos.enc.json?v=${Date.now()}`, { cache: 'no-store' })).json();
+      const enc = await (await fetch(new URL(`demos.enc.json?v=${Date.now()}`, base), { cache: 'no-store' })).json();
       const key = await crypto.subtle.importKey('raw', b64(k), 'AES-GCM', false, ['decrypt']);
       const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(enc.iv) }, key, b64(enc.ct));
       return index(JSON.parse(new TextDecoder().decode(plain)));

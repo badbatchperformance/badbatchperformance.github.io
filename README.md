@@ -31,5 +31,6 @@ Timer on Wall 2: **OK** = start / pause, **◀** = reset. There's a 10-second "g
 ## Movement demo videos (members only)
 - Wes's unlisted YouTube demos are mapped to movement names in a **private** file outside this repo (`Bad Batch Performance/Video Library/videos.json`) and published here only in encrypted form (`demos.enc.json`).
 - The key lives in the URL fragment (`#k=…`), which browsers never send to a server. Only the gym TVs carry it, and their QR code passes it to members' phones.
-- TVs: add `#k=<key>` to the TV link. The key is in `Video Library/demo-key.txt`. With the key, movements that have a video show ▶, and a "Scan for demo videos" QR appears.
+- **TV setup (easy way):** open `badbatchperformance.github.io/tv1` (or `/tv2`) and enter the gym code once (`Video Library/gym-code.txt`). The TV remembers it and opens the board.
+- TVs (long way): add `#k=<key>` to the TV link. The key is in `Video Library/demo-key.txt`. With the key, movements that have a video show ▶, and a "Scan for demo videos" QR appears.
 - Rebuild after adding videos: `node "Video Library/build-demos.mjs"`, then commit `demos.enc.json`. To revoke access, delete `demo-key.txt`, rebuild, and update both TV links.
