@@ -1,6 +1,6 @@
 # Open Gym programming plan
 
-Audience: adult open-gym members, mixed levels, **no coach on the floor**. So heavy work is prescribed by **RPE first** (same safety rule as remote clients).
+Audience: **The Bad Batch 30** (cap 30, changed from 50 on 2026-10-03 for floor capacity): adult open-gym members, mixed levels, **no coach on the floor**. So heavy work is prescribed by **RPE first** (same safety rule as remote clients).
 Order (bad-batch-coach skill): Hypertrophy (6 wk) → Strength / conjugate + triphasic 2/2/2 (6 wk) → Power / French contrast (3 wk) → repeat.
 
 | Block | Weeks | Dates |
@@ -106,3 +106,6 @@ Heavy lift held at 4×3 @ RPE 8 inside French contrast; progression comes from t
 | Week | **785** | |
 
 Up ~7% from week 1 (735). Hurdles and sled still unconfirmed; every hurdle/sled item lists an alternative on the TV.
+
+# Floor capacity + rack staggering (added 2026-10-03)
+4 squat racks with benches (~8 people on barbells at once), 1 cable machine, 1 GHD, 1 reverse hyper, 2 sleds, 1 Assault bike, 1 sprint treadmill. Both tracks share the floor at the same time, so on any day only ONE track's main lift uses the racks. The other track goes rack-free (trap bar, sleds, DB/KB, landmine, floor). The weekly routine enforces this from the week of Oct 19 on. Weeks 1–2 (Oct 5–18) were written before this rule and overlap on rack days.
