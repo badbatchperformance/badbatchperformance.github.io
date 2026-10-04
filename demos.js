@@ -12,14 +12,19 @@ window.BBDemos = (() => {
     try { return localStorage.getItem('bbDemoKey'); } catch (e) { return null; }
   }
 
-  async function load(k) {
+  // Decrypt one of the private files next to this script (demos.enc.json, coach.enc.json).
+  async function decryptFile(k, file) {
     if (!k || !crypto.subtle) return null;
     try {
-      const enc = await (await fetch(new URL(`demos.enc.json?v=${Date.now()}`, base), { cache: 'no-store' })).json();
+      const enc = await (await fetch(new URL(`${file}?v=${Date.now()}`, base), { cache: 'no-store' })).json();
       const key = await crypto.subtle.importKey('raw', b64(k), 'AES-GCM', false, ['decrypt']);
       const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(enc.iv) }, key, b64(enc.ct));
-      return index(JSON.parse(new TextDecoder().decode(plain)));
+      return JSON.parse(new TextDecoder().decode(plain));
     } catch (e) { return null; }
+  }
+  async function load(k) {
+    const data = await decryptFile(k, 'demos.enc.json');
+    return data ? index(data) : null;
   }
 
   // Same normalizing on both sides so "KB Swings" finds "Kettlebell Swings", etc.
@@ -80,5 +85,5 @@ window.BBDemos = (() => {
     return list;
   }
 
-  return { getKey, load, match, forDay };
+  return { getKey, load, decryptFile, match, forDay };
 })();

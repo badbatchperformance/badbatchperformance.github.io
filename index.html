@@ -146,6 +146,21 @@
   .wall.both .timer .clock { font-size: 11vh; }
   .wall.both .timer .round { font-size: 2.2vh; }
   .wall.both .timer .hint { font-size: 1.5vh; }
+  .wall.coach .body { display: block; }
+  .kidsgrid { display: grid; gap: 1.2vw; height: 100%; grid-auto-rows: minmax(0, 1fr); }
+  .kidsgrid .panel { padding: 1.4vh 1.2vw; }
+  .kidsgrid .panel h2 { margin-bottom: .6vh; }
+  .kidsgrid .panel h2 .tag { font-size: 3.4vh; padding: .2vh 1.2vw; }
+  .kidsgrid .ex { padding: .7vh 0; }
+  .kidsgrid .ex .name, .kidsgrid .ex .rx { font-size: 3vh; }
+  .kidsgrid .ex .notes { font-size: 1.8vh; }
+  .clientgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4vw; height: 100%; }
+  .clientgrid .panel h2 { font-size: 5vh; margin-bottom: 0; }
+  .clientgrid .when { color: var(--red); font-family: Oswald, sans-serif; font-size: 2.6vh; margin-bottom: 1vh; }
+  .clientgrid .ex .name, .clientgrid .ex .rx { font-size: 2.8vh; }
+  .clientgrid .ex .notes { font-size: 1.8vh; }
+  .clientgrid .pending { margin-top: 3vh; font-size: 2.6vh; color: var(--muted); }
+  .wall.coach .restday { height: 100%; }
   .wall .restday { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2vh; }
   .wall .restday img { height: 24vh; }
   .wall .restday h2 { font-size: 7vh; }
@@ -192,8 +207,11 @@
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const fresh = url => `${url}?v=${Date.now()}`;
 
+  // ?at=2026-10-05T16:30 runs the board as if it were that moment (for previews).
+  const atParam = params.get('at'), bootMs = Date.now();
+  const now = () => atParam ? new Date(new Date(atParam).getTime() + (Date.now() - bootMs)) : new Date();
   let config = { signupUrl: 'https://www.badbatchperformance.com', ticker: [] };
-  let viewDate = params.get('date') || ymd(new Date());
+  let viewDate = params.get('date') || ymd(now());
   let followToday = !params.get('date');
   let wod = null;
   let lastJson = '';
@@ -221,17 +239,46 @@
     return isTV ? ' <span class="play">▶</span>' : ` <a class="play" href="${demoUrl('&v=' + v.id)}">▶ demo</a>`;
   };
 
+  // Coaching schedule: kids classes take over TV 1, adult clients take over TV 2 (private, encrypted).
+  let coach = null, lastCoachSig = '', override = null; // override = { mode: 'wod' | 'coach', until }
+  const mins = hhmm => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
+  const fmtTime = hhmm => { const [h, m] = hhmm.split(':').map(Number); return `${(h + 11) % 12 + 1}:${pad(m)}`; };
+  function coachNow() {
+    if (!coach || !isTV) return null;
+    const t = now(), m = t.getHours() * 60 + t.getMinutes(), dow = t.getDay() || 7, sch = coach.schedule || {};
+    let auto = null;
+    if (track === '1') {
+      const cls = (sch.kidsClasses || []).find(c => c.days.includes(dow) && m >= mins(c.start) && m < mins(c.end));
+      if (cls) auto = { kind: 'kids', cls, session: (coach.kids || {})[viewDate] || null };
+    } else {
+      const list = (sch.clients || []).filter(c => c.days.includes(dow) && m >= mins(c.start) - 10 && m < mins(c.end))
+        .sort((a, b) => mins(a.start) - mins(b.start)).slice(0, 3);
+      if (list.length) auto = { kind: 'clients', list };
+    }
+    if (override && Date.now() > override.until) override = null;
+    if (override?.mode === 'wod') return null;
+    if (override?.mode === 'coach' && !auto) return track === '1'
+      ? { kind: 'kids', cls: { title: 'Kids Class' }, session: (coach.kids || {})[viewDate] || null, manual: true }
+      : { kind: 'clients', list: [], manual: true };
+    return auto && override ? { ...auto, manual: true } : auto;
+  }
+  const coachSig = () => JSON.stringify(coachNow());
+
   async function load() {
     try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
     if (demoKey && !demoDb) demoDb = await BBDemos.load(demoKey);
+    if (demoKey && isTV && !coach) coach = await BBDemos.decryptFile(demoKey, 'coach.enc.json');
     let data = null, next = null;
     try { data = await getJson(`${dir()}/${viewDate}.json`); } catch (e) {
       try { next = (await getJson(`${dir()}/index.json`)).find(d => d > viewDate) || null; } catch (e2) {}
     }
-    const json = JSON.stringify([data, next, config, viewDate, track, !!demoDb]);
+    lastCoachSig = coachSig();
+    const json = JSON.stringify([data, next, config, viewDate, track, !!demoDb, lastCoachSig]);
     if (json === lastJson) return; // nothing changed; keep the timer running
     lastJson = json;
     wod = data;
+    const cm = coachNow();
+    if (cm) return renderCoach(cm);
     isTV ? renderWall(next) : renderSite(next);
   }
 
@@ -365,6 +412,48 @@
     fitPanels();
   }
 
+  // Coach-led screens: no timer (the gym's Rogue clock runs those), no QR codes.
+  function renderCoach(cm) {
+    if (timer) { timer.destroy(); timer = null; }
+    const el = document.getElementById('wall');
+    el.className = `wall coach ${cm.kind}`;
+    const blockCard = b => `<section class="panel"><h2><span class="tag">${esc(b.label || '')}</span></h2>
+        ${b.items.map(([n, rx, notes]) => `<div class="ex"><div class="name">${esc(n)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`).join('')}</section>`;
+    let title, sub, body, foot;
+    if (cm.kind === 'kids') {
+      const s = cm.session;
+      title = cm.cls.title; sub = s ? `<span class="trk">Kids</span> · ${esc(s.title)} · ${esc(s.block)}` : '<span class="trk">Kids</span>';
+      if (s) {
+        const cols = s.blocks.length <= 4 ? s.blocks.length : Math.ceil(s.blocks.length / 2);
+        body = `<div class="kidsgrid" style="grid-template-columns:repeat(${cols},minmax(0,1fr))">${s.blocks.map(blockCard).join('')}</div>`;
+        foot = (s.note || '').split(/(?<=\.)\s/)[0];
+      } else {
+        body = `<div class="restday"><img src="assets/eagle.svg" alt=""><h2>${esc(cm.cls.title)}</h2><p>Coach-led today. Listen up.</p></div>`;
+        foot = 'Coach-led class';
+      }
+    } else {
+      title = 'Personal Training'; sub = '<span class="trk">Adults</span> · Now training';
+      const progs = (coach.schedule || {}).clientPrograms || {};
+      const dow = String(now().getDay() || 7);
+      const col = c => {
+        const p = progs[c.name] || {}, day = p[viewDate] || p[dow];
+        return `<section class="panel client"><h2>${esc(c.name)}</h2><div class="when">${fmtTime(c.start)}–${fmtTime(c.end)}</div>
+          ${day ? day.blocks.map(b => `<div class="sub">${esc(b.label || '')}</div>${b.items.map(([n, rx, notes]) => `<div class="ex"><div class="name">${esc(n)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`).join('')}`).join('')
+                : '<div class="pending">Program coming soon</div>'}</section>`;
+      };
+      body = cm.list.length ? `<div class="clientgrid">${cm.list.map(col).join('')}</div>`
+                            : `<div class="restday"><img src="assets/eagle.svg" alt=""><h2>Personal Training</h2><p>No client scheduled right now.</p></div>`;
+      foot = 'Coached sessions';
+    }
+    el.innerHTML = `<div class="top"><img src="assets/logo.svg" alt="Bad Batch Performance">
+        <div class="mid"><h1>${esc(title)}</h1><div class="dayline muted">${sub}${cm.manual ? ' · <span class="trk">Manual</span>' : ''}</div></div>
+        <div class="now"><div class="t" id="nowT"></div><div class="d">${esc(niceDate(viewDate))}</div></div></div>
+      <div class="body">${body}</div>
+      <div class="bottom"><div class="ticker"><span class="red">${cm.kind === 'kids' ? 'Bad Batch Kids' : 'Bad Batch'}</span> · ${esc(foot)}</div></div>`;
+    updateClock();
+    fitPanels();
+  }
+
   // Shrink any TV column whose content is taller than the screen allows.
   function fitPanels() {
     document.querySelectorAll('.wall .panel').forEach(p => {
@@ -467,6 +556,11 @@
   }
 
   document.addEventListener('keydown', e => {
+    if (isTV && coach && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
+      e.preventDefault();
+      override = { mode: coachNow() ? 'wod' : 'coach', until: Date.now() + 60 * 60 * 1000 };
+      lastJson = ''; load(); return;
+    }
     if (!timer) return;
     if (['Enter', ' ', 'MediaPlayPause'].includes(e.key)) { e.preventDefault(); window.__lastKeyToggle = Date.now(); timer.toggle(); }
     if (['ArrowLeft', 'Backspace', 'r', 'R'].includes(e.key)) { e.preventDefault(); timer.reset(); }
@@ -475,11 +569,12 @@
   /* ---------- Clock, day rollover, refresh ---------- */
   function updateClock() {
     const t = document.getElementById('nowT');
-    if (t) t.textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    if (t) t.textContent = now().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
   }
   setInterval(() => {
     updateClock();
-    if (followToday && ymd(new Date()) !== viewDate) { viewDate = ymd(new Date()); lastJson = ''; load(); }
+    if (followToday && ymd(now()) !== viewDate) { viewDate = ymd(now()); lastJson = ''; load(); }
+    else if (isTV && coachSig() !== lastCoachSig) { lastJson = ''; load(); }
   }, 15000);
   setInterval(load, 5 * 60 * 1000); // pick up edits within a few minutes
   if (isTV) setTimeout(() => location.reload(), 6 * 60 * 60 * 1000); // fresh page every 6 hours
