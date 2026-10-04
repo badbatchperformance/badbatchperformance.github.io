@@ -124,7 +124,7 @@
   .wall .bottom .ticker { flex: 1; font-size: 2.6vh; font-weight: 600; }
   .wall .bottom .ticker .red { font-family: Oswald, sans-serif; text-transform: uppercase; }
   .wall .bottom .qr { display: flex; align-items: center; gap: 1vw; font-size: 1.9vh; color: var(--muted); text-align: right; line-height: 1.3; }
-  .wall .bottom .qr svg { height: 9vh; width: 9vh; background: #fff; padding: .5vh; border-radius: .6vh; }
+  .wall .bottom .qr img.qrimg { height: 10vh; width: 10vh; background: #fff; border-radius: .6vh; image-rendering: pixelated; display: block; }
   .wall .noteline { font-size: 2.6vh; border-left: .5vh solid var(--red); padding-left: 1vw; }
   .wall.a .body { grid-template-columns: 1fr 1.25fr; }
   .wall.b .body { grid-template-columns: 1.1fr 1fr; }
@@ -274,7 +274,8 @@
   function qrSvg(url) {
     if (typeof qrcode === 'undefined') return '';
     const q = qrcode(0, 'M'); q.addData(url); q.make();
-    return q.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+    // A plain GIF image with a white quiet zone. Some TV browsers (TV Bro) draw SVG QR codes as blank white squares.
+    return `<img class="qrimg" alt="QR code" src="${q.createDataURL(8, 2)}">`;
   }
 
   function renderSite(next) {
