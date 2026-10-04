@@ -157,8 +157,13 @@
   .clientgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4vw; height: 100%; }
   .clientgrid .panel h2 { font-size: 5vh; margin-bottom: 0; }
   .clientgrid .when { color: var(--red); font-family: Oswald, sans-serif; font-size: 2.6vh; margin-bottom: 1vh; }
-  .clientgrid .ex .name, .clientgrid .ex .rx { font-size: 2.8vh; }
-  .clientgrid .ex .notes { font-size: 1.8vh; }
+  .cblocks.two { column-count: 2; column-gap: 2.4vw; }
+  .cblock { break-inside: avoid; margin-bottom: .6vh; }
+  .clientgrid .sub { margin: .9vh 0 .2vh; }
+  .cx { display: flex; justify-content: space-between; gap: 1vw; font-size: 2.7vh; font-weight: 700; padding: .45vh 0; border-bottom: 1px solid var(--line); }
+  .cx .r { color: var(--red); font-weight: 800; white-space: nowrap; }
+  .cx.main { font-size: 3.2vh; }
+  .clientgrid .notes { font-size: 1.9vh; color: var(--muted); padding-top: .3vh; }
   .clientgrid .pending { margin-top: 3vh; font-size: 2.6vh; color: var(--muted); }
   .wall.coach .restday { height: 100%; }
   .wall .restday { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2vh; }
@@ -435,13 +440,16 @@
       title = 'Personal Training'; sub = '<span class="trk">Adults</span> · Now training';
       const progs = (coach.schedule || {}).clientPrograms || {};
       const dow = String(now().getDay() || 7);
+      const wide = cm.list.length === 1;
+      // One line per exercise (cue only on the main lift) so three clients fit side by side.
       const col = c => {
         const p = progs[c.name] || {}, day = p[viewDate] || p[dow];
-        return `<section class="panel client"><h2>${esc(c.name)}</h2><div class="when">${fmtTime(c.start)}–${fmtTime(c.end)}</div>
-          ${day ? day.blocks.map(b => `<div class="sub">${esc(b.label || '')}</div>${b.items.map(([n, rx, notes]) => `<div class="ex"><div class="name">${esc(n)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`).join('')}`).join('')
+        return `<section class="panel client"><h2>${esc(c.name)}</h2><div class="when">${fmtTime(c.start)}–${fmtTime(c.end)}${day && day.title ? ' · ' + esc(day.title) : ''}</div>
+          ${day ? `<div class="cblocks${wide ? ' two' : ''}">${day.blocks.map(b => `<div class="cblock"><div class="sub">${esc(b.label || '')}</div>${b.items.map(([n, rx, notes]) =>
+              `<div class="cx${/strength/i.test(b.label || '') ? ' main' : ''}"><span class="n">${esc(n)}</span><span class="r">${esc(rx)}</span></div>${/strength/i.test(b.label || '') && notes ? `<div class="notes">${esc(notes)}</div>` : ''}`).join('')}</div>`).join('')}</div>`
                 : '<div class="pending">Program coming soon</div>'}</section>`;
       };
-      body = cm.list.length ? `<div class="clientgrid">${cm.list.map(col).join('')}</div>`
+      body = cm.list.length ? `<div class="clientgrid" style="grid-template-columns:repeat(${cm.list.length},minmax(0,1fr))">${cm.list.map(col).join('')}</div>`
                             : `<div class="restday"><img src="assets/eagle.svg" alt=""><h2>Personal Training</h2><p>No client scheduled right now.</p></div>`;
       foot = 'Coached sessions';
     }
