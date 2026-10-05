@@ -588,6 +588,17 @@
   }, 15000);
   setInterval(load, 5 * 60 * 1000); // pick up edits within a few minutes
   if (isTV) setTimeout(() => location.reload(), 6 * 60 * 60 * 1000); // fresh page every 6 hours
+  // TV browsers can hold on to an old copy of this page. Check version.txt (never cached) every
+  // 5 minutes and reload with a cache-busting address when a new version is published.
+  if (isTV) setInterval(async () => {
+    try {
+      const v = (await (await fetch(`version.txt?v=${Date.now()}`, { cache: 'no-store' })).text()).trim();
+      if (v && v !== BUILD) {
+        const q = new URLSearchParams(location.search); q.set('r', Date.now());
+        location.replace(`${location.pathname}?${q}${location.hash}`);
+      }
+    } catch (e) {}
+  }, 5 * 60 * 1000);
 
   // Keep the TV awake: Android TV starts its screensaver after a few minutes without input
   // unless something is playing. A tiny muted looping video (plus the Wake Lock API where
