@@ -31,7 +31,7 @@
 (async () => {
   const track = location.pathname.includes('/tv2') ? '2' : '1';
   document.getElementById('title').textContent = `TV ${track} setup · ${track === '1' ? 'Build' : 'Athlete'}`;
-  const board = k => `../?wall=both&track=${track}${k ? '#k=' + k : ''}`;
+  const board = k => `../?wall=both&track=${track}&r=${Date.now()}${k ? "#k=" + k : ""}`; // r= forces a fresh copy past TV browser caches
   document.getElementById('skip').href = board('');
   let saved = null; try { saved = localStorage.getItem('bbDemoKey'); } catch (e) {}
   if (saved && await BBDemos.load(saved)) return location.replace(board(saved));
