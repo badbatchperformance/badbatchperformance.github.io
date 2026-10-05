@@ -63,6 +63,7 @@
   .site footer { margin: 28px 0 12px; color: var(--muted); font-size: 13px; text-align: center; line-height: 1.6; }
   .site footer a { color: var(--muted); }
   .empty { padding: 48px 0; text-align: center; }
+  .ver { color: #555; font-size: 1.4vh; margin-left: 1vw; font-weight: 400; }
   .play { color: var(--red); font-size: .8em; text-decoration: none; white-space: nowrap; }
   a.play { font-size: 13px; font-weight: 800; margin-left: 6px; border: 1px solid var(--red-dim); padding: 1px 8px; border-radius: 999px; vertical-align: 2px; }
   .demobtn { display: block; margin-top: 16px; text-align: center; background: var(--panel); border: 1px solid var(--red); color: var(--text); text-decoration: none; font-weight: 800; padding: 14px; border-radius: 12px; }
@@ -204,6 +205,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
+  const BUILD = 'v10-05b'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -399,7 +401,7 @@
     const tick = (config.ticker || []).length ? config.ticker : ['Re-rack your weights'];
     el.innerHTML = `${top}<div class="body">${body}</div>
       <div class="bottom">
-        <div class="ticker"><span class="red">Open Gym</span> · <span id="tickerText">${esc(tick[0])}</span></div>
+        <div class="ticker"><span class="red">Open Gym</span> · <span id="tickerText">${esc(tick[0])}</span> <span class="ver">${BUILD}${coach ? '' : ' · no schedule'}</span></div>
         ${demoDb ? `<div class="qr demo"><div>Need a refresher?<br><b style="color:var(--text)">Scan for ▶ demo videos</b></div>${qrSvg(new URL(`demos.html#k=${demoKey}&t=${track}`, location.href).href)}</div>` : ''}
         <div class="qr"><div>Want in?<br><b style="color:var(--text)">Scan to claim a spot</b></div>${qrSvg(config.signupUrl)}</div>
       </div>`;
@@ -457,7 +459,7 @@
         <div class="mid"><h1>${esc(title)}</h1><div class="dayline muted">${sub}${cm.manual ? ' · <span class="trk">Manual</span>' : ''}</div></div>
         <div class="now"><div class="t" id="nowT"></div><div class="d">${esc(niceDate(viewDate))}</div></div></div>
       <div class="body">${body}</div>
-      <div class="bottom"><div class="ticker"><span class="red">${cm.kind === 'kids' ? 'Bad Batch Kids' : 'Bad Batch'}</span> · ${esc(foot)}</div></div>`;
+      <div class="bottom"><div class="ticker"><span class="red">${cm.kind === 'kids' ? 'Bad Batch Kids' : 'Bad Batch'}</span> · ${esc(foot)} <span class="ver">${BUILD}</span></div></div>`;
     updateClock();
     fitPanels();
   }
@@ -586,6 +588,26 @@
   }, 15000);
   setInterval(load, 5 * 60 * 1000); // pick up edits within a few minutes
   if (isTV) setTimeout(() => location.reload(), 6 * 60 * 60 * 1000); // fresh page every 6 hours
+
+  // Keep the TV awake: Android TV starts its screensaver after a few minutes without input
+  // unless something is playing. A tiny muted looping video (plus the Wake Lock API where
+  // the browser supports it) counts as "playing".
+  if (isTV) {
+    const v = document.createElement('video');
+    v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
+    v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+    v.style.cssText = 'position:fixed;right:0;bottom:0;width:2px;height:2px;opacity:.01;pointer-events:none';
+    v.innerHTML = '<source src="assets/keepawake.webm" type="video/webm"><source src="assets/keepawake.mp4" type="video/mp4">';
+    document.body.appendChild(v);
+    const keepAwake = async () => {
+      try { if (v.paused) await v.play(); } catch (e) {}
+      try { if ('wakeLock' in navigator && !keepAwake.lock) { keepAwake.lock = await navigator.wakeLock.request('screen'); keepAwake.lock.addEventListener('release', () => { keepAwake.lock = null; }); } } catch (e) {}
+    };
+    keepAwake();
+    setInterval(keepAwake, 60 * 1000);
+    document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && keepAwake());
+    document.addEventListener('keydown', keepAwake);
+  }
 
   const go = n => {
     viewDate = addDays(viewDate, n); followToday = viewDate === ymd(new Date());
