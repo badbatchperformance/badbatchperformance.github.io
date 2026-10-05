@@ -103,6 +103,7 @@
   .wall .top .now .t { font-size: 5vh; line-height: 1; font-variant-numeric: tabular-nums; }
   .wall .top .now .d { font-size: 2.2vh; color: var(--muted); text-transform: uppercase; }
   .wall .body { flex: 1; display: grid; gap: 2vw; min-height: 0; }
+  .wall .fitwrap { display: flex; flex-direction: column; min-height: 100%; flex: none; }
   .wall .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 1.4vh; padding: 2.2vh 2vw; overflow: hidden; display: flex; flex-direction: column; }
   .wall .panel h2 { font-size: 3.6vh; margin-bottom: 1.2vh; display: flex; gap: 1vw; align-items: baseline; }
   .wall .panel h2 .tag { background: var(--red); color: #fff; padding: .2vh 1vw; border-radius: .6vh; font-size: 2.8vh; }
@@ -205,7 +206,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-05c'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-05d'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -416,7 +417,7 @@
       if (slot) mountTimer(slot, wod.cond.timer, wallMode === 'b');
     }
     updateClock();
-    fitPanels();
+    refit();
   }
 
   // Coach-led screens: no timer (the gym's Rogue clock runs those), no QR codes.
@@ -461,17 +462,27 @@
       <div class="body">${body}</div>
       <div class="bottom"><div class="ticker"><span class="red">${cm.kind === 'kids' ? 'Bad Batch Kids' : 'Bad Batch'}</span> · ${esc(foot)} <span class="ver">${BUILD}</span></div></div>`;
     updateClock();
-    fitPanels();
+    refit();
   }
 
   // Shrink any TV column whose content is taller than the screen allows.
   function fitPanels() {
     document.querySelectorAll('.wall .panel').forEach(p => {
-      let k = 1;
-      p.style.zoom = 1;
-      while (p.scrollHeight > p.clientHeight + 2 && k > 0.6) { k -= 0.04; p.style.zoom = k; }
+      // Scale an inner wrapper and compare its rendered height with the space the panel has.
+      let w = p.querySelector(':scope > .fitwrap');
+      if (!w) { w = document.createElement('div'); w.className = 'fitwrap'; while (p.firstChild) w.appendChild(p.firstChild); p.appendChild(w); }
+      const cs = getComputedStyle(p), room = p.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      let k = 1; w.style.zoom = 1;
+      while (w.getBoundingClientRect().height > room + 1 && k > 0.5) { k -= 0.03; w.style.zoom = k; }
     });
   }
+  // Fonts and images arrive after the first layout, so fit now and again shortly after.
+  function refit() {
+    fitPanels();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitPanels);
+    setTimeout(fitPanels, 800); setTimeout(fitPanels, 2500);
+  }
+
   window.addEventListener('resize', () => isTV && fitPanels());
 
   /* ---------- Timer ----------
