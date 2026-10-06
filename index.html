@@ -148,6 +148,8 @@
   .wall.both .timer .clock { font-size: 11vh; }
   .wall.both .timer .round { font-size: 2.2vh; }
   .wall.both .timer .hint { font-size: 1.5vh; }
+  .wall.event { padding: 0; background: #0b0b0b; }
+  .wall.event .eventimg { width: 100vw; height: 100vh; object-fit: contain; display: block; }
   .wall.coach .body { display: block; }
   .kidsgrid { display: grid; gap: 1.2vw; height: 100%; grid-auto-rows: minmax(0, 1fr); }
   .kidsgrid .panel { padding: 1.4vh 1.2vw; }
@@ -206,7 +208,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-05d'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-06a'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -270,7 +272,14 @@
       : { kind: 'clients', list: [], manual: true };
     return auto && override ? { ...auto, manual: true } : auto;
   }
-  const coachSig = () => JSON.stringify(coachNow());
+  // Special events from config.json take over the listed TVs, e.g.
+  // {"date":"2026-10-06","start":"17:30","end":"19:00","tvs":["1","2"],"image":"assets/events/welcome-padma.png"}
+  function eventNow() {
+    if (!isTV) return null;
+    const t = now(), m = t.getHours() * 60 + t.getMinutes(), d = ymd(t);
+    return (config.events || []).find(e => e.date === d && (e.tvs || ['1', '2']).includes(track) && m >= mins(e.start) && m < mins(e.end)) || null;
+  }
+  const coachSig = () => JSON.stringify([coachNow(), eventNow()]);
 
   async function load() {
     try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
@@ -285,6 +294,8 @@
     if (json === lastJson) return; // nothing changed; keep the timer running
     lastJson = json;
     wod = data;
+    const ev = eventNow();
+    if (ev) return renderEvent(ev);
     const cm = coachNow();
     if (cm) return renderCoach(cm);
     isTV ? renderWall(next) : renderSite(next);
@@ -418,6 +429,13 @@
     }
     updateClock();
     refit();
+  }
+
+  function renderEvent(ev) {
+    if (timer) { timer.destroy(); timer = null; }
+    const el = document.getElementById('wall');
+    el.className = 'wall event';
+    el.innerHTML = `<img class="eventimg" src="${esc(ev.image)}" alt="">`;
   }
 
   // Coach-led screens: no timer (the gym's Rogue clock runs those), no QR codes.

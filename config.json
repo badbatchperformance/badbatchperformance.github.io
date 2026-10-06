@@ -6,9 +6,9 @@
   "foundingPrice": 100,
   "regularPrice": 125,
   "hours": [
-    "Mon–Fri 5–10 AM",
-    "Mon–Fri 7–10 PM",
-    "Sat–Sun 9 AM–3 PM"
+    "Mon\u2013Fri 5\u201310 AM",
+    "Mon\u2013Fri 7\u201310 PM",
+    "Sat\u2013Sun 9 AM\u20133 PM"
   ],
   "ticker": [
     "RPE 7 = 3 good reps left in the tank",
@@ -25,5 +25,6 @@
       "name": "Athlete",
       "tagline": "Power, speed + jumps"
     }
-  }
+  },
+  "events": []
 }
