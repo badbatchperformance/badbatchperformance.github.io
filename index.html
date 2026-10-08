@@ -208,7 +208,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-08a'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-08b'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -277,7 +277,9 @@
   function eventNow() {
     if (!isTV) return null;
     const t = now(), m = t.getHours() * 60 + t.getMinutes(), d = ymd(t);
-    return (config.events || []).find(e => e.date === d && (e.tvs || ['1', '2']).includes(track) && m >= mins(e.start) && m < mins(e.end)) || null;
+    // One-off events use "date"; weekly ones use "days" (0=Sun…6=Sat) plus an optional "from" date.
+    const onDay = e => e.date ? e.date === d : (e.days || []).includes(t.getDay()) && (!e.from || d >= e.from);
+    return (config.events || []).find(e => onDay(e) && (e.tvs || ['1', '2']).includes(track) && m >= mins(e.start) && m < mins(e.end)) || null;
   }
   const coachSig = () => JSON.stringify([coachNow(), eventNow()]);
 

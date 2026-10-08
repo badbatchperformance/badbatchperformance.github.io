@@ -37,6 +37,21 @@
       ],
       "image": "assets/events/thank-you-bobby.png",
       "title": "Thank you Bobby (from the Nelson Family)"
+    },
+    {
+      "days": [
+        2,
+        4
+      ],
+      "from": "2026-10-08",
+      "start": "17:30",
+      "end": "19:00",
+      "tvs": [
+        "1",
+        "2"
+      ],
+      "image": "assets/events/yoga-night.png",
+      "title": "Yoga Night with Padma (Prana House of Yoga), every Tue/Thu"
     }
   ]
 }
