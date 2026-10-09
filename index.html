@@ -208,7 +208,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-08b'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-09a'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
