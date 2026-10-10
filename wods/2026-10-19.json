@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-19",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Lower: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 25",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Box Jump",
+      "5 × 5",
+      "Step down, don't jump down"
+    ],
+    [
+      "Vertical Jump",
+      "3 × 4",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "Back Squat",
+      "4 × 6 @ RPE 7",
+      "Tempo 3-1-1 · Rest 2:30 · heavier than last week"
+    ],
+    [
+      "DB Reverse Lunge",
+      "3 × 10/leg @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "3 × 5/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 25 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 16",
+    "subtitle": "4 rounds · new station every minute",
+    "timer": {
+      "type": "emom",
+      "minutes": 16
+    },
+    "items": [
+      "Min 1: 12 KB Goblet Squats",
+      "Min 2: 10/7 cal Assault bike",
+      "Min 3: 20 Walking Lunge steps",
+      "Min 4: 40 yd Farmer's Carry"
+    ],
+    "scaling": "Bike taken? 100m run · lighter bells"
+  },
+  "note": "New scheme: 4 sets of 6. Fewer reps, more weight on the bar. Same depth."
+}

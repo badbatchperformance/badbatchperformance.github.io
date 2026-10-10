@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-23",
+  "block": "Power · Week 3 of 3",
+  "title": "Lower Power: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Back Squat 3 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Squat @ RPE 8 · DBs 20–30% bodyweight · rest 3:00 · max intent"
+    ],
+    [
+      "Hurdle Hops",
+      "5 × 5",
+      "Low hurdles · no hurdles? Tuck jumps"
+    ],
+    [
+      "Single-Leg Bound",
+      "3 × 6/side",
+      "Stick each landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "3 × 6/side @ RPE 8",
+      "DBs in hand · heavier than last week"
+    ],
+    [
+      "Pissing Dog",
+      "3 × 12/side",
+      "Slow, own the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "4 × 12",
+      "Full stretch at the bottom"
+    ]
+  ],
+  "cond": {
+    "format": "6 × :30 / 1:30",
+    "subtitle": "All-out, full recovery",
+    "timer": {
+      "type": "interval",
+      "work": 30,
+      "rest": 90,
+      "rounds": 6
+    },
+    "items": [
+      "Assault bike or Treadmill Sprint: 30 sec all-out",
+      "Easy: 1:30",
+      "Hold your round-1 output"
+    ],
+    "scaling": "Machines taken? 30-yd shuttle sprints"
+  },
+  "note": "Last contrast day of the block. Heavier DBs on the jump, same squat weight."
+}

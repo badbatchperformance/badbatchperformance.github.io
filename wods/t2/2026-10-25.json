@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-25",
+  "block": "Power · Week 3 of 3",
+  "title": "Recovery Sunday",
+  "warmup": "Foam roll 5 min",
+  "jumps": [],
+  "strength": [
+    [
+      "Zone 2 cardio",
+      "30–40 min",
+      "Bike, treadmill walk or outside. 60–70% max heart rate: you can talk in full sentences"
+    ]
+  ],
+  "cond": {
+    "format": "Mobility 10 × 1:00",
+    "subtitle": "5 positions, 2 rounds · 10 sec to switch",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 10,
+      "rounds": 10
+    },
+    "items": [
+      "Hip Mobility Flow",
+      "Dynamic Pigeon Isometric (each side)",
+      "90/90 with Thoracic Rotation",
+      "Couch Stretch (each side)",
+      "90/90 Breathing: 5 sec in, 5 sec out"
+    ],
+    "scaling": "Go easy. Nose breathing the whole time"
+  },
+  "note": "Power block done. Strength block starts Monday: slow lowering on every main lift."
+}

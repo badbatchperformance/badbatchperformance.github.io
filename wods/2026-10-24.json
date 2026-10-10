@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-24",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Saturday Partner WOD",
+  "warmup": "With your partner, 2 rounds: Lateral Lunge × 6/side · Inchworm Walk × 4 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "4 × 20",
+      "Partners alternate sets"
+    ],
+    [
+      "Broad Jump",
+      "5 × 5",
+      "Stick it"
+    ]
+  ],
+  "strength": [
+    [
+      "Farmer's Carry",
+      "4 × 60 yd",
+      "Heavy · partners alternate"
+    ],
+    [
+      "Kettlebell Teapot",
+      "3 × 8/side",
+      "Slow, control the tilt"
+    ]
+  ],
+  "cond": {
+    "format": "Partner AMRAP 20",
+    "subtitle": "Split reps any way · one works, one rests",
+    "timer": {
+      "type": "amrap",
+      "minutes": 20
+    },
+    "items": [
+      "30 KB Swings",
+      "20 Medicine Ball Slams",
+      "20 Walking Lunge steps each",
+      "200m run (together)"
+    ],
+    "scaling": "Solo? Halve the reps · 100m run"
+  },
+  "note": "Short sets, fast switches. Score is total rounds."
+}

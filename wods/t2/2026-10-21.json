@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-21",
+  "block": "Power · Week 3 of 3",
+  "title": "Speed + Hinge Power",
+  "warmup": "Foam roll 2 min · Tri-Planar Ankle × 8/side · Walking Lunge × 10/side · A-skip, B-skip 2 × 20 yd each",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Stiff ankles"
+    ],
+    [
+      "Broad Jump",
+      "6 × 3",
+      "Max distance, stick it"
+    ],
+    [
+      "Single-Leg Bound",
+      "3 × 6/side",
+      "Hold the landing"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Explode sideways"
+    ]
+  ],
+  "strength": [
+    [
+      "Box Drop to Stick",
+      "3 × 5",
+      "Step off a 12–18\" box, land silent"
+    ],
+    [
+      "Acceleration Sprint",
+      "6 × 30 yd",
+      "Walk back · rest 2:00"
+    ],
+    [
+      "Trap Bar Jump",
+      "4 × 3",
+      "Light: 20–30% of your deadlift · land soft"
+    ],
+    [
+      "Heavy KB Swings",
+      "5 × 8",
+      "Snap the hips"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 10",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 10
+    },
+    "items": [
+      "200m run (treadmill or outside)",
+      "12 KB Swings",
+      "6 Medicine Ball Slams"
+    ],
+    "scaling": "100m run · lighter bell"
+  },
+  "note": "Sprints are longer this week: 30 yd. Full rest, full speed."
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-23",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · 4 Way Deadbug × 8",
+  "jumps": [
+    [
+      "French Contrast · 4 rounds",
+      "Goblet Squat 3 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Goblet @ RPE 8 · light DBs on the jump · max intent · rest 3:00"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 25",
+      "Quick and springy"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "4 × 8/side @ RPE 8",
+      "DBs in hand · Rest 1:30"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 10/side",
+      "Pause at the hip"
+    ],
+    [
+      "Single-Arm Farmer Walk",
+      "3 × 40 yd/side",
+      "Don't lean"
+    ],
+    [
+      "TK Palof",
+      "3 × 10/side",
+      "Cable or band, don't let it rotate you"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 10",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 10
+    },
+    "items": [
+      "10 KB Swings",
+      "20 yd Sled Push",
+      "8 DB Push Press"
+    ],
+    "scaling": "Sled taken? 40 yd Farmer's Carry · lighter DBs"
+  },
+  "note": "4 contrast rounds now. Heavy first, then fast. Full 3:00 between rounds."
+}

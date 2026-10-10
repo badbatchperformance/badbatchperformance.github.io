@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-21",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Lower: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Hamstring Walkout × 6 · Bird Dog × 8/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "2 × 25",
+      "Stiff ankles"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Hold each landing 1 sec"
+    ],
+    [
+      "Broad Jump",
+      "4 × 5",
+      "Max distance, stick it"
+    ],
+    [
+      "Box Drop to Stick",
+      "2 × 5",
+      "Step off a 12\" box, land silent"
+    ]
+  ],
+  "strength": [
+    [
+      "Romanian Deadlift",
+      "4 × 6 @ RPE 7",
+      "Tempo 3-0-1 · Rest 2:30 · from the floor, no rack needed"
+    ],
+    [
+      "Nordic Hamstring Curl",
+      "3 × 4",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Hip Thrust",
+      "4 × 10",
+      "Pause 1 sec at the top"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
+      "Full stretch at the bottom"
+    ]
+  ],
+  "cond": {
+    "format": "3 rounds for time",
+    "subtitle": "Time cap 15:00",
+    "timer": {
+      "type": "fortime",
+      "cap": 15
+    },
+    "items": [
+      "400m run (treadmill or outside)",
+      "20 KB Swings",
+      "20 Walking Lunge steps",
+      "40 yd Farmer's Carry"
+    ],
+    "scaling": "200m run · lighter bell"
+  },
+  "note": "One more set than last week. Hinge, don't squat it. Bar stays on your legs."
+}

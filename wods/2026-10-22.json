@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-22",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Upper: Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Inchworm Shoulder Tap × 6 · Bird Dog × 8/side",
+  "jumps": [
+    [
+      "Lateral Pogo Hops",
+      "3 × 25",
+      "Side to side over a line"
+    ],
+    [
+      "Jump Squats",
+      "3 × 6",
+      "Land soft, reset each rep"
+    ]
+  ],
+  "strength": [
+    [
+      "Pull-Up",
+      "5 × (2 short of failure)",
+      "Scale: Banded Lat Pulldown"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "4 × 10 @ RPE 8",
+      "Ribs down · Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "3 × 10/side",
+      "Leg high, pause at the top"
+    ],
+    [
+      "Zottman Curl + Barbell Skull Crushers",
+      "3 × 12 each",
+      "Superset · Rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "21-15-9 for time",
+    "subtitle": "Time cap 12:00",
+    "timer": {
+      "type": "fortime",
+      "cap": 12
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams",
+      "Dumbbell Rows (each arm)"
+    ],
+    "scaling": "15-12-9 · lighter bell, ball and DB"
+  },
+  "note": "Strict pull-ups, full hang at the bottom. Added a set this week."
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-20",
+  "block": "Power · Week 3 of 3",
+  "title": "Upper Power: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Push-Up to T × 8 · Wall Shoulder CAR × 5/side · 4 Way Deadbug × 8",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "DB bench @ RPE 8 · no rack needed · rest 3:00 · max intent"
+    ],
+    [
+      "Pogo Hops",
+      "3 × 25",
+      "Stiff ankles"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "2 × 25",
+      "Quick feet"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 12",
+      "Quick, springy contacts"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "5 × 3 @ RPE 8.5",
+      "Scale: bodyweight or banded"
+    ],
+    [
+      "MB Pitcher Throw",
+      "4 × 5/side",
+      "Ball ~10% of bodyweight"
+    ],
+    [
+      "Face Pull",
+      "3 × 15",
+      "Cable or band · cable taken? band"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "6 DB Push Press",
+      "8 Medicine Ball Slams",
+      "10 KB Swings"
+    ],
+    "scaling": "Lighter DBs, ball and bell"
+  },
+  "note": "Pull-ups: fewer reps, more weight this week. Throws at full speed."
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-19",
+  "block": "Power · Week 3 of 3",
+  "title": "Lower Power: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 → Hurdle Hops 5 → Trap Bar Jump 5 → Pogo Hops 10",
+      "Deadlift @ RPE 8 · jump 20–30% · rest 3:00 · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Single-Leg Hop",
+      "3 × 6/side",
+      "Small hops, stable knee"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic Hamstring Curl",
+      "3 × 6",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "3 × 5/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 30 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 10",
+    "subtitle": "5 rounds · max intent",
+    "timer": {
+      "type": "emom",
+      "minutes": 10
+    },
+    "items": [
+      "Min 1: 20 yd Sled Push, heavy",
+      "Min 2: 6 Medicine Ball Slams"
+    ],
+    "scaling": "Sled taken? 20-yd shuttle sprint"
+  },
+  "note": "Last week of the power block. Trap bar jump goes up to 20–30%. Every rep fast."
+}

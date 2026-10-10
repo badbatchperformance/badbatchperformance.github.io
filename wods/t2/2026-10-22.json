@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-22",
+  "block": "Power · Week 3 of 3",
+  "title": "Upper Speed + Rotation",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 6 · Bird Dog × 8/side",
+  "jumps": [
+    [
+      "Windmill MB Throw",
+      "4 × 5/side",
+      "Full hip turn, throw hard"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 20",
+      "Quick feet"
+    ],
+    [
+      "Jump Squats",
+      "4 × 5",
+      "Reset each rep"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 5",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "Push Press",
+      "4 × 2 @ RPE 8.5",
+      "Fast dip, faster drive · Rest 3:00"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 10/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Palof Rotation",
+      "3 × 10/side",
+      "Band or cable, slow return"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 9",
+    "subtitle": "3 rounds · new station every minute",
+    "timer": {
+      "type": "emom",
+      "minutes": 9
+    },
+    "items": [
+      "Min 1: 8 Medicine Ball Slams",
+      "Min 2: 10 KB Swings",
+      "Min 3: 6 Inchworm Push-Ups"
+    ],
+    "scaling": "Lighter ball and bell"
+  },
+  "note": "Lighter jump day. Push press doubles: heavier than last week, still fast."
+}

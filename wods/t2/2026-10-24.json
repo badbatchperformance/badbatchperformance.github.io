@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-24",
+  "block": "Power · Week 3 of 3",
+  "title": "Saturday Sprint Day",
+  "warmup": "3 rounds: A-skip · B-skip · Walking Lunge, 20 yd each",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Partners alternate"
+    ],
+    [
+      "Broad Jump",
+      "4 × 5",
+      "Stick it"
+    ],
+    [
+      "Accel Sprint + Repeated Broad Jump",
+      "6 × (1 + 3)",
+      "10 yd sprint straight into 3 broad jumps"
+    ]
+  ],
+  "strength": [
+    [
+      "Sprint",
+      "8 × 40 yd",
+      "Walk back · race your partner"
+    ],
+    [
+      "Sled Push",
+      "5 × 25 yd",
+      "Heavy · sled taken? 40 yd Farmer's Carry"
+    ]
+  ],
+  "cond": {
+    "format": "Partner EMOM 16",
+    "subtitle": "Alternate minutes · 8 rounds each",
+    "timer": {
+      "type": "emom",
+      "minutes": 16
+    },
+    "items": [
+      "One partner works each minute:",
+      "8 KB Swings",
+      "4 Medicine Ball Slams",
+      "20 yd Sled Push"
+    ],
+    "scaling": "Sled taken? 20-yd shuttle sprint · solo: EMOM 10"
+  },
+  "note": "Race someone faster than you."
+}

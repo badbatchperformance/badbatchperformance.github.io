@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-20",
+  "block": "Hypertrophy · Week 3 of 6",
+  "title": "Upper: Push",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 8 · 4 Way Deadbug × 8",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 30",
+      "Stiff ankles"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Quick, springy contacts"
+    ],
+    [
+      "Plyometric Push-Up",
+      "4 × 5",
+      "Hands leave the floor · box to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "4 × 6 @ RPE 7",
+      "Tempo 3-0-1 · Rest 2:30 · spotter or safeties"
+    ],
+    [
+      "HK LM Press to Decel",
+      "3 × 10/side",
+      "Control the bar on the way down"
+    ],
+    [
+      "Face Pull",
+      "3 × 15",
+      "Cable or band · cable taken? band"
+    ],
+    [
+      "DB Tricep Extension + Prone YTW",
+      "3 × 12 + 6 each",
+      "Superset · Rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 12",
+    "subtitle": "As many rounds as possible",
+    "timer": {
+      "type": "amrap",
+      "minutes": 12
+    },
+    "items": [
+      "10 DB Push Press",
+      "12 KB Swings",
+      "8 Inchworm Push-Ups",
+      "100m run (outside or treadmill)"
+    ],
+    "scaling": "Lighter DBs and bell · push-ups from a box"
+  },
+  "note": "4 sets of 6 now. Shoulder blades pinned, feet planted, same bar path every rep."
+}

@@ -27,14 +27,24 @@ Wes is not a CrossFit coach. Build every session from his movement library, usin
 Audience: **The Bad Batch 30** (cap 30, changed from 50 on 2026-10-03 for floor capacity): adult open-gym members, mixed levels, **no coach on the floor**. So heavy work is prescribed by **RPE first** (same safety rule as remote clients).
 Order (bad-batch-coach skill): Hypertrophy (6 wk) → Strength / conjugate + triphasic 2/2/2 (6 wk) → Power / French contrast (3 wk) → repeat.
 
+Build (TV 1):
 | Block | Weeks | Dates |
 |---|---|---|
 | Hypertrophy | 1–6 | Oct 5 – Nov 15, 2026 |
-| Strength (conjugate, triphasic 2/2/2) | 7–12 | Nov 16 – Dec 27 |
-| Power (French contrast) | 13–15 | Dec 28 – Jan 17, 2027 |
+| Strength (conjugate, triphasic 2/2/2) | 7–12 | Eccentric Nov 16 – Nov 29 · Isometric Nov 30 – Dec 13 · Concentric Dec 14 – Dec 27 |
+| Power (French contrast) | 13–15 | Dec 28, 2026 – Jan 17, 2027 |
+| Hypertrophy (cycle 2) | 16–21 | Jan 18 – Feb 28, 2027, then repeat |
+
+Athlete (TV 2):
+| Block | Dates |
+|---|---|
+| Power | Oct 5 – Oct 25, 2026 |
+| Strength (conjugate, FC in the DE slot) | Eccentric Oct 26 – Nov 8 · Isometric Nov 9 – Nov 22 · Concentric Nov 23 – Dec 6 |
+| Power | Dec 7 – Dec 27 |
+| Strength (cycle 2) | Dec 28, 2026 – Feb 7, 2027, then Power 3 wk, repeat |
 
 Weekly template: Mon lower squat · Tue upper push · Wed lower hinge · Thu upper pull · Fri full body + French contrast · Sat partner WOD · Sun recovery.
-Equipment: barbells/rack, trap bar, DBs, KBs, boxes, wall balls, med balls, jump ropes, pull-up bar, bands, **1 Assault bike, 1 sprint treadmill (non-motorized), no rower** (Wes, 2026-10-02). Sleds and hurdles: yes (Wes, 2026-10-02). With up to 50 members sharing 1 bike and 1 treadmill, every machine piece needs a no-machine option (run, burpees, jump rope, shuttle sprints).
+Equipment (updated 2026-10-09 to the current list): 4 squat racks with benches, 1 cable machine, 1 GHD, 1 reverse hyper, 2 sleds, hurdles, 1 Assault bike, 1 non-motorized sprint treadmill, trap bar, barbells, DBs, KBs, plyo boxes, med balls, pull-up bar, bands. No rower, no ski erg. Up to 30 members share the single-unit pieces and sleds, so every one of them needs a no-equipment option (run outside, shuttle sprints, Farmer's Carry, KB swings).
 
 ## Week 1 math (Oct 5–11)
 RPE → % from the skill's RTS chart.
@@ -88,6 +98,34 @@ Foot contacts (target 120–200, floor 80–120):
 
 Up ~10% from week 1 (543). Thu is the lighter day. Still near the floor; keep adding ~10%/week toward 120+ per day by week 4.
 
+## Week 3 math (Oct 19–25), Hypertrophy wk 3 of 6
+Progression: main barbell lifts go from 3 sets to 4 and from 8–10 reps to 6, so the bar gets heavier (~72% / ~67% → ~76%) while total reps stay in Prilepin range. Week 4 holds 4 × 6 and moves RPE 7 → 7.5. Accessories rotated this week (DB Reverse Lunge, Loaded Hip Airplane, Nordic, Face Pull, DB Tricep Ext + Prone YTW, Single-Arm Farmer Walk, TK Palof, Kettlebell Teapot). Fri French contrast 3 → 4 rounds; RFESS, DB shoulder press and pull-ups each +1 set.
+
+| Day | Lift | Prescription | Est. % | Prilepin | INOL |
+|---|---|---|---|---|---|
+| Mon | Back squat | 4×6 @ RPE 7 | ~76% | 24 reps, 70–80% zone (opt 18, 12–24) ✅ | 1.01 |
+| Tue | Bench press | 4×6 @ RPE 7 | ~76% | 24 reps, 70–80% zone ✅ | 1.01 |
+| Wed | Romanian deadlift | 4×6 @ RPE 7 | ~76% | 24 reps, 70–80% zone ✅ | 1.01 |
+| Thu | Seated DB shoulder press | 4×10 @ RPE 8 | DB | no Prilepin check | – |
+| Fri | RFESS + goblet squat (FC) | 4×8/side @ RPE 8; goblet ×3 @ RPE 8 ×4 rounds | DB | no Prilepin check | – |
+
+INOL ~1.0 per lift sits at the top of a normal single-session range; acceptable for one lift a day at RPE 7.
+
+Foot contacts (target 120–200, floor 80–120):
+| Day | Drills | Contacts |
+|---|---|---|
+| Mon | Pogo 3×25 (low), box jump 5×5 (mod), vertical jump 3×4 (mod) | 112 |
+| Tue | Pogo 3×30 (low), Ankle Spring 2×10 (low). Plyo push-up not counted | 110 |
+| Wed | Pogo 2×25 (low), lateral bounds 3×6/side (mod), broad jump 4×5 (mod), box drop to stick 2×5 (high) | 116 |
+| Thu | Lateral pogo 3×25 (low), jump squat 3×6 (mod) | 93 |
+| Fri | French contrast ×4: box jump 20 (mod), DB jump squat 20 (high), pogo 40 (low); Ankle Spring 2×25 (low) | 130 |
+| Sat | Pogo 4×20 (low), broad jump 5×5 (mod) | 105 |
+| Week | | **666** |
+
+Up 11% from week 2 (600). Thu is the lighter day. Fri is the first day at 120+.
+
+Rack check (Oct 19–25): Mon Build back squat (racks) / Athlete trap bar FC (no rack) · Tue Build bench (racks) / Athlete DB bench FC · Wed both rack-free · Thu Athlete push press (racks) / Build pull-ups + DB press · Fri Athlete back squat FC (racks) / Build goblet FC + RFESS · Sat–Sun no racks ✅
+
 # Track 2: Athlete (TV 2)
 Picked by Wes 2026-10-02. Power-biased: 3-wk power block (French contrast) → 6-wk strength block (conjugate, French contrast in the DE slot) → repeat. Hypertrophy is left out because Build covers it, so the two TVs are always in different phases. Heavy work: 4 × 3 @ RPE 8 (~86%).
 
@@ -130,6 +168,28 @@ Heavy lift held at 4×3 @ RPE 8 inside French contrast; progression comes from t
 | Week | **785** | |
 
 Up ~7% from week 1 (735). Hurdles and sled still unconfirmed; every hurdle/sled item lists an alternative on the TV.
+
+## Week 3 math (Oct 19–25), Power wk 3 of 3
+Last power week. French contrast heavy lifts stay at 4×3 @ RPE 8 (the contrast rule); progression comes from the loaded jump (15–25% → 20–30%), contacts (+6%) and a hurdle hop swap into Mon's contrast. Push press moves to doubles at RPE 8.5 (heavier, fewer reps). Weighted pull-up 5×4 @ 8 → 5×3 @ 8.5. Sprints 20 → 30 yd (Wed) and 30 → 40 yd (Sat). Accessories rotated (Loaded Hip Airplane, Face Pull, Windmill MB Throw, Cable Row with Extension, Palof Rotation).
+
+| Day | Lift | Est. % | Prilepin | INOL |
+|---|---|---|---|---|
+| Mon | Trap bar DL 4×3 @ RPE 8 (in French contrast) | ~86% | 12 reps, 80–90% zone (opt 15, 10–20) ✅ | 0.88 |
+| Tue | DB bench 4×3 @ RPE 8 (in French contrast) | DB | no Prilepin check | – |
+| Thu | Push press 4×2 @ RPE 8.5 | ~91% | 8 reps, 90%+ zone (1–2/set, opt 7, 4–10) ✅ | 0.86 |
+| Fri | Back squat 4×3 @ RPE 8 (in French contrast) | ~86% | 12 ✅ | 0.88 |
+
+| Day | Contacts | Notes |
+|---|---|---|
+| Mon | 152 | FC ×4: hurdle hop 20 high (or tuck jump), trap bar jump 20 high, pogo 40 low; lateral bound 36 mod, SL hop 36 high |
+| Tue | 149 | pogo 75, lateral pogo 50, Ankle Spring 24 (all low; plyo push-up / med ball not counted) |
+| Wed | 177 | pogo 60, broad 18, SL bound 36, lateral bound 36, box drop to stick 15, trap bar jump 12 (sprints not counted) |
+| Thu | 100 | lighter day: lateral pogo 60, jump squat 20, vertical 20 (windmill throw not counted) |
+| Fri | 141 | FC ×4: box 20, DB jump squat 20, pogo 40; hurdle hop 25 (or tuck jump), SL bound 36 |
+| Sat | 98 | pogo 60, broad 20, sprint + repeated broad 18 (sprints not counted) |
+| Week | **817** | |
+
+Up 6% from week 2 (773). Next week (Oct 26) starts the Strength block, Eccentric phase.
 
 # Floor capacity + rack staggering (added 2026-10-03)
 4 squat racks with benches (~8 people on barbells at once), 1 cable machine, 1 GHD, 1 reverse hyper, 2 sleds, 1 Assault bike, 1 sprint treadmill. Both tracks share the floor at the same time, so on any day only ONE track's main lift uses the racks. The other track goes rack-free (trap bar, sleds, DB/KB, landmine, floor). The weekly routine enforces this from the week of Oct 19 on. Weeks 1–2 (Oct 5–18) were written before this rule and overlap on rack days.
