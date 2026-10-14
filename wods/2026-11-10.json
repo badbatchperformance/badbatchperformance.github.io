@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-10",
+  "block": "Hypertrophy · Week 6 of 6",
+  "title": "Upper: Push",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 35",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 10",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "5 × 5",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "3 × 5 @ RPE 8",
+      "Rest 3:00 · heaviest week of the block"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "4 × 10 @ RPE 8.5",
+      "Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "4 × 10/side",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "DB Tricep Extension + Face Pull",
+      "4 × 12 + 15",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 15",
+    "subtitle": "Beat your wk 5 rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 15
+    },
+    "items": [
+      "12 DB Push Press",
+      "15 KB Swings",
+      "250m run (treadmill or outside)"
+    ],
+    "scaling": "Lighter bells · run → 18 cal bike"
+  },
+  "note": "Heaviest week of the block. Strength block starts Nov 16."
+}

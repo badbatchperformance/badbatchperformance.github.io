@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "block": "Hypertrophy · Week 4 of 6 (unload)",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Inchworm Shoulder Tap × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 2 rounds",
+      "Goblet Squat 3 (heavy, RPE 8) → Lateral Bounds 3/side → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 20",
+      "Stiff ankles, fast feet"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "3 × 8/side @ RPE 7",
+      "Rest 1:30 · heavier DBs than last time you did 8s"
+    ],
+    [
+      "Dumbbell Rows",
+      "3 × 10/side",
+      "Pause at the hip"
+    ],
+    [
+      "Single-Arm Farmer Walk",
+      "2 × 40 yd/side",
+      "Stand tall, don't lean"
+    ],
+    [
+      "TK Palof",
+      "2 × 10/side",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Unload: steady",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "6 DB Push Press",
+      "8 Medicine Ball Slams",
+      "8 KB Goblet Squats"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "UNLOAD week. Everything is lighter on purpose so you come back stronger. Don't add weight."
+}

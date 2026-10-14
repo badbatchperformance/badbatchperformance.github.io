@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-05",
+  "block": "Hypertrophy · Week 5 of 6",
+  "title": "Lower: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 3 rounds",
+      "Front Squat 2 @ RPE 7.5 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 20",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Front Squat",
+      "4 × 6 @ RPE 8",
+      "Rest 2:30 · heavier than wk 3 · elbows high"
+    ],
+    [
+      "Pull-Up",
+      "5 × (1 short of failure)",
+      "Band or Banded Lat Pulldown to scale"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 12/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "3 × 12, heavier",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "21-15-9 for time",
+    "subtitle": "Beat your wk 3 time",
+    "timer": {
+      "type": "fortime",
+      "cap": 12
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams",
+      "Cal Assault bike (or 2× the reps as walking lunge steps)"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "Back to work: heavier than week 3. Same lifts, more on the bar."
+}

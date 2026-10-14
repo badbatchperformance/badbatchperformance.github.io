@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-09",
+  "block": "Hypertrophy · Week 6 of 6",
+  "title": "Lower: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 3 rounds",
+      "Back Squat 1 @ RPE 7 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Pogo Hops",
+      "3 × 25",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 4",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "Back Squat",
+      "3 × 5 @ RPE 8",
+      "Rest 3:00 · heaviest week of the block"
+    ],
+    [
+      "DB Reverse Lunge",
+      "4 × 10/leg @ RPE 8.5",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "3 × 6/side, heavier",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 35 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 16",
+    "subtitle": "4 rounds · heavier bells than wk 5",
+    "timer": {
+      "type": "emom",
+      "minutes": 16
+    },
+    "items": [
+      "Min 1: 15 KB Goblet Squats",
+      "Min 2: 12/9 cal Assault bike",
+      "Min 3: 24 Walking Lunge steps",
+      "Min 4: 50 yd Farmer's Carry"
+    ],
+    "scaling": "Bike taken? 150m run · lighter bells"
+  },
+  "note": "Heaviest week of the block. Strength block starts Nov 16."
+}

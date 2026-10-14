@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-04",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Lower ME: Front Squat + Speed",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd · B-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Front Squat 3 · 5-sec lower @ RPE 8 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 2: heavier, 5 sec down · 10–20 sec between steps, 3:00 between rounds · elbows high"
+    ],
+    [
+      "Single-Leg Bound",
+      "3 × 5/side",
+      "Big and controlled"
+    ],
+    [
+      "Broad Jump",
+      "3 × 4",
+      "Stick every landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Acceleration Sprint",
+      "8 × 20 yd",
+      "Walk back · every rep 100%"
+    ],
+    [
+      "Rear Foot Elevated Split Squat",
+      "3 × 6/side @ RPE 7.5",
+      "Rest 1:30"
+    ],
+    [
+      "KB Side Plank Corkscrew",
+      "3 × 6/side",
+      "Slow"
+    ]
+  ],
+  "cond": {
+    "format": "8 × :15 / :45",
+    "subtitle": "Max effort",
+    "timer": {
+      "type": "interval",
+      "work": 15,
+      "rest": 45,
+      "rounds": 8
+    },
+    "items": [
+      "Treadmill Sprint or 20-yd shuttle"
+    ],
+    "scaling": "Treadmill taken? Shuttle sprint"
+  },
+  "note": "Eccentric wk 2: heavier than last week, 5-second lowering."
+}

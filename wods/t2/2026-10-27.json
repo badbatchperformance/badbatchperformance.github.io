@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-27",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Upper ME: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 · 6-sec lower @ RPE 7 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Eccentric wk 1: 6 sec down, then drive up hard · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "3 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "4 × 4 · 5-sec lower @ RPE 7",
+      "Rest 2:30"
+    ],
+    [
+      "Face Pull",
+      "2 × 15",
+      "Pull to the eyes"
+    ],
+    [
+      "DB Tricep Extension",
+      "2 × 12",
+      "Slow down, fast up"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 6",
+    "subtitle": "Short and fast",
+    "timer": {
+      "type": "amrap",
+      "minutes": 6
+    },
+    "items": [
+      "6 DB Push Press",
+      "8 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Strength block starts. Slow 6-second lowering on the main lift, then explode. Expect soreness: accessories are cut back."
+}

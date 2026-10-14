@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-10",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Upper ME: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 · 3-sec pause @ RPE 8 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "4 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 10",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "4 × 3 · 3-sec hold chin over bar @ RPE 8",
+      "Rest 2:30"
+    ],
+    [
+      "Face Pull",
+      "3 × 12, heavier",
+      "Pull to the eyes"
+    ],
+    [
+      "DB Tricep Extension",
+      "3 × 10, heavier",
+      "Slow down, fast up"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Heavier DBs than last week",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "8 DB Push Press",
+      "8 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier again."
+}

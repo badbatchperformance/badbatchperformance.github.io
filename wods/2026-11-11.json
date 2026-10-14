@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-11",
+  "block": "Hypertrophy · Week 6 of 6",
+  "title": "Lower: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
+  "jumps": [
+    [
+      "French Contrast × 3 rounds",
+      "Trap Bar Deadlift 1 @ RPE 7 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Box Drop to Stick",
+      "2 × 5",
+      "Drop, stick, freeze 2 sec"
+    ]
+  ],
+  "strength": [
+    [
+      "Trap Bar Deadlift",
+      "3 × 5 @ RPE 8",
+      "Rest 3:00 · heaviest week of the block · trap bar keeps load off the spine"
+    ],
+    [
+      "Single-Leg RDL",
+      "4 × 10/side @ RPE 8.5",
+      "Hold a rack if you need balance"
+    ],
+    [
+      "Nordic Hamstring Curl",
+      "3 × 6",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 20",
+      "Pause at the top"
+    ]
+  ],
+  "cond": {
+    "format": "8 × 1:00 / 1:00",
+    "subtitle": "Hard 1:00, easy 1:00 · less rest than wk 5",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 60,
+      "rounds": 8
+    },
+    "items": [
+      "Treadmill Sprint or Assault bike",
+      "Sled Push, alternate partners"
+    ],
+    "scaling": "Machines taken? Run outside, same times"
+  },
+  "note": "Heaviest week of the block. Strength block starts Nov 16."
+}

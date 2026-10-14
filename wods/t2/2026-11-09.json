@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-09",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Lower ME: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd · B-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 · 3-sec pause @ RPE 8 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Single-Leg Hop",
+      "3 × 5/side",
+      "Small hops, stable knee"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic Hamstring Curl",
+      "3 × 5",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Single-Leg RDL",
+      "3 × 10/side",
+      "RPE 7–8"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 30 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "6 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 25 yd Sled Push, heavy",
+      "Min 2: 6 Medicine Ball Slams"
+    ],
+    "scaling": "Sled taken? 25-yd shuttle sprint"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier again."
+}

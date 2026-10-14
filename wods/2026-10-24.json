@@ -2,45 +2,45 @@
   "date": "2026-10-24",
   "block": "Hypertrophy · Week 3 of 6",
   "title": "Saturday Partner WOD",
-  "warmup": "With your partner, 2 rounds: Lateral Lunge × 6/side · Inchworm Walk × 4 · CL Dead Bug × 6/side",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side",
   "jumps": [
     [
       "Pogo Hops",
       "4 × 20",
-      "Partners alternate sets"
+      "Partner counts"
     ],
     [
       "Broad Jump",
       "5 × 5",
-      "Stick it"
+      "Stick every landing"
     ]
   ],
   "strength": [
     [
       "Farmer's Carry",
       "4 × 60 yd",
-      "Heavy · partners alternate"
+      "One partner carries, one rests"
     ],
     [
       "Kettlebell Teapot",
       "3 × 8/side",
-      "Slow, control the tilt"
+      "Slow and controlled"
     ]
   ],
   "cond": {
-    "format": "Partner AMRAP 20",
-    "subtitle": "Split reps any way · one works, one rests",
+    "format": "AMRAP 20",
+    "subtitle": "Partners split reps any way",
     "timer": {
       "type": "amrap",
       "minutes": 20
     },
     "items": [
-      "30 KB Swings",
-      "20 Medicine Ball Slams",
-      "20 Walking Lunge steps each",
-      "200m run (together)"
+      "20 KB Swings",
+      "200m run together",
+      "20 Walking Lunge steps",
+      "10 Pull-Ups"
     ],
-    "scaling": "Solo? Halve the reps · 100m run"
+    "scaling": "Band pull-ups"
   },
-  "note": "Short sets, fast switches. Score is total rounds."
+  "note": "New this week: trap bar is the Wednesday hinge, front squat is Thursday, and French contrast opens every lower day."
 }

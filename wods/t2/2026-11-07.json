@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-07",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Saturday Sprint Day",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd · B-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Quick off the floor"
+    ],
+    [
+      "Broad Jump",
+      "4 × 4",
+      "Stick every landing"
+    ],
+    [
+      "Accel Sprint + Repeated Broad Jump",
+      "6 × (1 + 3)",
+      "Sprint 10 yd into 3 broad jumps"
+    ]
+  ],
+  "strength": [
+    [
+      "Sprint",
+      "10 × 30 yd",
+      "Full recovery · every rep 100%"
+    ],
+    [
+      "Sled Push",
+      "6 × 25 yd",
+      "Heavy, low hips"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 14",
+    "subtitle": "Partners alternate minutes",
+    "timer": {
+      "type": "emom",
+      "minutes": 14
+    },
+    "items": [
+      "10 KB Swings",
+      "6 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter bell"
+  },
+  "note": "Eccentric wk 2: heavier than last week, 5-second lowering."
+}

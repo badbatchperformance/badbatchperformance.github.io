@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-28",
+  "block": "Hypertrophy · Week 4 of 6 (unload)",
+  "title": "Lower: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
+  "jumps": [
+    [
+      "French Contrast × 2 rounds",
+      "Trap Bar Deadlift 2 @ RPE 6 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Lateral Bounds",
+      "2 × 5/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 15",
+      "Quick off the floor"
+    ]
+  ],
+  "strength": [
+    [
+      "Trap Bar Deadlift",
+      "3 × 8 @ RPE 6",
+      "Rest 2:00 · UNLOAD week: lighter on purpose, crisp reps · trap bar keeps load off the spine"
+    ],
+    [
+      "Single-Leg RDL",
+      "2 × 10/side @ RPE 7",
+      "Hold a rack if you need balance"
+    ],
+    [
+      "Nordic Hamstring Curl",
+      "2 × 4",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "2 × 15",
+      "Pause at the top"
+    ]
+  ],
+  "cond": {
+    "format": "4 × 1:00 / 2:00",
+    "subtitle": "Unload: moderate effort",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 120,
+      "rounds": 4
+    },
+    "items": [
+      "Assault bike or run",
+      "Steady, not all-out"
+    ],
+    "scaling": "Machines taken? Run outside"
+  },
+  "note": "UNLOAD week. Everything is lighter on purpose so you come back stronger. Don't add weight."
+}

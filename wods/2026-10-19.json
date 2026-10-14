@@ -5,14 +5,14 @@
   "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
   "jumps": [
     [
-      "Pogo Hops",
-      "3 × 25",
-      "Quick off the floor, stiff ankles"
+      "French Contrast × 2 rounds",
+      "Back Squat 2 @ RPE 7 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
     ],
     [
-      "Box Jump",
-      "5 × 5",
-      "Step down, don't jump down"
+      "Pogo Hops",
+      "3 × 20",
+      "Quick off the floor, stiff ankles"
     ],
     [
       "Vertical Jump",
@@ -24,7 +24,7 @@
     [
       "Back Squat",
       "4 × 6 @ RPE 7",
-      "Tempo 3-1-1 · Rest 2:30 · heavier than last week"
+      "Rest 2:30 · new scheme: heavier, 6s"
     ],
     [
       "DB Reverse Lunge",
@@ -43,11 +43,11 @@
     ]
   ],
   "cond": {
-    "format": "EMOM 16",
-    "subtitle": "4 rounds · new station every minute",
+    "format": "EMOM 12",
+    "subtitle": "3 rounds · new station every minute",
     "timer": {
       "type": "emom",
-      "minutes": 16
+      "minutes": 12
     },
     "items": [
       "Min 1: 12 KB Goblet Squats",
@@ -57,5 +57,5 @@
     ],
     "scaling": "Bike taken? 100m run · lighter bells"
   },
-  "note": "New scheme: 4 sets of 6. Fewer reps, more weight on the bar. Same depth."
+  "note": "New this week: trap bar is the Wednesday hinge, front squat is Thursday, and French contrast opens every lower day."
 }

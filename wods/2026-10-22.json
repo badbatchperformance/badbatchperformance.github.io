@@ -1,45 +1,45 @@
 {
   "date": "2026-10-22",
   "block": "Hypertrophy · Week 3 of 6",
-  "title": "Upper: Pull",
-  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Inchworm Shoulder Tap × 6 · Bird Dog × 8/side",
+  "title": "Lower: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
   "jumps": [
     [
-      "Lateral Pogo Hops",
-      "3 × 25",
-      "Side to side over a line"
+      "French Contrast × 2 rounds",
+      "Front Squat 2 @ RPE 7 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
     ],
     [
-      "Jump Squats",
-      "3 × 6",
-      "Land soft, reset each rep"
+      "Lateral Pogo Hops",
+      "3 × 20",
+      "Side to side over a line"
     ]
   ],
   "strength": [
     [
+      "Front Squat",
+      "4 × 6 @ RPE 7",
+      "Rest 2:30 · new scheme: heavier, 6s · elbows high"
+    ],
+    [
       "Pull-Up",
       "5 × (2 short of failure)",
-      "Scale: Banded Lat Pulldown"
+      "Band or Banded Lat Pulldown to scale"
     ],
     [
-      "Seated DB Shoulder Press",
-      "4 × 10 @ RPE 8",
-      "Ribs down · Rest 1:30"
-    ],
-    [
-      "Elevated Bird Dog Row",
+      "Cable Row with Extension",
       "3 × 10/side",
-      "Leg high, pause at the top"
+      "Cable taken? Dumbbell Rows"
     ],
     [
-      "Zottman Curl + Barbell Skull Crushers",
-      "3 × 12 each",
-      "Superset · Rest 1:00"
+      "Zottman Curl",
+      "3 × 12",
+      "Slow on the way down"
     ]
   ],
   "cond": {
     "format": "21-15-9 for time",
-    "subtitle": "Time cap 12:00",
+    "subtitle": "Cap 12 min",
     "timer": {
       "type": "fortime",
       "cap": 12
@@ -47,9 +47,9 @@
     "items": [
       "KB Swings",
       "Medicine Ball Slams",
-      "Dumbbell Rows (each arm)"
+      "Cal Assault bike (or 2× the reps as walking lunge steps)"
     ],
-    "scaling": "15-12-9 · lighter bell, ball and DB"
+    "scaling": "Lighter bell · ball"
   },
-  "note": "Strict pull-ups, full hang at the bottom. Added a set this week."
+  "note": "New this week: trap bar is the Wednesday hinge, front squat is Thursday, and French contrast opens every lower day."
 }

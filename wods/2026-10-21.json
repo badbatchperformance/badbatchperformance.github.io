@@ -2,34 +2,34 @@
   "date": "2026-10-21",
   "block": "Hypertrophy · Week 3 of 6",
   "title": "Lower: Hinge",
-  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Hamstring Walkout × 6 · Bird Dog × 8/side",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
   "jumps": [
     [
-      "Pogo Hops",
-      "2 × 25",
-      "Stiff ankles"
+      "French Contrast × 2 rounds",
+      "Trap Bar Deadlift 2 @ RPE 7 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
     ],
     [
       "Lateral Bounds",
       "3 × 6/side",
-      "Hold each landing 1 sec"
+      "Stick each landing 1 sec"
     ],
     [
-      "Broad Jump",
-      "4 × 5",
-      "Max distance, stick it"
-    ],
-    [
-      "Box Drop to Stick",
-      "2 × 5",
-      "Step off a 12\" box, land silent"
+      "Pogo Hops",
+      "2 × 20",
+      "Quick off the floor"
     ]
   ],
   "strength": [
     [
-      "Romanian Deadlift",
+      "Trap Bar Deadlift",
       "4 × 6 @ RPE 7",
-      "Tempo 3-0-1 · Rest 2:30 · from the floor, no rack needed"
+      "Rest 2:30 · new scheme: heavier, 6s · trap bar keeps load off the spine"
+    ],
+    [
+      "Single-Leg RDL",
+      "3 × 10/side @ RPE 8",
+      "Hold a rack if you need balance"
     ],
     [
       "Nordic Hamstring Curl",
@@ -37,30 +37,25 @@
       "Slow lowering · band assist OK"
     ],
     [
-      "Hip Thrust",
-      "4 × 10",
-      "Pause 1 sec at the top"
-    ],
-    [
       "Calf Raises / Cool Guy Leans",
       "3 × 15",
-      "Full stretch at the bottom"
+      "Pause at the top"
     ]
   ],
   "cond": {
-    "format": "3 rounds for time",
-    "subtitle": "Time cap 15:00",
+    "format": "6 × 1:00 / 1:30",
+    "subtitle": "Hard 1:00, easy 1:30",
     "timer": {
-      "type": "fortime",
-      "cap": 15
+      "type": "interval",
+      "work": 60,
+      "rest": 90,
+      "rounds": 6
     },
     "items": [
-      "400m run (treadmill or outside)",
-      "20 KB Swings",
-      "20 Walking Lunge steps",
-      "40 yd Farmer's Carry"
+      "Treadmill Sprint or Assault bike",
+      "Sled Push, alternate partners"
     ],
-    "scaling": "200m run · lighter bell"
+    "scaling": "Machines taken? Run outside, same times"
   },
-  "note": "One more set than last week. Hinge, don't squat it. Bar stays on your legs."
+  "note": "New this week: trap bar is the Wednesday hinge, front squat is Thursday, and French contrast opens every lower day."
 }

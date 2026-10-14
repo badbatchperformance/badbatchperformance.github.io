@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-12",
+  "block": "Hypertrophy · Week 6 of 6",
+  "title": "Lower: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 3 rounds",
+      "Front Squat 1 @ RPE 7 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 25",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Front Squat",
+      "3 × 5 @ RPE 8",
+      "Rest 3:00 · heaviest week of the block · elbows high"
+    ],
+    [
+      "Pull-Up",
+      "6 × (1 short of failure)",
+      "Band or Banded Lat Pulldown to scale"
+    ],
+    [
+      "Cable Row with Extension",
+      "4 × 10/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "4 × 10, heavier",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "27-21-15 for time",
+    "subtitle": "Cap 15 min",
+    "timer": {
+      "type": "fortime",
+      "cap": 15
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams",
+      "Cal Assault bike (or 2× the reps as walking lunge steps)"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "Heaviest week of the block. Strength block starts Nov 16."
+}

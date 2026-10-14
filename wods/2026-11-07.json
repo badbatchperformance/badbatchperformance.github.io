@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-07",
+  "block": "Hypertrophy · Week 5 of 6",
+  "title": "Saturday Partner WOD",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "4 × 20",
+      "Partner counts"
+    ],
+    [
+      "Broad Jump",
+      "5 × 5",
+      "Stick every landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Farmer's Carry",
+      "4 × 60 yd, heavier",
+      "One partner carries, one rests"
+    ],
+    [
+      "Kettlebell Teapot",
+      "3 × 10/side",
+      "Slow and controlled"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 22",
+    "subtitle": "Partners split reps any way",
+    "timer": {
+      "type": "amrap",
+      "minutes": 22
+    },
+    "items": [
+      "20 KB Swings",
+      "40 yd Sled Push each",
+      "20 Walking Lunge steps",
+      "10 Pull-Ups"
+    ],
+    "scaling": "Sled taken? 200m run"
+  },
+  "note": "Back to work: heavier than week 3. Same lifts, more on the bar."
+}

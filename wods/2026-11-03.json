@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-03",
+  "block": "Hypertrophy · Week 5 of 6",
+  "title": "Upper: Push",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 30",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 10",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "4 × 5",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "4 × 6 @ RPE 8",
+      "Rest 2:30 · heavier than wk 3"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "3 × 12 @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "3 × 12/side",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "DB Tricep Extension + Face Pull",
+      "3 × 12 + 15",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 14",
+    "subtitle": "Steady pace, good reps",
+    "timer": {
+      "type": "amrap",
+      "minutes": 14
+    },
+    "items": [
+      "10 DB Push Press",
+      "15 KB Swings",
+      "200m run (treadmill or outside)"
+    ],
+    "scaling": "Lighter bells · run → 15 cal bike"
+  },
+  "note": "Back to work: heavier than week 3. Same lifts, more on the bar."
+}

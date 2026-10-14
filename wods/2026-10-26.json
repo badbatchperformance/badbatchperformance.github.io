@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-26",
+  "block": "Hypertrophy · Week 4 of 6 (unload)",
+  "title": "Lower: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 2 rounds",
+      "Back Squat 2 @ RPE 6 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 20",
+      "Quick off the floor, stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Back Squat",
+      "3 × 8 @ RPE 6",
+      "Rest 2:00 · UNLOAD week: lighter on purpose, crisp reps"
+    ],
+    [
+      "DB Reverse Lunge",
+      "2 × 10/leg @ RPE 7",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "2 × 5/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "2 × 20 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 8",
+    "subtitle": "2 rounds · easy pace, unload week",
+    "timer": {
+      "type": "emom",
+      "minutes": 8
+    },
+    "items": [
+      "Min 1: 10 KB Goblet Squats",
+      "Min 2: 8/6 cal Assault bike",
+      "Min 3: 16 Walking Lunge steps",
+      "Min 4: 40 yd Farmer's Carry"
+    ],
+    "scaling": "Bike taken? 100m run"
+  },
+  "note": "UNLOAD week. Everything is lighter on purpose so you come back stronger. Don't add weight."
+}

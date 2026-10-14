@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-05",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Upper DE + Rotation",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Med Ball Rotational Throw",
+      "4 × 6/side",
+      "Max intent, hips first"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 25",
+      "Side to side over a line"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 5",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Push Press",
+      "7 × 3 @ RPE 7",
+      "Dynamic effort: moderate DBs moved as FAST as possible · rest 1:00"
+    ],
+    [
+      "Dumbbell Rows",
+      "3 × 10/side",
+      "Pause at the hip"
+    ],
+    [
+      "Palof Rotation",
+      "3 × 12/side",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 10",
+    "subtitle": "5 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 10
+    },
+    "items": [
+      "Min 1: 8 Medicine Ball Slams",
+      "Min 2: 10 KB Swings"
+    ],
+    "scaling": "Lighter ball"
+  },
+  "note": "Eccentric wk 2: heavier than last week, 5-second lowering."
+}

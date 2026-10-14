@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-29",
+  "block": "Hypertrophy · Week 4 of 6 (unload)",
+  "title": "Lower: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 2 rounds",
+      "Front Squat 2 @ RPE 6 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "2 × 20",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Front Squat",
+      "3 × 8 @ RPE 6",
+      "Rest 2:00 · UNLOAD week: lighter on purpose, crisp reps · elbows high"
+    ],
+    [
+      "Pull-Up",
+      "3 × (3 short of failure)",
+      "Band or Banded Lat Pulldown to scale"
+    ],
+    [
+      "Cable Row with Extension",
+      "2 × 10/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "2 × 12",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "15-12-9 for time",
+    "subtitle": "Unload: smooth, not all-out",
+    "timer": {
+      "type": "fortime",
+      "cap": 8
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "UNLOAD week. Everything is lighter on purpose so you come back stronger. Don't add weight."
+}

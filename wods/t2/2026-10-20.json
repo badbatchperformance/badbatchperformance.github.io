@@ -2,59 +2,53 @@
   "date": "2026-10-20",
   "block": "Power · Week 3 of 3",
   "title": "Upper Power: Press",
-  "warmup": "Foam roll 2 min, then 2 rounds: Push-Up to T × 8 · Wall Shoulder CAR × 5/side · 4 Way Deadbug × 8",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
   "jumps": [
     [
       "French Contrast × 4 rounds",
-      "DB Bench Press 3 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
-      "DB bench @ RPE 8 · no rack needed · rest 3:00 · max intent"
+      "DB Bench Press 2 (heavy, RPE 8) → Plyometric Push-Up 4 → Med Ball Chest Pass 4 → Medicine Ball Slams 4",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
     ],
     [
       "Pogo Hops",
       "3 × 25",
-      "Stiff ankles"
-    ],
-    [
-      "Lateral Pogo Hops",
-      "2 × 25",
-      "Quick feet"
+      "Quick off the floor"
     ],
     [
       "Ankle Spring Series",
-      "2 × 12",
-      "Quick, springy contacts"
+      "1 × 10",
+      "Stiff ankles"
     ]
   ],
   "strength": [
     [
       "Weighted Pull-Up",
-      "5 × 3 @ RPE 8.5",
-      "Scale: bodyweight or banded"
+      "4 × 2 @ RPE 8.5",
+      "Heavier than wk 2 · rest 2:30"
     ],
     [
       "MB Pitcher Throw",
-      "4 × 5/side",
-      "Ball ~10% of bodyweight"
+      "3 × 4/side",
+      "Max intent"
     ],
     [
       "Face Pull",
-      "3 × 15",
-      "Cable or band · cable taken? band"
+      "2 × 15",
+      "Pull to the eyes"
     ]
   ],
   "cond": {
-    "format": "AMRAP 8",
-    "subtitle": "As many rounds as possible",
+    "format": "AMRAP 6",
+    "subtitle": "Short and fast",
     "timer": {
       "type": "amrap",
-      "minutes": 8
+      "minutes": 6
     },
     "items": [
       "6 DB Push Press",
-      "8 Medicine Ball Slams",
-      "10 KB Swings"
+      "8 Medicine Ball Slams"
     ],
-    "scaling": "Lighter DBs, ball and bell"
+    "scaling": "Lighter DBs"
   },
-  "note": "Pull-ups: fewer reps, more weight this week. Throws at full speed."
+  "note": "Last power week: heaviest single of the block, much less volume. Every rep fast."
 }

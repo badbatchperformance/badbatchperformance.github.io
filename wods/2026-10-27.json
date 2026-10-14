@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-27",
+  "block": "Hypertrophy · Week 4 of 6 (unload)",
+  "title": "Upper: Push",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "3 × 4",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "3 × 8 @ RPE 6",
+      "Rest 2:00 · UNLOAD week: lighter on purpose, crisp reps"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "2 × 10 @ RPE 7",
+      "Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "2 × 10/side",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "DB Tricep Extension + Face Pull",
+      "2 × 12 + 15",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Unload: easy pace",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "8 DB Push Press",
+      "10 KB Swings",
+      "200m run (treadmill or outside)"
+    ],
+    "scaling": "Lighter bells"
+  },
+  "note": "UNLOAD week. Everything is lighter on purpose so you come back stronger. Don't add weight."
+}

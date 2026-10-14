@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-03",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Upper ME: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 · 5-sec lower @ RPE 8 → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Eccentric wk 2: heavier, 5 sec down · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "4 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "4 × 4 · 5-sec lower @ RPE 8",
+      "Rest 2:30"
+    ],
+    [
+      "Face Pull",
+      "3 × 15",
+      "Pull to the eyes"
+    ],
+    [
+      "DB Tricep Extension",
+      "3 × 12",
+      "Slow down, fast up"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Short and fast",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "6 DB Push Press",
+      "8 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Eccentric wk 2: heavier than last week, 5-second lowering."
+}

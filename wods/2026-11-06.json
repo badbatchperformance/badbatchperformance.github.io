@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-06",
+  "block": "Hypertrophy · Week 5 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Inchworm Shoulder Tap × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 3 rounds",
+      "Goblet Squat 3 (heavy, RPE 8) → Lateral Bounds 3/side → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 20",
+      "Stiff ankles, fast feet"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "4 × 10/side @ RPE 8",
+      "Rest 1:30 · heavier DBs than last time you did 8s"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 12/side",
+      "Pause at the hip"
+    ],
+    [
+      "Single-Arm Farmer Walk",
+      "3 × 50 yd/side",
+      "Stand tall, don't lean"
+    ],
+    [
+      "TK Palof",
+      "3 × 12/side",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 12",
+    "subtitle": "Max rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 12
+    },
+    "items": [
+      "8 DB Push Press",
+      "10 Medicine Ball Slams",
+      "12 KB Goblet Squats"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Back to work: heavier than week 3. Same lifts, more on the bar."
+}

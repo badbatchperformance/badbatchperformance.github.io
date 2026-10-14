@@ -2,59 +2,58 @@
   "date": "2026-10-22",
   "block": "Power · Week 3 of 3",
   "title": "Upper Speed + Rotation",
-  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 6 · Bird Dog × 8/side",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
   "jumps": [
     [
       "Windmill MB Throw",
-      "4 × 5/side",
-      "Full hip turn, throw hard"
+      "3 × 5/side",
+      "Max intent, full rotation"
     ],
     [
       "Lateral Pogo Hops",
       "3 × 20",
-      "Quick feet"
-    ],
-    [
-      "Jump Squats",
-      "4 × 5",
-      "Reset each rep"
+      "Side to side over a line"
     ],
     [
       "Vertical Jump",
-      "4 × 5",
+      "3 × 4",
       "Max height, land soft"
+    ],
+    [
+      "Jump Squats",
+      "2 × 5",
+      "Bodyweight, max height"
     ]
   ],
   "strength": [
     [
-      "Push Press",
-      "4 × 2 @ RPE 8.5",
-      "Fast dip, faster drive · Rest 3:00"
+      "DB Push Press",
+      "5 × 2 @ RPE 8",
+      "Racks are Build's today · drive the DBs fast"
     ],
     [
       "Cable Row with Extension",
-      "3 × 10/side",
+      "2 × 10/side",
       "Cable taken? Dumbbell Rows"
     ],
     [
       "Palof Rotation",
-      "3 × 10/side",
-      "Band or cable, slow return"
+      "2 × 10/side",
+      "Ribs down"
     ]
   ],
   "cond": {
-    "format": "EMOM 9",
-    "subtitle": "3 rounds · new station every minute",
+    "format": "EMOM 8",
+    "subtitle": "4 rounds",
     "timer": {
       "type": "emom",
-      "minutes": 9
+      "minutes": 8
     },
     "items": [
       "Min 1: 8 Medicine Ball Slams",
-      "Min 2: 10 KB Swings",
-      "Min 3: 6 Inchworm Push-Ups"
+      "Min 2: 10 KB Swings"
     ],
-    "scaling": "Lighter ball and bell"
+    "scaling": "Lighter ball"
   },
-  "note": "Lighter jump day. Push press doubles: heavier than last week, still fast."
+  "note": "Last power week: heaviest single of the block, much less volume. Every rep fast."
 }
