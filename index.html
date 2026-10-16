@@ -208,7 +208,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-16c'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-16d'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -287,7 +287,8 @@
   async function load() {
     try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
     if (demoKey && !demoDb) demoDb = await BBDemos.load(demoKey);
-    if (demoKey && isTV && !coach) coach = await BBDemos.decryptFile(demoKey, 'coach.enc.json');
+    // Refetch client/kids schedule on every load so same-day edits reach the TVs without a reload.
+    if (demoKey && isTV) coach = (await BBDemos.decryptFile(demoKey, 'coach.enc.json')) || coach;
     let data = null, next = null;
     try { data = await getJson(`${dir()}/${viewDate}.json`); } catch (e) {
       try { next = (await getJson(`${dir()}/index.json`)).find(d => d > viewDate) || null; } catch (e2) {}
