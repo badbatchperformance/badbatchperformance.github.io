@@ -274,7 +274,7 @@
     return auto && override ? { ...auto, manual: true } : auto;
   }
   // Special events from config.json take over the listed TVs, e.g.
-  // {"date":"2026-10-06","start":"17:30","end":"19:00","tvs":["1","2"],"image":"assets/events/welcome-padma.png"}
+  // {"date":"2026-10-06","start":"17:30","end":"19:00","tvs":["1","2"],"image":"assets/events/your-event.png"}
   function eventNow() {
     if (!isTV) return null;
     const t = now(), m = t.getHours() * 60 + t.getMinutes(), d = ymd(t);
