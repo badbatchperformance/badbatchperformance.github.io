@@ -208,7 +208,7 @@
   const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-20a'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-21a'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -257,8 +257,8 @@
     if (!coach || !isTV) return null;
     const t = now(), m = t.getHours() * 60 + t.getMinutes(), dow = t.getDay() || 7, sch = coach.schedule || {};
     let auto = null;
-    // Client slots go on TV 2 unless they set "tv": "1". One-off slots use "date" instead of "days".
-    const list = (sch.clients || []).filter(c => (c.tv || '2') === track && (c.date ? c.date === viewDate : (c.days || []).includes(dow))
+    // Client slots go on TV 2 unless they set "tv": "1". One-off slots use "date" instead of "days"; "skip" lists dates a weekly slot is off, "program" picks another day's session.
+    const list = (sch.clients || []).filter(c => (c.tv || '2') === track && (c.date ? c.date === viewDate : (c.days || []).includes(dow) && !(c.skip || []).includes(viewDate))
         && m >= mins(c.start) - 10 && m < mins(c.end))
       .sort((a, b) => mins(a.start) - mins(b.start)).slice(0, 3);
     if (list.length) auto = { kind: 'clients', list };
@@ -468,7 +468,7 @@
       const wide = cm.list.length === 1;
       // One line per exercise (cue only on the main lift) so three clients fit side by side.
       const col = c => {
-        const p = progs[c.name] || {}, day = p[viewDate] || p[dow];
+        const p = progs[c.name] || {}, day = p[c.program || viewDate] || p[dow];
         return `<section class="panel client"><h2>${esc(c.name)}</h2><div class="when">${fmtTime(c.start)}–${fmtTime(c.end)}${day && day.title ? ' · ' + esc(day.title) : ''}</div>
           ${day ? `<div class="cblocks${wide ? ' two' : ''}">${day.blocks.map(b => `<div class="cblock"><div class="sub">${esc(b.label || '')}</div>${b.items.map(([n, rx, notes]) =>
               `<div class="cx${/strength/i.test(b.label || '') ? ' main' : ''}"><span class="n">${esc(n)}</span><span class="r">${esc(rx)}</span></div>${/strength/i.test(b.label || '') && notes ? `<div class="notes">${esc(notes)}</div>` : ''}`).join('')}</div>`).join('')}</div>`
