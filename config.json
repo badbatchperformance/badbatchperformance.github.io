@@ -38,5 +38,15 @@
       "image": "assets/events/thank-you-bobby.png",
       "title": "Thank you Bobby (from the Nelson Family)"
     }
+  ],
+  "trackSwaps": [
+    {
+      "date": "2026-10-22",
+      "start": "16:20",
+      "end": "22:00",
+      "tv": "2",
+      "track": "1",
+      "note": "Build front squat workout on TV 2 (Wes)"
+    }
   ]
 }

@@ -205,10 +205,18 @@
   const wallMode = (params.get('wall') || '').toLowerCase(); // 'a', 'b', 'both' or ''
   const isTV = ['a', 'b', 'both'].includes(wallMode);
   let track = params.get('track') || '1'; // each TV can run its own program
-  const dir = () => (track === '1' ? 'wods' : `wods/t${track}`);
+  // config.json "trackSwaps" put another track's workout on a TV for a while, e.g.
+  // {"date":"2026-10-22","start":"16:20","end":"22:00","tv":"2","track":"1"}
+  const swapNow = () => {
+    if (!isTV) return null;
+    const t = now(), m = t.getHours() * 60 + t.getMinutes(), d = ymd(t);
+    return (config.trackSwaps || []).find(s => s.date === d && s.tv === track && m >= mins(s.start) && m < mins(s.end)) || null;
+  };
+  const wodTrack = () => (swapNow() || {}).track || track;
+  const dir = () => (wodTrack() === '1' ? 'wods' : `wods/t${wodTrack()}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v10-22a'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v10-22b'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -236,7 +244,7 @@
   // Demo videos unlock only with the key from the gym TV's QR code (see demos.js).
   const demoKey = BBDemos.getKey();
   let demoDb = null;
-  const demoUrl = (extra = '') => `demos.html#k=${demoKey}&t=${track}&d=${viewDate}${extra}`;
+  const demoUrl = (extra = '') => `demos.html#k=${demoKey}&t=${wodTrack()}&d=${viewDate}${extra}`;
   function demoFor(name, rx) {
     if (!demoDb) return null;
     const parts = /contrast/i.test(name) ? String(rx).split('→') : [name];
@@ -282,7 +290,7 @@
     const onDay = e => e.date ? e.date === d : (e.days || []).includes(t.getDay()) && (!e.from || d >= e.from);
     return (config.events || []).find(e => onDay(e) && (e.tvs || ['1', '2']).includes(track) && m >= mins(e.start) && m < mins(e.end)) || null;
   }
-  const coachSig = () => JSON.stringify([coachNow(), eventNow()]);
+  const coachSig = () => JSON.stringify([coachNow(), eventNow(), swapNow()]);
 
   async function load() {
     try { config = { ...config, ...(await getJson('config.json')) }; } catch (e) {}
@@ -325,7 +333,7 @@
   }
 
   const tracks = () => config.tracks || {};
-  const trackName = () => (tracks()[track] || {}).name || '';
+  const trackName = () => (tracks()[wodTrack()] || {}).name || '';
   function trackTabs() {
     const ids = Object.keys(tracks());
     if (ids.length < 2) return '';
@@ -418,7 +426,7 @@
     el.innerHTML = `${top}<div class="body">${body}</div>
       <div class="bottom">
         <div class="ticker"><span class="red">Open Gym</span> · <span id="tickerText">${esc(tick[0])}</span> <span class="ver">${BUILD}${coach ? '' : ' · no schedule'}</span></div>
-        ${demoDb ? `<div class="qr demo"><div>Need a refresher?<br><b style="color:var(--text)">Scan for ▶ demo videos</b></div>${qrSvg(new URL(`demos.html#k=${demoKey}&t=${track}`, location.href).href)}</div>` : ''}
+        ${demoDb ? `<div class="qr demo"><div>Need a refresher?<br><b style="color:var(--text)">Scan for ▶ demo videos</b></div>${qrSvg(new URL(`demos.html#k=${demoKey}&t=${wodTrack()}`, location.href).href)}</div>` : ''}
         <div class="qr"><div>Want in?<br><b style="color:var(--text)">Scan to claim a spot</b></div>${qrSvg(config.signupUrl)}</div>
       </div>`;
     let i = 0;
