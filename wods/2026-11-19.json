@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-19",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Lower ME: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Front Squat 3 · 6-sec lower @ RPE 7 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 1: 6 sec down, then drive up hard · 10–20 sec between steps, 3:00 between rounds · every jump max intent · elbows high · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "2 × 20",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Pull-Up",
+      "4 × 3 · 5-sec lower",
+      "Band or Banded Lat Pulldown to scale · rest 2:00"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 8/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "2 × 10",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "15-12-9 for time",
+    "subtitle": "Cap 10 min",
+    "timer": {
+      "type": "fortime",
+      "cap": 10
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "Strength block starts. The heavy step of every French contrast is today's main lift: 6 seconds down, then explode. Expect soreness, so accessories are cut back."
+}

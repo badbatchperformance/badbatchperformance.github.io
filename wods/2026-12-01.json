@@ -1,0 +1,60 @@
+{
+  "date": "2026-12-01",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Upper ME: Bench",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 30",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 10",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "5 × 5",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "4 × 3 · 3-sec pause @ RPE 8",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · rest 3:00"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "3 × 6 · 2-sec pause @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "4 × 8/side, heavier",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "DB Tricep Extension + Face Pull",
+      "3 × 8 + 15, heavier",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 12",
+    "subtitle": "Beat last week's rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 12
+    },
+    "items": [
+      "10 DB Push Press",
+      "15 KB Swings",
+      "200m run (treadmill or outside)"
+    ],
+    "scaling": "Lighter bells · run → 15 cal bike"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier than last week."
+}

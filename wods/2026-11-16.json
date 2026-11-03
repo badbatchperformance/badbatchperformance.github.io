@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-16",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Lower ME: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Back Squat 3 · 6-sec lower @ RPE 7 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 1: 6 sec down, then drive up hard · 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 20",
+      "Quick off the floor, stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Reverse Lunge",
+      "3 × 8/leg @ RPE 7.5",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "2 × 5/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "2 × 25 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 10",
+    "subtitle": "5 rounds · strength block: quality over speed",
+    "timer": {
+      "type": "emom",
+      "minutes": 10
+    },
+    "items": [
+      "Min 1: 12 KB Goblet Squats",
+      "Min 2: 10/7 cal Assault bike"
+    ],
+    "scaling": "Bike taken? 100m run"
+  },
+  "note": "Strength block starts. The heavy step of every French contrast is today's main lift: 6 seconds down, then explode. Expect soreness, so accessories are cut back."
+}

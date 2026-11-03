@@ -1,0 +1,50 @@
+{
+  "date": "2026-12-03",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Lower ME: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Front Squat 3 · 3-sec pause @ RPE 8 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · 10–20 sec between steps, 3:00 between rounds · every jump max intent · elbows high · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 20",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Pull-Up",
+      "5 × 3 · 3-sec hold chin over bar",
+      "Band or Banded Lat Pulldown to scale · rest 2:00"
+    ],
+    [
+      "Cable Row with Extension",
+      "4 × 8/side, heavier",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "3 × 8, heavier",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "21-15-9 for time",
+    "subtitle": "Beat last week's time",
+    "timer": {
+      "type": "fortime",
+      "cap": 12
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams",
+      "Cal Assault bike (or 2× the reps as walking lunge steps)"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier than last week."
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-12-04",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Inchworm Shoulder Tap × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Goblet Squat 3 (heavy, RPE 8) → Lateral Bounds 3/side → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 20",
+      "Stiff ankles, fast feet"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "4 × 5/side · 3-sec pause @ RPE 8",
+      "Rest 1:30 · same tempo as the week's main lifts"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 8/side, heavier",
+      "Pause at the hip"
+    ],
+    [
+      "Single-Arm Farmer Walk",
+      "4 × 50 yd/side",
+      "Stand tall, don't lean"
+    ],
+    [
+      "TK Palof",
+      "3 × 12/side, heavier band",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 12",
+    "subtitle": "Max rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 12
+    },
+    "items": [
+      "8 DB Push Press",
+      "10 Medicine Ball Slams",
+      "10 KB Goblet Squats",
+      "5 Pull-Ups"
+    ],
+    "scaling": "Band pull-ups or Dumbbell Rows"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier than last week."
+}

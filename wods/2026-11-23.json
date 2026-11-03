@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-23",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Lower ME: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Back Squat 3 · 5-sec lower @ RPE 7.5 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 2: heavier, 5 sec down · 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 25",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Vertical Jump",
+      "3 × 4",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Reverse Lunge",
+      "3 × 8/leg @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "3 × 5/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 25 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "6 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 12 KB Goblet Squats",
+      "Min 2: 12/9 cal Assault bike"
+    ],
+    "scaling": "Bike taken? 150m run"
+  },
+  "note": "Eccentric wk 2: more weight on the bar, 5-second lowering. Write down your heavy-step weight."
+}

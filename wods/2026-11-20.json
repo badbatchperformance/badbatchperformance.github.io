@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-20",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Inchworm Shoulder Tap × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Goblet Squat 3 (heavy, RPE 8) → Lateral Bounds 3/side → DB Jump Squat 5 → Pogo Hops 10",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 20",
+      "Stiff ankles, fast feet"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "4 × 5/side · 6-sec lower @ RPE 7",
+      "Rest 1:30 · same tempo as the week's main lifts"
+    ],
+    [
+      "Dumbbell Rows",
+      "3 × 8/side",
+      "Pause at the hip"
+    ],
+    [
+      "Single-Arm Farmer Walk",
+      "3 × 40 yd/side",
+      "Stand tall, don't lean"
+    ],
+    [
+      "TK Palof",
+      "3 × 10/side",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 10",
+    "subtitle": "Max rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 10
+    },
+    "items": [
+      "6 DB Push Press",
+      "8 Medicine Ball Slams",
+      "10 KB Goblet Squats"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Strength block starts. The heavy step of every French contrast is today's main lift: 6 seconds down, then explode. Expect soreness, so accessories are cut back."
+}

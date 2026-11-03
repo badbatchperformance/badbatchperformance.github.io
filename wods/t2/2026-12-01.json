@@ -1,0 +1,54 @@
+{
+  "date": "2026-12-01",
+  "block": "Strength · Concentric · Week 6 of 6",
+  "title": "Upper ME: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 2 @ RPE 8.5–9, fast up → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Concentric wk 2: heaviest of the block. Every rep max speed · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "4 × 30",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 12",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "4 × 2 @ RPE 8.5–9, fast up",
+      "Rest 2:30"
+    ],
+    [
+      "Face Pull",
+      "3 × 12",
+      "Pull to the eyes"
+    ],
+    [
+      "DB Tricep Extension",
+      "3 × 8, heavier",
+      "Slow down, fast up"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 9",
+    "subtitle": "Beat last week's rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 9
+    },
+    "items": [
+      "8 DB Push Press",
+      "10 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Last strength week: heaviest doubles of the block, all speed. Power block starts Dec 7."
+}

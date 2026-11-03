@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-30",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Lower ME: Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Back Squat 3 · 3-sec pause @ RPE 8 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Vertical Jump",
+      "3 × 5",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Reverse Lunge",
+      "3 × 6/leg · 2-sec pause @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Loaded Hip Airplane",
+      "3 × 6/side",
+      "Slow, hold a rack or wall"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 30 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "4 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 12 KB Goblet Squats",
+      "Min 2: 12/9 cal Assault bike",
+      "Min 3: 50 yd Farmer's Carry"
+    ],
+    "scaling": "Bike taken? 150m run"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier than last week."
+}

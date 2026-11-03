@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-26",
+  "block": "Strength · Concentric · Week 5 of 6",
+  "title": "Upper DE + Rotation",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Med Ball Rotational Throw",
+      "5 × 6/side",
+      "Max intent, hips first"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "4 × 25",
+      "Side to side over a line"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 5",
+      "Max height, land soft"
+    ],
+    [
+      "Jump Squats",
+      "3 × 5",
+      "Bodyweight, max height"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Push Press",
+      "8 × 2 @ RPE 7.5",
+      "Dynamic effort: moderate DBs moved as FAST as possible · rest 1:00"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 8/side, heavier",
+      "Pause at the hip"
+    ],
+    [
+      "Palof Rotation",
+      "3 × 12/side, heavier band",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "6 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 10 Medicine Ball Slams",
+      "Min 2: 15 KB Swings"
+    ],
+    "scaling": "Lighter ball"
+  },
+  "note": "Happy Thanksgiving. Get your training in early, then go eat. Concentric phase: no tempo. Control the way down, then move the bar as fast as you can."
+}

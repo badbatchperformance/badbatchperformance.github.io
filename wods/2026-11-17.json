@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-17",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Upper ME: Bench",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "4 × 4",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Bench Press",
+      "4 × 3 · 6-sec lower @ RPE 7",
+      "Eccentric wk 1: 6 sec down, then drive up hard · rest 3:00"
+    ],
+    [
+      "Seated DB Shoulder Press",
+      "3 × 8 @ RPE 7.5",
+      "Rest 1:30"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "3 × 8/side",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "DB Tricep Extension + Face Pull",
+      "2 × 10 + 15",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 10",
+    "subtitle": "Steady pace, good reps",
+    "timer": {
+      "type": "amrap",
+      "minutes": 10
+    },
+    "items": [
+      "8 DB Push Press",
+      "12 KB Swings",
+      "200m run (treadmill or outside)"
+    ],
+    "scaling": "Lighter bells · run → 15 cal bike"
+  },
+  "note": "Strength block starts. The heavy step of every French contrast is today's main lift: 6 seconds down, then explode. Expect soreness, so accessories are cut back."
+}

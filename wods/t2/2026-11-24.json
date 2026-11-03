@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-24",
+  "block": "Strength · Concentric · Week 5 of 6",
+  "title": "Upper ME: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 @ RPE 8, fast up → Plyometric Push-Up 5 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Concentric wk 1: normal lowering, then drive up as FAST as possible · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "4 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 12",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Weighted Pull-Up",
+      "5 × 2 @ RPE 8, fast up",
+      "Rest 2:30"
+    ],
+    [
+      "Face Pull",
+      "3 × 12",
+      "Pull to the eyes"
+    ],
+    [
+      "DB Tricep Extension",
+      "3 × 8, heavier",
+      "Slow down, fast up"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Heavier DBs than last week",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "8 DB Push Press",
+      "10 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter DBs"
+  },
+  "note": "Concentric phase: no tempo. Control the way down, then move the bar as fast as you can."
+}

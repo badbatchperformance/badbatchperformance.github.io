@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-18",
+  "block": "Strength · Eccentric · Week 1 of 6",
+  "title": "Lower ME: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 · 6-sec lower @ RPE 7 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 1: 6 sec down, then drive up hard · 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 5/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 15",
+      "Quick off the floor"
+    ]
+  ],
+  "strength": [
+    [
+      "Single-Leg RDL",
+      "3 × 8/side @ RPE 7.5",
+      "Hold a rack if you need balance"
+    ],
+    [
+      "Nordic Hamstring Curl",
+      "3 × 4",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 15",
+      "Pause at the top"
+    ]
+  ],
+  "cond": {
+    "format": "6 × 1:00 / 1:30",
+    "subtitle": "Hard 1:00, easy 1:30",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 90,
+      "rounds": 6
+    },
+    "items": [
+      "Treadmill Sprint or Assault bike",
+      "Sled Push, alternate partners"
+    ],
+    "scaling": "Machines taken? Run outside, same times"
+  },
+  "note": "Strength block starts. The heavy step of every French contrast is today's main lift: 6 seconds down, then explode. Expect soreness, so accessories are cut back."
+}

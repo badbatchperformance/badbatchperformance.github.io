@@ -1,0 +1,61 @@
+{
+  "date": "2026-12-02",
+  "block": "Strength · Isometric · Week 3 of 6",
+  "title": "Lower ME: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 3 · 3-sec pause @ RPE 8 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 10",
+      "Isometric wk 1: dead-stop 3-sec pause at the bottom, no bounce · 10–20 sec between steps, 3:00 between rounds · every jump max intent"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 20",
+      "Quick off the floor"
+    ],
+    [
+      "Box Drop to Stick",
+      "2 × 5",
+      "Drop, stick, freeze 2 sec"
+    ]
+  ],
+  "strength": [
+    [
+      "Single-Leg RDL",
+      "3 × 6/side · 2-sec pause @ RPE 8",
+      "Hold a rack if you need balance"
+    ],
+    [
+      "Nordic Hamstring Curl",
+      "3 × 5, slower",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Calf Raises / Cool Guy Leans",
+      "3 × 12 · 3-sec hold at the top",
+      "Pause at the top"
+    ]
+  ],
+  "cond": {
+    "format": "8 × 1:00 / 1:30",
+    "subtitle": "Hard 1:00, easy 1:30",
+    "timer": {
+      "type": "interval",
+      "work": 60,
+      "rest": 90,
+      "rounds": 8
+    },
+    "items": [
+      "Treadmill Sprint or Assault bike",
+      "Sled Push, alternate partners"
+    ],
+    "scaling": "Machines taken? Run outside, same times"
+  },
+  "note": "Isometric phase: 3-second dead-stop pause at the bottom of every main-lift rep. Heavier than last week."
+}

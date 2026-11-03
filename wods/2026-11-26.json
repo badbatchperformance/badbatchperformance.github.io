@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-26",
+  "block": "Strength · Eccentric · Week 2 of 6",
+  "title": "Lower ME: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Front Squat 3 · 5-sec lower @ RPE 7.5 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Eccentric wk 2: heavier, 5 sec down · 10–20 sec between steps, 3:00 between rounds · every jump max intent · elbows high · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "2 × 25",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Pull-Up",
+      "5 × 3 · 5-sec lower",
+      "Band or Banded Lat Pulldown to scale · rest 2:00"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 10/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Zottman Curl",
+      "3 × 10",
+      "Slow on the way down"
+    ]
+  ],
+  "cond": {
+    "format": "21-15-9 for time",
+    "subtitle": "Cap 12 min",
+    "timer": {
+      "type": "fortime",
+      "cap": 12
+    },
+    "items": [
+      "KB Swings",
+      "Medicine Ball Slams",
+      "Cal Assault bike (or 2× the reps as walking lunge steps)"
+    ],
+    "scaling": "Lighter bell · ball"
+  },
+  "note": "Happy Thanksgiving. Get your training in early, then go eat. Eccentric wk 2: more weight on the bar, 5-second lowering. Write down your heavy-step weight."
+}

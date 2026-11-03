@@ -1,0 +1,59 @@
+{
+  "date": "2026-12-03",
+  "block": "Strength · Concentric · Week 6 of 6",
+  "title": "Upper DE + Rotation",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Med Ball Rotational Throw",
+      "6 × 5/side",
+      "Max intent, hips first"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "4 × 25",
+      "Side to side over a line"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 5",
+      "Max height, land soft"
+    ],
+    [
+      "Jump Squats",
+      "3 × 5",
+      "Bodyweight, max height"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Push Press",
+      "10 × 2 @ RPE 7.5",
+      "Dynamic effort: moderate DBs moved as FAST as possible · rest 1:00"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 8/side, heavier",
+      "Pause at the hip"
+    ],
+    [
+      "Palof Rotation",
+      "3 × 12/side, heavier band",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 14",
+    "subtitle": "7 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 14
+    },
+    "items": [
+      "Min 1: 10 Medicine Ball Slams",
+      "Min 2: 15 KB Swings"
+    ],
+    "scaling": "Lighter ball"
+  },
+  "note": "Last strength week: heaviest doubles of the block, all speed. Power block starts Dec 7."
+}

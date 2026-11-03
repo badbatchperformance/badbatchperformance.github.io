@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-30",
+  "block": "Strength · Concentric · Week 6 of 6",
+  "title": "Lower ME: Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side · A-skip 2 × 20 yd · B-skip 2 × 20 yd",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Trap Bar Deadlift 2 @ RPE 8.5–9, fast up → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 10",
+      "Concentric wk 2: heaviest of the block. Every rep max speed · 10–20 sec between steps, 3:00 between rounds · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Bounds",
+      "4 × 5/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Single-Leg Hop",
+      "3 × 6/side",
+      "Small hops, stable knee"
+    ]
+  ],
+  "strength": [
+    [
+      "Nordic Hamstring Curl",
+      "3 × 6, slower",
+      "Slow lowering · band assist OK"
+    ],
+    [
+      "Single-Leg RDL",
+      "3 × 6/side, heavier",
+      "RPE 8"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 35 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 14",
+    "subtitle": "7 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 14
+    },
+    "items": [
+      "Min 1: 25 yd Sled Push, heavier",
+      "Min 2: 8 Medicine Ball Slams"
+    ],
+    "scaling": "Sled taken? 25-yd shuttle sprint"
+  },
+  "note": "Last strength week: heaviest doubles of the block, all speed. Power block starts Dec 7."
+}
