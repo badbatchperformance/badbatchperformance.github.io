@@ -48,5 +48,22 @@
       "track": "1",
       "note": "Build front squat workout on TV 2 (Wes)"
     }
+  ],
+  "themes": [
+    {
+      "theme": "thanksgiving",
+      "from": "2026-11-24",
+      "to": "2026-11-24",
+      "start": "16:00",
+      "end": "22:00",
+      "tvs": [
+        "1"
+      ]
+    },
+    {
+      "theme": "christmas",
+      "from": "2026-12-01",
+      "to": "2026-12-31"
+    }
   ]
 }
