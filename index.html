@@ -249,7 +249,7 @@
   const dir = () => (wodTrack() === '1' ? 'wods' : `wods/t${wodTrack()}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v11-24b'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v11-24c'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -307,8 +307,9 @@
     if (themed) auto = { kind: 'kids', cls: { title: themed.title || themed.name }, session: (coach.kids || {})[themed.kids] || null, theme: themed.theme, lines: themed.lines || [], missions: themed.missions || [] };
     else if (list.length) auto = { kind: 'clients', list };
     else if (track === '1') {
-      const cls = (sch.kidsClasses || []).find(c => c.days.includes(dow) && m >= mins(c.start) && m < mins(c.end));
-      if (cls) auto = { kind: 'kids', cls, session: (coach.kids || {})[viewDate] || null };
+      const cls = (sch.kidsClasses || []).find(c => (c.date ? c.date === viewDate : (c.days || []).includes(dow) && !(c.skip || []).includes(viewDate)) && m >= mins(c.start) && m < mins(c.end));
+      // One-off classes use "date" + "session" (another day's workout); "skip" turns a weekly class off for a date.
+      if (cls) auto = { kind: 'kids', cls, session: (coach.kids || {})[cls.session || viewDate] || null };
     }
     if (override && Date.now() > override.until) override = null;
     if (override?.mode === 'wod') return null;
