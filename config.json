@@ -53,12 +53,7 @@
     {
       "theme": "thanksgiving",
       "from": "2026-11-24",
-      "to": "2026-11-24",
-      "start": "16:00",
-      "end": "22:00",
-      "tvs": [
-        "1"
-      ]
+      "to": "2026-11-25"
     },
     {
       "theme": "christmas",

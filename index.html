@@ -190,6 +190,12 @@
   .wall.themed .panel h2 { align-items: center; }
   .wall.themed .panel h2 .tag { background: var(--tagbg); color: var(--tagfg); border-radius: 1.2vh; }
   .wall.themed .panel h2 .mission { font-family: var(--tfont), Oswald, sans-serif; text-transform: none; letter-spacing: 0; font-size: 3.3vh; color: var(--mission); }
+  .wall.themed .panel h2 { flex-wrap: wrap; row-gap: .2vh; }
+  .wall.themed .panel h2 .lbl { font-size: 2vh; color: #e6dfd6; font-weight: 500; }
+  .wall.themed .clientgrid .sub { text-transform: none; letter-spacing: 0; display: flex; align-items: baseline; gap: .8vw; flex-wrap: wrap; }
+  .wall.themed .clientgrid .sub .mission { font-family: var(--tfont), Oswald, sans-serif; font-size: 2.5vh; font-weight: 700; color: var(--mission); line-height: 1.1; }
+  .wall.themed .clientgrid .sub .lbl { font-size: 1.6vh; text-transform: uppercase; letter-spacing: .08em; color: #e6dfd6; }
+  .wall.thanksgiving .clientgrid .sub .mission { font-weight: 400; font-size: 2.2vh; }
   .wall.themed .ex .notes, .wall.themed .clientgrid .notes, .wall.themed .sub, .wall.themed .warm, .wall.themed .fsub, .wall.themed .scale { color: #e6dfd6; }
   .wall.themed .bottom { border-top: 0; padding: 1vh 1.4vw; background: var(--pane); border-radius: 2vh; }
   .wall.themed .bottom .ver { color: #a79f97; }
@@ -284,7 +290,7 @@
   const dir = () => (wodTrack() === '1' ? 'wods' : `wods/t${wodTrack()}`);
   if (isTV) document.body.classList.add('tv');
 
-  const BUILD = 'v11-24d'; // shown small on the TVs so we can tell they've picked up the latest version
+  const BUILD = 'v11-24e'; // shown small on the TVs so we can tell they've picked up the latest version
   const pad = n => String(n).padStart(2, '0');
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const parseYmd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -528,9 +534,11 @@
   const ART = { turkey: `<svg viewBox="0 0 200 190" aria-hidden="true"><ellipse cx="100" cy="42" rx="17" ry="46" fill="#c0392b" transform="rotate(-84 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#e8772e" transform="rotate(-56 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#f2b441" transform="rotate(-28 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#8fae3c" transform="rotate(0 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#f2b441" transform="rotate(28 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#e8772e" transform="rotate(56 100 108)"/><ellipse cx="100" cy="42" rx="17" ry="46" fill="#c0392b" transform="rotate(84 100 108)"/><g stroke="#e8772e" stroke-width="6" stroke-linecap="round"><path d="M86 168v14M114 168v14"/></g><circle cx="100" cy="130" r="44" fill="#7a4a24"/><ellipse cx="100" cy="140" rx="27" ry="28" fill="#a8703c"/><circle cx="100" cy="84" r="25" fill="#7a4a24"/><circle cx="91" cy="80" r="7" fill="#fff"/><circle cx="109" cy="80" r="7" fill="#fff"/><circle cx="92" cy="81" r="3.4" fill="#1b1b1b"/><circle cx="108" cy="81" r="3.4" fill="#1b1b1b"/><path d="M93 90h14l-7 13z" fill="#f2b441"/><path d="M104 96c9 2 9 17 2 18-5 0-6-8-2-18z" fill="#c0392b"/><path d="M74 70c4-22 48-22 52 0z" fill="#c0392b"/><rect x="72" y="66" width="56" height="7" rx="3" fill="#fff6e6"/><rect x="30" y="134" width="140" height="7" rx="3" fill="#d8d8d8"/><g fill="#e9b949"><rect x="26" y="121" width="13" height="33" rx="4"/><rect x="41" y="125" width="8" height="25" rx="3"/><rect x="161" y="121" width="13" height="33" rx="4"/><rect x="151" y="125" width="8" height="25" rx="3"/></g><g fill="#5e3718"><ellipse cx="62" cy="138" rx="13" ry="10"/><ellipse cx="138" cy="138" rx="13" ry="10"/></g></svg>`, pumpkin: `<svg viewBox="0 0 200 190" aria-hidden="true"><path d="M66 78c-8-64 76-64 68 0" fill="none" stroke="#23262b" stroke-width="17" stroke-linecap="round"/><g fill="#e8772e"><ellipse cx="52" cy="126" rx="38" ry="50"/><ellipse cx="148" cy="126" rx="38" ry="50"/></g><g fill="#f28f3b"><ellipse cx="78" cy="126" rx="36" ry="55"/><ellipse cx="122" cy="126" rx="36" ry="55"/></g><ellipse cx="100" cy="126" rx="27" ry="57" fill="#f7a552"/><path d="M128 72c18-20 40-12 44 2-16 10-34 10-44-2z" fill="#7d9a35"/><g fill="#3a1808"><circle cx="80" cy="116" r="7"/><circle cx="120" cy="116" r="7"/></g><path d="M74 136c12 22 40 22 52 0" fill="none" stroke="#3a1808" stroke-width="7" stroke-linecap="round"/></svg>`, santa: `<svg viewBox="0 0 200 190" aria-hidden="true"><path d="M50 72C54 18 108-4 150 30c16 12 22 34 20 52l-14-4c-2-14-8-24-18-30l10 26z" fill="#e02b2b"/><circle cx="163" cy="88" r="13" fill="#fff"/><circle cx="100" cy="96" r="46" fill="#f4c9a2"/><path d="M52 92c-8 58 18 84 48 86 30-2 56-28 48-86-8 12-20 18-30 18H82c-10 0-22-6-30-18z" fill="#fff"/><rect x="42" y="60" width="116" height="24" rx="12" fill="#fff"/><circle cx="82" cy="97" r="5.4" fill="#22262c"/><circle cx="118" cy="97" r="5.4" fill="#22262c"/><g fill="#ef9a8a"><circle cx="70" cy="109" r="8"/><circle cx="130" cy="109" r="8"/></g><circle cx="100" cy="108" r="9" fill="#e58c7c"/><g fill="#f3f3f3" stroke="#dcdcdc" stroke-width="1.5"><path d="M100 116c-10-5-32-2-38 13 14 7 32 4 38-7z"/><path d="M100 116c10-5 32-2 38 13-14 7-32 4-38-7z"/></g><path d="M90 134c5 8 15 8 20 0z" fill="#b23a3a"/><rect x="30" y="170" width="140" height="7" rx="3" fill="#d8d8d8"/><g fill="#e9b949"><rect x="26" y="157" width="13" height="33" rx="4"/><rect x="41" y="161" width="8" height="25" rx="3"/><rect x="161" y="157" width="13" height="33" rx="4"/><rect x="151" y="161" width="8" height="25" rx="3"/></g><g fill="#22262c"><circle cx="66" cy="173" r="11"/><circle cx="134" cy="173" r="11"/></g></svg>`, snowman: `<svg viewBox="0 0 200 190" aria-hidden="true"><rect x="16" y="22" width="168" height="7" rx="3" fill="#d8d8d8"/><g fill="#e9b949"><rect x="12" y="9" width="13" height="33" rx="4"/><rect x="27" y="13" width="8" height="25" rx="3"/><rect x="175" y="9" width="13" height="33" rx="4"/><rect x="165" y="13" width="8" height="25" rx="3"/></g><g stroke="#6b4226" stroke-width="7" stroke-linecap="round" fill="none"><path d="M68 116L44 78 46 32M132 116l24-38-2-46"/></g><circle cx="100" cy="146" r="43" fill="#fff"/><circle cx="100" cy="88" r="30" fill="#fff"/><rect x="68" y="60" width="64" height="8" rx="4" fill="#22262c"/><rect x="78" y="36" width="44" height="27" rx="4" fill="#22262c"/><rect x="78" y="53" width="44" height="7" fill="#d42426"/><circle cx="90" cy="84" r="4.2" fill="#22262c"/><circle cx="110" cy="84" r="4.2" fill="#22262c"/><path d="M100 90l26 6-26 5z" fill="#f28f3b"/><path d="M87 103c8 7 18 7 26 0" fill="none" stroke="#22262c" stroke-width="3.4" stroke-linecap="round"/><path d="M72 108c18 12 38 12 56 0l3 10c-20 12-42 12-62 0z" fill="#d42426"/><path d="M116 116l14 34-13 3-9-34z" fill="#b51d20"/><g fill="#22262c"><circle cx="97" cy="140" r="4"/><circle cx="97" cy="158" r="4"/></g></svg>`, elf: `<svg viewBox="0 0 130 170" aria-hidden="true"><path d="M30 62C34 22 66 4 104 14c-12 4-16 10-14 16 8 10 11 20 12 32z" fill="#1f9a55"/><circle cx="106" cy="15" r="7" fill="#ffd966"/><g fill="#f4c9a2"><path d="M30 70L8 60l16 26zM100 70l22-10-16 26z"/><circle cx="65" cy="76" r="33"/></g><path d="M27 58h76c4 0 4 12 0 12H27c-4 0-4-12 0-12z" fill="#fff"/><circle cx="54" cy="80" r="4.4" fill="#22262c"/><circle cx="78" cy="78" r="4.4" fill="#22262c"/><path d="M70 69l15-4" stroke="#6b4226" stroke-width="3.4" stroke-linecap="round"/><g fill="#ef9a8a"><circle cx="45" cy="90" r="5.5"/><circle cx="85" cy="90" r="5.5"/></g><path d="M52 92c8 11 20 10 28-3" fill="none" stroke="#8a2f2f" stroke-width="3.6" stroke-linecap="round"/><path d="M40 106h50l7 34H33z" fill="#1f9a55"/><path d="M36 104l10 12 9-9 10 11 10-11 9 9 10-12z" fill="#d42426"/><rect x="34" y="128" width="62" height="7" fill="#22262c"/><rect x="58" y="126" width="14" height="11" rx="2" fill="#ffd966"/><g stroke="#1f9a55" stroke-width="10" stroke-linecap="round"><path d="M40 112L22 136M90 112l18 24"/></g><g fill="#f4c9a2"><circle cx="21" cy="138" r="6"/><circle cx="109" cy="138" r="6"/></g><g stroke="#fff" stroke-width="10" stroke-linecap="butt"><path d="M50 138v20M80 138v20"/></g><g stroke="#d42426" stroke-width="10" stroke-dasharray="5 5"><path d="M50 138v20M80 138v20"/></g><path d="M44 155h12c4 6-2 12-10 12-12 0-22-2-24-12 8 4 14 4 22 0zM74 155h12c8 4 14 4 22 0-2 10-12 12-24 12-8 0-14-6-10-12z" fill="#b51d20"/></svg>`, ginger: `<svg viewBox="0 0 200 190" aria-hidden="true"><g stroke="#b5703a" stroke-width="36" stroke-linecap="round"><path d="M100 98L44 92M100 98l56-6M100 128l-26 40M100 128l26 40"/></g><ellipse cx="100" cy="118" rx="36" ry="38" fill="#b5703a"/><circle cx="100" cy="56" r="40" fill="#b5703a"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"><path d="M34 80q6 8 0 20M166 80q-6 8 0 20M62 162q12-4 20 12M138 162q-12-4-20 12M74 30q8-8 13 0t13 0 13 0 13 0"/><path d="M84 68c8 12 24 12 32 0"/></g><g fill="#22262c"><circle cx="86" cy="54" r="5"/><circle cx="114" cy="54" r="5"/></g><g fill="#ef8ea0"><circle cx="74" cy="66" r="6"/><circle cx="126" cy="66" r="6"/></g><circle cx="100" cy="106" r="6" fill="#d42426"/><circle cx="100" cy="128" r="6" fill="#1f9a55"/><path d="M100 88l-16-8v16zM100 88l16-8v16z" fill="#d42426"/></svg>` };
   const XMAS = ['santa', 'snowman', 'elf', 'ginger'];
   const THEMES = {
-    thanksgiving: { missions: ['Set the Table', 'Toss the Rolls', 'The Main Course', 'Second Helpings', 'All the Sides', 'Save Room for Pie', 'Leftovers'],
+    thanksgiving: { names: { warm: ['Set the Table'], jump: ['Turkey Trot', 'Wild Turkey Chase'], throw: ['Toss the Rolls'], main: ['The Main Course'], second: ['Carve the Bird', 'Second Course'], power: ['Wishbone Snap', 'Cannonball Cranberries'],
+        acc: ['Second Helpings', 'All the Sides', 'Stuff the Bird', 'Pass the Gravy', 'Mash the Potatoes'], finish: ['Save Room for Pie', 'Leftovers'], metcon: ['The Turkey Burn'], learn: ['Read the Recipe'], pull: ['Wishbone Pull'], recover: ['The Food Nap'] },
       who: 'Coach Turkey says', lines: ['Earn your plate.', 'Gobble up the reps. Keep them perfect.', 'No fowl play. Re-rack your weights.', 'Thankful for this crew.'], fall: ['🍂', '🍁'], bulbs: ['#e8772e', '#f2b441', '#c0392b', '#8fae3c'] },
-    christmas: { missions: ['Elf Warm-Up', 'Reindeer Games', 'The Big Sleigh', "Santa's Workshop", 'Wrap It Up', 'Candy Cane Finish', 'Milk and Cookies'],
+    christmas: { names: { warm: ['Elf Warm-Up'], jump: ['Reindeer Games', 'Up on the Rooftop'], throw: ['Snowball Fight'], main: ['The Big Sleigh'], second: ['Down the Chimney', 'The Second Sleigh'], power: ['Rocket Sleigh', 'Rudolph Takeoff'],
+        acc: ["Santa's Workshop", 'Wrap It Up', 'Stocking Stuffers', 'Deck the Halls', 'Jingle All the Way'], finish: ['Candy Cane Finish', 'Milk and Cookies'], metcon: ['Dash Through the Snow'], learn: ['Elf School'], pull: ['Pull the Sleigh'], recover: ['Long Winter Nap'] },
       who: 'North Pole news', lines: ['Find the elf in red. It moves every day.', 'Santa knows if you skipped your warm-up.', 'Full range of motion goes on the nice list.', 'Re-rack your weights or it is coal for you.'], fall: ['❄', '•', '❅'], bulbs: ['#ff4b4b', '#ffd966', '#3fd07a', '#5ab8ff'] },
   };
   function themeNow() {
@@ -541,7 +549,53 @@
     const day = t.getDate(), look = x.theme === 'christmas' ? XMAS[(day - 1 + (track === '2' ? 2 : 0)) % XMAS.length] : '';
     return { name: x.theme, look, day };
   }
-  const missionFor = (th, b, i) => th && /^[A-Z]$/.test(b.label || '') ? THEMES[th.name].missions[i] || '' : '';
+  // Fun block names, matched to what the block is. Labels with words (adults, weightlifting, open gym) go by the label;
+  // letter-only kids blocks go by position and exercises. Names don't repeat inside one workout until a list runs out.
+  function blockNamer(names) {
+    const used = {};
+    let mains = 0;
+    const pick = k => { const l = names[k], n = used[k] = (used[k] || 0) + 1; return l[(n - 1) % l.length]; };
+    const jumpOrThrow = ex => /throw|shot put|slam|push pass|medicine ball|\bmb\b/i.test(ex) && !/jump throw/i.test(ex) ? 'throw' : /jump|hop|bound|pogo|ankle|drop|skip|spring/i.test(ex) ? 'jump' : 'power';
+    return (label, exercises, i, total) => {
+      const L = String(label || '').trim(), ex = exercises.join(' ');
+      if (/^[A-Z]$/.test(L)) {
+        if (i === 0) return pick('warm');
+        if (i === 1) return pick(jumpOrThrow(exercises[0] || ''));
+        if (i === 2) return pick('main');
+        return pick(i === total - 1 ? 'finish' : 'acc');
+      }
+      if (/metcon|conditioning/i.test(L)) return pick('metcon');
+      if (/warm/i.test(L) && !/jumps/i.test(L)) return pick('warm');
+      if (/finish/i.test(L)) return pick('finish');
+      if (/recover/i.test(L)) return pick('recover');
+      if (/teach|learn|screen/i.test(L)) return pick('learn');
+      if (/pull/i.test(L) && !/push/i.test(L)) return pick('pull');
+      if (/strength|squat|hinge|main lift/i.test(L)) return pick(mains++ ? 'second' : 'main');
+      if (/throws/i.test(L)) return pick('throw');
+      if (/jumps/i.test(L)) return pick('jump');
+      if (/power|contrast/i.test(L)) return pick('power');
+      return pick('acc');
+    };
+  }
+  function nameBlocks(el, names) {
+    const mark = n => `<span class="mission">${esc(n)}</span>`;
+    const exOf = (root, sel) => [...root.querySelectorAll(sel)].map(x => x.textContent);
+    if (el.querySelector('.clientgrid')) {
+      el.querySelectorAll('.clientgrid .panel').forEach(p => {
+        const name = blockNamer(names), blocks = [...p.querySelectorAll('.cblock')];
+        blocks.forEach((b, i) => { const s = b.querySelector('.sub'), l = s.textContent; s.innerHTML = `${mark(name(l, exOf(b, '.n'), i, blocks.length))} <span class="lbl">${esc(l)}</span>`; });
+      });
+    } else {
+      const name = blockNamer(names), panels = [...el.querySelectorAll('.body .panel')];
+      panels.forEach((p, i) => {
+        const h = p.querySelector('h2'), tag = h && h.querySelector('.tag');
+        if (!tag) return;
+        const extra = h.textContent.replace(tag.textContent, '').trim();   // open gym panels have words after the tag
+        const n = name(extra || tag.textContent, exOf(p, '.ex .name'), i, panels.length);
+        h.innerHTML = `${tag.outerHTML}${mark(n)}${extra ? `<span class="lbl">${esc(extra)}</span>` : ''}`;
+      });
+    }
+  }
   // Re-dress a finished screen: themed header, light string, falling bits and (in December) the hiding elf.
   function dress(el) {
     clearInterval(dress.lineTimer);
@@ -554,6 +608,7 @@
     top.querySelector('img').classList.add('lg');
     h1.style.setProperty('--tsize', n > 30 ? '4.2vh' : n > 22 ? '5.4vh' : th.name === 'christmas' ? '7.6vh' : '6.6vh');
     mid.innerHTML = `${a}<div>${mid.innerHTML}</div>${b}`;
+    nameBlocks(el, T.names);
     const trim = document.createElement('div'); trim.className = 'trim';
     trim.innerHTML = Array.from({ length: 40 }, (_, i) => `<i style="background:${T.bulbs[i % T.bulbs.length]}"></i>`).join('');
     top.after(trim);
@@ -567,7 +622,7 @@
       const spot = (th.day + (track === '2' ? 3 : 0)) % 6;
       const place = () => {
         s.style.cssText = '';
-        if (spot === 1 || spot === 4) { top.appendChild(s); s.style.cssText = `position:absolute;top:-2.2vh;left:${spot === 1 ? 16.5 : 78.5}%;transform:rotate(180deg)`; }
+        if (spot === 1 || spot === 4) { top.appendChild(s); s.style.cssText = `position:absolute;top:-2.2vh;left:${spot === 1 ? 14.5 : 80}%;transform:rotate(180deg)`; }
         else if (spot === 0 || spot === 3) { trim.style.position = 'relative'; trim.appendChild(s); s.style.cssText = `position:absolute;top:-8.2vh;left:${spot === 0 ? 14.5 : 80}%`; }
         else {
           const r = [...el.querySelectorAll('.body .panel')].map(x => x.getBoundingClientRect()), bar = el.querySelector('.bottom'), low = Math.max(...r.map(x => x.bottom));
@@ -601,10 +656,10 @@
     if (timer) { timer.destroy(); timer = null; }
     const el = document.getElementById('wall');
     el.className = `wall coach ${cm.kind}`;
-    const angels = cm.theme === 'angels', th = angels ? null : themeNow();
+    const angels = cm.theme === 'angels';
     clearInterval(dress.lineTimer);
     if (angels) el.classList.add('angels');
-    const blockCard = (b, i) => `<section class="panel"><h2><span class="tag">${esc(b.label || '')}</span>${(cm.missions || [])[i] || missionFor(th, b, i) ? `<span class="mission">${esc((cm.missions || [])[i] || missionFor(th, b, i))}</span>` : ''}</h2>
+    const blockCard = (b, i) => `<section class="panel"><h2><span class="tag">${esc(b.label || '')}</span>${(cm.missions || [])[i] ? `<span class="mission">${esc(cm.missions[i])}</span>` : ''}</h2>
         ${b.items.map(([n, rx, notes]) => `<div class="ex"><div class="name">${esc(n)}</div><div class="rx">${esc(rx)}</div>${notes ? `<div class="notes">${esc(notes)}</div>` : ''}</div>`).join('')}</section>`;
     let title, sub, body, foot;
     if (cm.kind === 'kids') {
