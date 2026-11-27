@@ -1,0 +1,46 @@
+{
+  "date": "2026-12-12",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Saturday Partner WOD",
+  "warmup": "Foam roll 2 min, then 2 rounds: Tri-Planar Ankle × 8/side · Inchworm Walk × 4 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "4 × 20",
+      "Partner counts"
+    ],
+    [
+      "Broad Jump",
+      "7 × 5",
+      "Stick every landing"
+    ]
+  ],
+  "strength": [
+    [
+      "Single-Arm Farmer Walk",
+      "4 × 50 yd/side",
+      "One partner carries, one rests"
+    ],
+    [
+      "Copenhagen Plank",
+      "3 × 30 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "Partner AMRAP 20",
+    "subtitle": "Split reps any way",
+    "timer": {
+      "type": "amrap",
+      "minutes": 20
+    },
+    "items": [
+      "20 KB Swings",
+      "15 cal Assault bike",
+      "10 Inchworm Push-Ups",
+      "40 yd Sled Push"
+    ],
+    "scaling": "Bike taken? 200m run · sled taken? 40-yd shuttle sprint"
+  },
+  "note": "Partner day. Same 3-sec pause on the week's main lifts; today is about moving well together."
+}

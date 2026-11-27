@@ -1,0 +1,60 @@
+{
+  "date": "2026-12-10",
+  "block": "Power · Week 1 of 3",
+  "title": "Upper Speed + Rotation",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Windmill MB Throw",
+      "4 × 5/side",
+      "Max intent, full rotation"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "4 × 25",
+      "Side to side over a line"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 4",
+      "Max height, land soft"
+    ],
+    [
+      "Jump Squats",
+      "3 × 5",
+      "Bodyweight, max height"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Push Press",
+      "5 × 3 @ RPE 7 + 5 MB Chest Pass",
+      "Contrast: press fast, then throw · racks are Build's today · rest 2:00"
+    ],
+    [
+      "Dumbbell Rows",
+      "3 × 6/side, fast up",
+      "Pause at the hip"
+    ],
+    [
+      "Copenhagen Plank",
+      "2 × 25 sec/side",
+      "Short lever (knee) to scale"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 8",
+    "subtitle": "Smooth and fast",
+    "timer": {
+      "type": "amrap",
+      "minutes": 8
+    },
+    "items": [
+      "5 Pull-Ups",
+      "8 Medicine Ball Slams",
+      "10 Walking Lunge steps"
+    ],
+    "scaling": "Band pull-ups or Dumbbell Rows"
+  },
+  "note": "Power block starts: no tempo, lighter heavy step. Move the bar fast, then jump."
+}

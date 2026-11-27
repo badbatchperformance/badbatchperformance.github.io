@@ -1,0 +1,59 @@
+{
+  "date": "2026-12-08",
+  "block": "Power · Week 1 of 3",
+  "title": "Upper Power: Press",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Eccentric Push-Up with Extension × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "DB Bench Press 3 @ RPE 7, fast → Plyometric Push-Up 4 → Med Ball Chest Pass 5 → Medicine Ball Slams 5",
+      "Power wk 1: no tempo, lighter bar, every rep max speed · 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Pogo Hops",
+      "4 × 25",
+      "Quick off the floor"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "2 × 20",
+      "Side to side over a line"
+    ],
+    [
+      "Ankle Spring Series",
+      "2 × 10",
+      "Stiff ankles"
+    ]
+  ],
+  "strength": [
+    [
+      "Explosive Pull-Up",
+      "5 × 3, fast up",
+      "Bodyweight, chest to bar if you can · band to scale"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "3 × 6/side, fast up",
+      "Pull hard, lower slow"
+    ],
+    [
+      "Prone YTW",
+      "2 × 8",
+      "Light, squeeze each position"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 10",
+    "subtitle": "5 rounds · fast reps",
+    "timer": {
+      "type": "emom",
+      "minutes": 10
+    },
+    "items": [
+      "Min 1: 10 KB Swings",
+      "Min 2: 6 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter bell"
+  },
+  "note": "Power block starts: no tempo, lighter heavy step. Move the bar fast, then jump."
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-12-11",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Full Body + French Contrast",
+  "warmup": "Foam roll 2 min, then 2 rounds: Walking Lunge × 6/side · Inchworm Shoulder Tap × 5 · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Goblet Squat 3 (heavy, RPE 8) → Lateral Bounds 3/side → DB Jump Squat 5 → Pogo Hops 12",
+      "Rest 10–20 sec between steps, 3:00 between rounds"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 20",
+      "Stiff ankles, fast feet"
+    ]
+  ],
+  "strength": [
+    [
+      "Rear Foot Elevated Split Squat",
+      "4 × 4/side · 3-sec pause @ RPE 8.5",
+      "Rest 1:30 · same tempo as the week's main lifts"
+    ],
+    [
+      "HK LM Press to Decel",
+      "3 × 6/side",
+      "Press fast, stop it hard"
+    ],
+    [
+      "Cable Row with Extension",
+      "3 × 8/side",
+      "Cable taken? Dumbbell Rows"
+    ],
+    [
+      "Palof Rotation",
+      "3 × 10/side",
+      "Ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 15",
+    "subtitle": "5 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 15
+    },
+    "items": [
+      "Min 1: 10 Medicine Ball Slams",
+      "Min 2: 5 Pull-Ups",
+      "Min 3: 40 yd Farmer's Carry"
+    ],
+    "scaling": "Band pull-ups or Dumbbell Rows"
+  },
+  "note": "Isometric wk 2: same 3-sec pause, more weight. New main-lift variation today: log it."
+}

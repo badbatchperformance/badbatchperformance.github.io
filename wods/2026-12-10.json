@@ -1,0 +1,50 @@
+{
+  "date": "2026-12-10",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Lower ME: Front Squat + Pull",
+  "warmup": "Foam roll 2 min, then 2 rounds: KOT Sissy Squat × 8 · Wall Shoulder CAR × 3/side · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Front Squat 3 · 3-sec pause @ RPE 8.5 → Hurdle Hops 5 → DB Jump Squat 5 → Pogo Hops 12",
+      "Isometric wk 2: same 3-sec dead-stop pause, heavier · 10–20 sec between steps, 3:00 between rounds · every jump max intent · elbows high · no hurdles? Tuck jumps"
+    ],
+    [
+      "Lateral Pogo Hops",
+      "3 × 20",
+      "Side to side over a line"
+    ]
+  ],
+  "strength": [
+    [
+      "Pull-Up",
+      "5 × 3 · 4-sec hold chin over bar",
+      "Band or Banded Lat Pulldown to scale · rest 2:00"
+    ],
+    [
+      "Elevated Bird Dog Row",
+      "4 × 8/side",
+      "Flat back, pull to the hip"
+    ],
+    [
+      "Face Pull",
+      "3 × 15",
+      "Cable taken? Band face pull"
+    ]
+  ],
+  "cond": {
+    "format": "6 × :40 / 1:20",
+    "subtitle": "Hard :40, easy 1:20",
+    "timer": {
+      "type": "interval",
+      "work": 40,
+      "rest": 80,
+      "rounds": 6
+    },
+    "items": [
+      "Assault bike or Treadmill Sprint"
+    ],
+    "scaling": "Machines taken? Shuttle sprints, same times"
+  },
+  "note": "Isometric wk 2: same 3-sec pause, more weight. New main-lift variation today: log it."
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-12-09",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Lower ME: Deficit Hinge",
+  "warmup": "Foam roll 2 min, then 2 rounds: Reverse Lunge × 6/side · Hamstring Walkout × 5 · 4 Way Deadbug × 4",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Deficit Trap Bar Deadlift 3 · 3-sec pause @ RPE 8.5 → Broad Jump 4 → DB Jump Squat 5 → Pogo Hops 12",
+      "Isometric wk 2: same 3-sec dead-stop pause, heavier · 10–20 sec between steps, 3:00 between rounds · every jump max intent · stand on a 2-in plate, pause just off the floor"
+    ],
+    [
+      "Lateral Bounds",
+      "3 × 6/side",
+      "Stick each landing 1 sec"
+    ],
+    [
+      "Pogo Hops",
+      "2 × 20",
+      "Quick off the floor"
+    ],
+    [
+      "Box Drop to Stick",
+      "2 × 5",
+      "Drop, stick, freeze 2 sec"
+    ]
+  ],
+  "strength": [
+    [
+      "Hip Thrust",
+      "3 × 8 · 3-sec hold @ RPE 8",
+      "Back on a plyo box · racks are the Athlete track's"
+    ],
+    [
+      "Lengthened Ham Iso",
+      "3 × 30 sec/side",
+      "Long hamstring, push the heel down"
+    ],
+    [
+      "Waiter's Walk",
+      "3 × 40 yd/side",
+      "Lock the elbow, ribs down"
+    ]
+  ],
+  "cond": {
+    "format": "For time",
+    "subtitle": "4 rounds · cap 12",
+    "timer": {
+      "type": "fortime",
+      "cap": 12
+    },
+    "items": [
+      "200m run",
+      "15 KB Swings",
+      "10 Medicine Ball Slams"
+    ],
+    "scaling": "Lighter bell · run → 12/9 cal bike"
+  },
+  "note": "Isometric wk 2: same 3-sec pause, more weight. New main-lift variation today: log it."
+}

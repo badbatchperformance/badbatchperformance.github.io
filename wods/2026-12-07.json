@@ -1,0 +1,55 @@
+{
+  "date": "2026-12-07",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Lower ME: Box Squat",
+  "warmup": "Foam roll 2 min, then 2 rounds: Goblet Squat w/ Heartbeat × 8 · Inchworm Push-Up × 6 · CL Dead Bug × 6/side",
+  "jumps": [
+    [
+      "French Contrast × 4 rounds",
+      "Box Squat 3 · 3-sec pause @ RPE 8.5 → Box Jump 5 → DB Jump Squat 5 → Pogo Hops 12",
+      "Isometric wk 2: same 3-sec dead-stop pause, heavier · 10–20 sec between steps, 3:00 between rounds · every jump max intent · parallel box, sit back, stay tight, no rocking"
+    ],
+    [
+      "Pogo Hops",
+      "3 × 20",
+      "Quick off the floor, stiff ankles"
+    ],
+    [
+      "Vertical Jump",
+      "4 × 5",
+      "Max height, land soft"
+    ]
+  ],
+  "strength": [
+    [
+      "DB Walking Lunge",
+      "3 × 8/leg @ RPE 8",
+      "Rest 1:30"
+    ],
+    [
+      "Pissing Dog",
+      "3 × 12/side",
+      "Slow, no hip rotation"
+    ],
+    [
+      "KB Side Plank Corkscrew",
+      "3 × 8/side",
+      "Slow"
+    ]
+  ],
+  "cond": {
+    "format": "AMRAP 10",
+    "subtitle": "Max rounds",
+    "timer": {
+      "type": "amrap",
+      "minutes": 10
+    },
+    "items": [
+      "10 KB Goblet Squats",
+      "12/9 cal Assault bike",
+      "8 Inchworm Push-Ups"
+    ],
+    "scaling": "Bike taken? 150m run"
+  },
+  "note": "Isometric wk 2: same 3-sec pause, more weight. New main-lift variation today: log it."
+}

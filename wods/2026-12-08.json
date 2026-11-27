@@ -1,0 +1,55 @@
+{
+  "date": "2026-12-08",
+  "block": "Strength · Week 4 of 6 (Isometric)",
+  "title": "Upper ME: Close-Grip Bench",
+  "warmup": "Foam roll 2 min, then 2 rounds: Lateral Lunge × 6/side · Push-Up to T × 5/side · Bird Dog × 6/side",
+  "jumps": [
+    [
+      "Pogo Hops",
+      "3 × 30",
+      "Quick off the floor"
+    ],
+    [
+      "Ankle Spring Series",
+      "3 × 12",
+      "Stiff ankles, fast feet"
+    ],
+    [
+      "Plyometric Push-Up",
+      "5 × 5",
+      "Hands leave the floor · knees to scale"
+    ]
+  ],
+  "strength": [
+    [
+      "Close-Grip Bench Press",
+      "4 × 3 · 3-sec pause @ RPE 8.5",
+      "Hands shoulder-width · dead-stop 3-sec pause on the chest · rest 3:00"
+    ],
+    [
+      "Dumbbell Rows",
+      "4 × 8/side",
+      "Pause at the hip"
+    ],
+    [
+      "Barbell Skull Crushers + Prone YTW",
+      "3 × 8 + 8",
+      "Superset, rest 1:00"
+    ]
+  ],
+  "cond": {
+    "format": "EMOM 12",
+    "subtitle": "4 rounds",
+    "timer": {
+      "type": "emom",
+      "minutes": 12
+    },
+    "items": [
+      "Min 1: 10 DB Push Press",
+      "Min 2: 15 KB Swings",
+      "Min 3: 12/9 cal Assault bike"
+    ],
+    "scaling": "Bike taken? 150m run · lighter DBs"
+  },
+  "note": "Isometric wk 2: same 3-sec pause, more weight. New main-lift variation today: log it."
+}
